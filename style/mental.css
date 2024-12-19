@@ -1,0 +1,52 @@
+/* Header Styling */
+header {
+    background-color: #f071a6; /* Soft Pink Header */
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #ffb6c1;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin-left: 750px; /* Adjusted for better spacing */
+}
+
+header ul li {
+    margin-left: 1.5rem;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8c8dc;
+    color: #fff;
+    margin-top: auto; /* Footer stays at the bottom */
+}

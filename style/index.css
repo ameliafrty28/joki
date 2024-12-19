@@ -1,0 +1,160 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #5c5c5c;
+    background-color: #fff0f5; /* Soft Pink Background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    background-color: #f071a6; /* Soft Pink Header */
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #ffb6c1;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin-left: 750px; /* Adjusted for better spacing */
+}
+
+header ul li {
+    margin-left: 1.5rem;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Section */
+main {
+    padding: 2rem;
+    flex: 1;
+}
+
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffe4e9; /* Lighter Pink */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-hero-container {
+    display: flex;
+    justify-content: center; /* Memusatkan gambar secara horizontal */
+    align-items: center; /* Memusatkan gambar secara vertikal */
+    width: 100%;
+    height: 400px; /* Tentukan tinggi kontainer sesuai keinginan */
+}
+
+.home-hero {
+    border-radius: 10px;
+    width: 100%; /* Gambar memenuhi lebar kontainer */
+    height: 100%; /* Gambar memenuhi tinggi kontainer */
+    object-fit: cover; /* Menjaga proporsi gambar */
+    filter: brightness(0.7);
+    transition: filter 0.3s ease;
+}
+
+.home-hero:hover {
+    filter: brightness(1);
+}
+
+.home-hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.home-hero-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.home-hero-text p {
+    font-size: 18px;
+}
+
+.home-images {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.home-img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.home-img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.image-caption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    text-transform: capitalize;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8c8dc;
+    color: #fff;
+    margin-top: auto; /* Footer stays at the bottom */
+}

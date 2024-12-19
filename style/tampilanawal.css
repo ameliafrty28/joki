@@ -1,0 +1,211 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #5c5c5c;
+    background-color: #fff0f5; /* Soft Pink Background */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header Styling */
+header {
+    background-color: #f071a6; /* Soft Pink Header */
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #ffb6c1;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin-left: 900px; /* Adjusted for better spacing */
+
+}
+
+header ul li {
+    margin-left: 2.5rem;
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    flex: 1;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffe4e9; /* Lighter Pink */
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-text {
+    max-width: 60%; /* Lebih proporsional untuk teks */
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(135deg, #ffb6c1 0%, #ffe4e9 100%);
+    color: #5c5c5c;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.home-text h2 {
+    color: #ff69b4; /* Pink Title */
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home-text p {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+.home-text a {
+    display: inline-block;
+    margin-right: 1rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #ffb6c1; /* Light Pink Button */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.home-text a:hover {
+    background-color: #ff69b4;
+}
+
+.home-image img {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 1rem;
+}
+
+/* About Us Section */
+.about-us {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 15px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-us img {
+    width: 100%;
+    max-width: 300px;
+    margin-right: 3rem; /* Adjusted spacing */
+    border-radius: 10px;
+}
+
+.about-us div:last-child {
+    flex: 1;
+}
+
+.about-us h2 {
+    margin-bottom: 1rem;
+    color: #ff69b4;
+}
+
+.about-us p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+/* Team Section */
+.team {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.team h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #ff69b4;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.team-member {
+    background-color: #fff0f5;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    max-width: 100px;
+    margin-bottom: 1rem;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #ff69b4;
+}
+
+.team-member p {
+    color: #555;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8c8dc;
+    color: #fff;
+    margin-top: auto; /* Footer stays at the bottom */
+}
