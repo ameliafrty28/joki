@@ -97,7 +97,7 @@ session_start();
                         <img tabindex="0" src="img/kesehatan.png" alt="Foto Amanda Amelia Geli">
                     </div>
                     <h3 tabindex="0">Amanda Amelia Geli</h3>
-                    <p tabindex="0">[22180015] Prodi. Kebidanan</p>
+                    <p tabindex="0">[22180015] Prodi. Perawat</p>
                 </div>
             </div>
         </section>
