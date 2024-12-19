@@ -18,11 +18,43 @@
         .highlight {
             background-color: #ffcccc;
         }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            justify-content: center;
+            align-items: center;
+        }
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 500px;
+            text-align: center;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close:hover, .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
     <h1>Kalender Menstruasi</h1>
-    <form method="POST" id="input-form">
+    <form id="input-form">
         <label for="haid-durasi">Durasi Haid (hari):</label>
         <input type="number" id="haid-durasi" name="haid_durasi" required><br><br>
 
@@ -37,42 +69,103 @@
 
     <div id="result"></div>
 
+    <div id="info-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
     <script>
-        document.getElementById('input-form').addEventListener('submit', function(event) {
+        document.getElementById('input-form').addEventListener('submit', async function(event) {
             event.preventDefault();
 
             const haidDurasi = parseInt(document.getElementById('haid-durasi').value);
             const siklusHaid = parseInt(document.getElementById('siklus-haid').value);
             const haidTerakhir = new Date(document.getElementById('haid-terakhir').value);
 
-            const haidBerikutnyaDate = new Date(haidTerakhir);
-            haidBerikutnyaDate.setDate(haidBerikutnyaDate.getDate() + siklusHaid);
-
-            const haidBerakhirDate = new Date(haidBerikutnyaDate);
-            haidBerakhirDate.setDate(haidBerakhirDate.getDate() + haidDurasi);
-
-            const hariMenujuHaid = Math.max(0, Math.ceil((haidBerikutnyaDate - new Date()) / (1000 * 60 * 60 * 24)));
+            // Tampilkan keterangan siklus sebagai pop-up
+            displayCycleInfo(haidDurasi, siklusHaid);
 
             document.getElementById('result').innerHTML = `
                 <h2>Hasil Perhitungan</h2>
-                <p>Haid berikutnya dalam <strong>${hariMenujuHaid} hari</strong>, yaitu pada tanggal <strong>${haidBerikutnyaDate.toISOString().split('T')[0]}</strong>.</p>
                 <h3>Kalender</h3>
                 <div id="calendar-container"></div>
             `;
 
-            renderCalendar(haidBerikutnyaDate, haidBerakhirDate);
+            renderCalendar(haidTerakhir, haidDurasi, siklusHaid);
+
+            const saveResult = await saveToDatabase(haidDurasi, siklusHaid, haidTerakhir);
+            if (saveResult.success) {
+                alert('Data berhasil disimpan ke database!');
+            } else {
+                alert(`Gagal menyimpan data: ${saveResult.message}`);
+            }
         });
 
-        function renderCalendar(haidStartDate, haidEndDate, year = haidStartDate.getFullYear(), month = haidStartDate.getMonth()) {
+        function displayCycleInfo(haidDurasi, siklusHaid) {
+            const modal = document.getElementById('info-modal');
+            const modalMessage = document.getElementById('modal-message');
+            const closeModal = document.querySelector('.close');
+
+            let message = '';
+            if (siklusHaid >= 21 && siklusHaid <= 35 && haidDurasi >= 2 && haidDurasi <= 7) {
+                message = `Siklus menstruasi Anda normal.<br>Normal: 21-35 hari, durasi 2-7 hari.`;
+            } else {
+                message = `Siklus menstruasi tidak normal. Silakan konsultasi ke dokter.`;
+            }
+
+            modalMessage.innerHTML = message;
+            modal.style.display = 'flex';
+
+            closeModal.onclick = () => {
+                modal.style.display = 'none';
+            };
+
+            window.onclick = (event) => {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            };
+        }
+
+        async function saveToDatabase(haidDurasi, siklusHaid, haidTerakhir) {
+            try {
+                const response = await fetch('save-riwayat.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        id_user: 1,
+                        id_kategori: 3,
+                        haid_durasi: haidDurasi,
+                        siklus_haid: siklusHaid,
+                        haid_terakhir: haidTerakhir.toISOString().split('T')[0],
+                        hasil_analisis: siklusHaid >= 21 && siklusHaid <= 35 && haidDurasi >= 2 && haidDurasi <= 7 ? 'Normal' : 'Tidak Normal',
+                    }),
+                });
+
+                return await response.json();
+            } catch (error) {
+                console.error('Error saving to database:', error);
+                return { success: false, message: 'Terjadi kesalahan saat menghubungi server.' };
+            }
+        }
+
+        function renderCalendar(haidTerakhir, haidDurasi, siklusHaid, year = haidTerakhir.getFullYear(), month = haidTerakhir.getMonth()) {
             const calendarContainer = document.getElementById('calendar-container');
             calendarContainer.innerHTML = '';
 
             const firstDayOfMonth = new Date(year, month, 1);
             const lastDayOfMonth = new Date(year, month + 1, 0);
 
+            const monthNames = [
+                'Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 
+                'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'
+            ];
             const daysOfWeek = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
 
-            let calendarHTML = '<table><tr>';
+            let calendarHTML = `<h3>${monthNames[month]} ${year}</h3>`;
+            calendarHTML += '<table><tr>';
             daysOfWeek.forEach(day => {
                 calendarHTML += `<th>${day}</th>`;
             });
@@ -84,12 +177,30 @@
 
             for (let day = 1; day <= lastDayOfMonth.getDate(); day++) {
                 const currentDate = new Date(year, month, day);
-                const isHaidDay = currentDate >= haidStartDate && currentDate < haidEndDate;
-                calendarHTML += `<td class="${isHaidDay ? 'highlight' : ''}">${day}</td>`;
 
-                if (currentDate.getDay() === 6) {
+                const predictedHaidStart = new Date(haidTerakhir);
+                let isHighlighted = false;
+                while (predictedHaidStart <= lastDayOfMonth) {
+                    if (currentDate >= predictedHaidStart && currentDate < new Date(predictedHaidStart.getTime() + haidDurasi * 24 * 60 * 60 * 1000)) {
+                        calendarHTML += `<td class="highlight">${day}</td>`;
+                        isHighlighted = true;
+                        break;
+                    }
+                    predictedHaidStart.setDate(predictedHaidStart.getDate() + siklusHaid);
+                }
+
+                if (!isHighlighted) {
+                    calendarHTML += `<td>${day}</td>`;
+                }
+
+                if (currentDate.getDay() === 6 && day !== lastDayOfMonth.getDate()) {
                     calendarHTML += '</tr><tr>';
                 }
+            }
+
+            const remainingCells = 7 - (calendarHTML.match(/<tr>.*?<\/td>/g)?.length % 7 || 7);
+            for (let i = 0; i < remainingCells; i++) {
+                calendarHTML += '<td></td>';
             }
 
             calendarHTML += '</tr></table>';
@@ -101,17 +212,19 @@
         }
 
         function changeMonth(year, month) {
+            if (month < 0) {
+                month = 11;
+                year -= 1;
+            } else if (month > 11) {
+                month = 0;
+                year += 1;
+            }
+
             const haidDurasi = parseInt(document.getElementById('haid-durasi').value);
             const siklusHaid = parseInt(document.getElementById('siklus-haid').value);
             const haidTerakhir = new Date(document.getElementById('haid-terakhir').value);
 
-            const haidStartDate = new Date(haidTerakhir);
-            haidStartDate.setDate(haidStartDate.getDate() + siklusHaid);
-
-            const haidEndDate = new Date(haidStartDate);
-            haidEndDate.setDate(haidEndDate.getDate() + haidDurasi);
-
-            renderCalendar(haidStartDate, haidEndDate, year, month);
+            renderCalendar(haidTerakhir, haidDurasi, siklusHaid, year, month);
         }
     </script>
 </body>
