@@ -3,7 +3,7 @@ header('Content-Type: application/json');
 
 include 'koneksi.php';
 
-if (!isset($mysqli)) {
+if (!isset($conn)) {
     echo json_encode(['success' => false, 'message' => 'Koneksi database gagal.']);
     exit;
 }
@@ -24,15 +24,15 @@ $haid_terakhir = $data['haid_terakhir'];
 $hasil_analisis = $data['hasil_analisis'];
 
 // Simpan ke database
-$stmt = $mysqli->prepare("INSERT INTO tb_riwayat_haid (id_user, id_kategori, haid_durasi, siklus_haid, haid_terakhir, hasil_analisis) VALUES (?, ?, ?, ?, ?, ?)");
+$stmt = $conn->prepare("INSERT INTO tb_riwayat_haid (id_user, id_kategori, haid_durasi, siklus_haid, haid_terakhir, hasil_analisis) VALUES (?, ?, ?, ?, ?, ?)");
 $stmt->bind_param('iiisss', $id_user, $id_kategori, $haid_durasi, $siklus_haid, $haid_terakhir, $hasil_analisis);
 
 if ($stmt->execute()) {
     echo json_encode(['success' => true, 'message' => 'Data berhasil disimpan.']);
 } else {
-    echo json_encode(['success' => false, 'message' => 'Gagal menyimpan data: ' . $mysqli->error]);
+    echo json_encode(['success' => false, 'message' => 'Gagal menyimpan data: ' . $conn->error]);
 }
 
 $stmt->close();
-$mysqli->close();
+$conn->close();
 ?>
