@@ -4,150 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Profil</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-        header {
-    background-color: #f071a6; /* Soft Pink Header */
-    color: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 3px solid #ffb6c1;
-    }
-
-    header nav {
-        display: flex;
-        align-items: center;
-    }
-
-    header .logo {
-        height: 50px;
-        margin-right: 1rem;
-    }
-
-    header h1 {
-        font-size: 1.8rem;
-        color: #fff;
-    }
-
-    header ul {
-        list-style: none;
-        display: flex;
-        margin-left: 750px; /* Adjusted for better spacing */
-    }
-
-    header ul li {
-        margin-left: 1.5rem;
-    }
-
-    header ul li a {
-        color: #fff;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    header ul li a:hover {
-        text-decoration: underline;
-    }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #ffe4e6;
-            color: #6d435a;
-        }
-
-        .container {
-            max-width: 900px;
-            margin: 50px auto;
-            background: #fff0f3;
-            padding: 20px;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border: 1px solid #ffc1cc;
-        }
-
-        h1 {
-            text-align: center;
-            color: #b5838d;
-            font-size: 2.5rem;
-            margin-bottom: 20px;
-        }
-
-        h2 {
-            color: #ff8fab;
-            border-bottom: 2px solid #ffc1cc;
-            padding-bottom: 5px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
-            font-size: 1rem;
-        }
-
-        table, th, td {
-            border: 1px solid #ffc1cc;
-        }
-
-        th {
-            background-color: #ffccd5;
-            color: #fff;
-            padding: 12px;
-        }
-
-        td {
-            padding: 10px;
-            text-align: left;
-        }
-
-        .logout {
-            display: block;
-            width: 100%;
-            text-align: center;
-            padding: 15px;
-            background-color: #ff8fab;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-size: 1.2rem;
-            font-weight: bold;
-            transition: all 0.3s ease;
-            margin-top: 20px;
-        }
-
-        .logout:hover {
-            background-color: #ff4d6d;
-        }
-
-        p {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
-        }
-        footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: #f8c8dc;
-    color: #fff;
-    margin-top: auto; /* Footer stays at the bottom */
-}
-    </style>
+    <link rel="stylesheet" href="style/profil.css">
 </head>
 <body>
-<header>
+    <header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
             <h1>Web Kesehatan UNRIYO</h1>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="profile.php">Akun Saya</a></li>
+                <li><a href="index.php#home">Home</a></li>
+                <li><a href="index.php#about">About Us</a></li>
+                <li><a href="profil.php">Akun Saya</a></li>
             </ul>
         </nav>
     </header>
+    
     <main>
     <div class="container">
         <?php
@@ -180,7 +51,7 @@
         $resultHaid = $stmt->get_result();
         ?>
 
-        <h1>Profil Pengguna</h1>
+        <h2>Profil Pengguna</h2>
         <p><strong>Nama:</strong> <?php echo htmlspecialchars($resultUser['nama']); ?></p>
         <p><strong>Username:</strong> <?php echo htmlspecialchars($resultUser['username']); ?></p>
         <p><strong>Email:</strong> <?php echo htmlspecialchars($resultUser['email']); ?></p>

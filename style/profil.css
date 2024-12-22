@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Header Styling */
+header {
+    background-color: #f071a6; /* Soft Pink Header */
+    color: #fff;
+    padding: 0.8rem 1.5rem; /* Mengurangi padding untuk ukuran header lebih kecil */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px; /* Mengurangi ukuran logo */
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+}
+
+header .logo:hover {
+    transform: scale(1.05); /* Mengurangi efek zoom pada hover */
+}
+
+header h1 {
+    font-size: 1.6rem; /* Mengurangi ukuran font judul */
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin-left: 850px; /* Mengurangi jarak agar menu lebih dekat */
+}
+
+header ul li {
+    margin-left: 1rem; /* Mengurangi jarak antar menu */
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem; /* Mengurangi ukuran font menu */
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2rem;
+    flex: 1;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe4e6;
+    color: #6d435a;
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    background: #fff0f3;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ffc1cc;
+}
+
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #ff8fab;
+    border-bottom: 2px solid #ffc1cc;
+    padding-bottom: 5px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+table, th, td {
+    border: 1px solid #ffc1cc;
+}
+
+th {
+    background-color: #ffccd5;
+    color: #fff;
+    padding: 12px;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+.logout {
+    display: block;
+    width: 97%;
+    text-align: center;
+    padding: 15px;
+    background-color: #ff8fab;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.logout:hover {
+    background-color: #ff4d6d;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #f8c8dc; /* Soft Pink Footer */
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0;
+}
