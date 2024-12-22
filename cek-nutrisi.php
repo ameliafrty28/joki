@@ -95,28 +95,49 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pengecekan Masalah Nutrisi</title>
+    <link rel="stylesheet" href="style/cek-nutrisi.css">
 </head>
 <body>
-    <h1>Cek Masalah Nutrisi Anda</h1>
-    <form method="POST" action="">
-        <label for="weight">Berat Badan (kg):</label>
-        <input type="number" id="weight" name="weight" step="0.1" required><br>
+    <header>
+        <nav>
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <h1>Web Kesehatan UNRIYO</h1>
+            <ul>
+                <li><a href="index.php#home">Home</a></li>
+                <li><a href="index.php#about">About Us</a></li>
+                <li><a href="profil.php">Akun Saya</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <label for="height">Tinggi Badan (cm):</label>
-        <input type="number" id="height" name="height" step="0.1" required><br>
+    <main>
+        <h2>Cek Masalah Nutrisi Anda</h2>
+        <form method="POST" action="">
+            <label for="weight">Berat Badan (kg):</label>
+            <input type="number" id="weight" name="weight" step="0.1" required placeholder="contoh: 70">
 
-        <button type="submit">Hitung IMT</button>
-    </form>
+            <label for="height">Tinggi Badan (cm):</label>
+            <input type="number" id="height" name="height" step="0.1" required placeholder="contoh: 170">
 
-    <?php if (isset($bmi)): ?>
-        <h2>Hasil</h2>
-        <p>Berat Badan Anda: <?= htmlspecialchars($weight) ?> kg</p>
-        <p>Tinggi Badan Anda: <?= htmlspecialchars($height) ?> cm</p>
-        <p>IMT Anda: <?= number_format($bmi, 2) ?></p>
-        <p>Kategori: <?= htmlspecialchars($interpretation['category']) ?></p>
-        <p>Saran: <?= htmlspecialchars($interpretation['advice']) ?></p>
-    <?php elseif (isset($error)): ?>
-        <p style="color: red;"><?= htmlspecialchars($error) ?></p>
-    <?php endif; ?>
+            <button type="submit">Hitung IMT</button>
+        </form>
+
+        <?php if (isset($bmi)): ?>
+            <div class="result">
+            <h2>Hasil</h2>
+            <p>Berat Badan Anda: <?= htmlspecialchars($weight) ?> kg</p>
+            <p>Tinggi Badan Anda: <?= htmlspecialchars($height) ?> cm</p>
+            <p>IMT Anda: <?= number_format($bmi, 2) ?></p>
+            <p>Kategori: <?= htmlspecialchars($interpretation['category']) ?></p>
+            <p>Saran: <?= htmlspecialchars($interpretation['advice']) ?></p>
+            </div>
+        <?php elseif (isset($error)): ?>
+            <p style="color: red;"><?= htmlspecialchars($error) ?></p>
+        <?php endif; ?>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelompok 8 Kelas 2.</p>
+    </footer>
 </body>
 </html>
