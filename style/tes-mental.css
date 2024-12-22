@@ -1,0 +1,175 @@
+/* General Styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #fff8f9; /* Soft pinkish background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header Styling */
+header {
+    background-color: #f071a6; /* Soft Pink Header */
+    color: #fff;
+    padding: 0.8rem 1.5rem; /* Mengurangi padding untuk ukuran header lebih kecil */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px; /* Mengurangi ukuran logo */
+    margin-right: 1rem;
+    transition: transform 0.3s ease;
+}
+
+header .logo:hover {
+    transform: scale(1.05); /* Mengurangi efek zoom pada hover */
+}
+
+header h1 {
+    font-size: 1.6rem; /* Mengurangi ukuran font judul */
+    font-weight: bold;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    margin-left: 750px; /* Mengurangi jarak agar menu lebih dekat */
+}
+
+header ul li {
+    margin-left: 1rem; /* Mengurangi jarak antar menu */
+}
+
+header ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem; /* Mengurangi ukuran font menu */
+}
+
+header ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Styling */
+main {
+    padding: 2rem;
+    flex: 1;
+}
+
+main h1 {
+    font-size: 2.5rem;
+    color: #e91e63;
+    text-align: center;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+main ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+main li {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fff;
+    border: 2px solid #f48fb1;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+main li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+main p {
+    margin: 0 0 1rem;
+    color: #444;
+    font-size: 1.2rem;
+}
+
+main label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #555;
+    font-size: 1rem;
+}
+
+main input[type="radio"] {
+    margin-right: 0.5rem;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    background-color: #f071a6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+button:hover {
+    background-color: #e91e63;
+    transform: scale(1.05);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #f8c8dc;
+    color: #fff;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Styling */
+@media screen and (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header ul {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    header ul li {
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+
+    main h1 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.7rem 1.2rem;
+    }
+}
