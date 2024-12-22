@@ -101,7 +101,7 @@ $conn->close();
         <section>
             <h2>Ingin Mengetahui Lebih Lanjut?</h2>
             <p>Ikuti tes kesehatan anemia untuk mengetahui kondisi Anda lebih lanjut.</p>
-            <form action="pengetesan_anemia.php" method="GET">
+            <form action="cek-anemia.php" method="GET">
                 <button type="submit">Mulai Tes</button>
             </form>
         </section>

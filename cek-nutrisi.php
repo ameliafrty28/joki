@@ -1,4 +1,8 @@
 <?php
+include 'koneksi.php';
+
+session_start(); // Mulai sesi PHP
+
 // Function to calculate BMI
 function calculateBMI($weight, $height) {
     $heightInMeters = $height / 100; // Convert height to meters
@@ -31,15 +35,19 @@ function interpretBMI($bmi) {
 }
 
 // Insert result into database
-function saveResult($userId, $categoryId, $bmi, $result, $pdo) {
-    $stmt = $pdo->prepare("INSERT INTO tb_hasil (id_user, id_kategori, skor, hasil, tanggal_cek) VALUES (:id_user, :id_kategori, :skor, :hasil, NOW())");
+function saveResult($userId, $categoryId, $bmi, $result, $weight, $height, $pdo) {
+    $stmt = $pdo->prepare("INSERT INTO tb_riwayat_imt (id_user, id_kategori, tinggi_badan, berat_badan, skor_imt, hasil_keterangan, tanggal_cek) 
+                           VALUES (:id_user, :id_kategori, :tinggi_badan, :berat_badan, :skor_imt, :hasil_keterangan, NOW())");
     $stmt->execute([
         'id_user' => $userId,
         'id_kategori' => $categoryId,
-        'skor' => $bmi,
-        'hasil' => $result
+        'tinggi_badan' => $height,
+        'berat_badan' => $weight,
+        'skor_imt' => $bmi,
+        'hasil_keterangan' => $result
     ]);
 }
+
 
 // Database connection
 $dsn = 'mysql:host=localhost;dbname=kesehatan';
@@ -56,18 +64,25 @@ try {
     die('Database connection failed: ' . $e->getMessage());
 }
 
+// Check if user is logged in
+if (!isset($_SESSION['id_user'])) {
+    die('Anda harus login terlebih dahulu.');
+}
+
+$userId = $_SESSION['id_user']; // Ambil user_id dari sesi
+
 // Handle user input
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $weight = floatval($_POST['weight']);
     $height = floatval($_POST['height']);
-    $userId = intval($_POST['user_id']); // Assume user_id is passed from the form
 
     if ($weight > 0 && $height > 0) {
         $bmi = calculateBMI($weight, $height);
         $interpretation = interpretBMI($bmi);
 
         // Save result to database
-        saveResult($userId, 4, $bmi, $interpretation['category'], $pdo);
+// Save result to database
+    saveResult($userId, 4, $bmi, $interpretation['category'], $weight, $height, $pdo);
     } else {
         $error = 'Masukkan berat dan tinggi badan yang valid.';
     }
@@ -84,9 +99,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
     <h1>Cek Masalah Nutrisi Anda</h1>
     <form method="POST" action="">
-        <label for="user_id">ID Pengguna:</label>
-        <input type="number" id="user_id" name="user_id" required><br>
-
         <label for="weight">Berat Badan (kg):</label>
         <input type="number" id="weight" name="weight" step="0.1" required><br>
 
