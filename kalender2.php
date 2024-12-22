@@ -71,11 +71,7 @@
             renderCalendar(haidTerakhir, haidDurasi, siklusHaid);
 
             const saveResult = await saveToDatabase(haidDurasi, siklusHaid, haidTerakhir);
-            if (saveResult.success) {
-                alert('Data berhasil disimpan ke database!');
-            } else {
-                alert(`Gagal menyimpan data: ${saveResult.message}`);
-            }
+           
         });
 
         function displayCycleInfo(haidDurasi, siklusHaid) {

@@ -27,7 +27,7 @@ $conn->close();
     <header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
-            <h1>Web Kesehatan UNRIYO</h1>
+            <h1>KesehatanKu</h1>
             <ul>
                 <li><a href="index.php#home">Home</a></li>
                 <li><a href="index.php#about">About Us</a></li>

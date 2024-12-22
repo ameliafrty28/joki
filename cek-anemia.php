@@ -1,56 +1,56 @@
 <?php
-// Mulai sesi PHP
+// Menyertakan file koneksi
+include('koneksi.php');
+
 session_start();
 
-// Sertakan file koneksi ke database
-include 'koneksi.php';
+// Mendapatkan ID user dari session (sesuaikan dengan aplikasi Anda)
+$id_user = $_SESSION['id_user'];  // Misalnya, ID user disimpan di session
 
-// Cek apakah pengguna sudah login
-if (!isset($_SESSION['user_id'])) {
-    die("Anda harus login untuk mengakses halaman ini.");
+// Ambil pertanyaan kategori Anemia dari database
+$sql = "SELECT * FROM tb_pertanyaan_kesehatan WHERE id_kategori = 1";
+$result = $conn->query($sql);
+
+$skor = 0;
+$pertanyaan = [];
+
+if ($result->num_rows > 0) {
+    // Menyimpan pertanyaan dalam array
+    while ($row = $result->fetch_assoc()) {
+        $pertanyaan[] = $row;
+    }
+} else {
+    echo "Tidak ada pertanyaan ditemukan";
 }
 
-// Cek apakah form dikirimkan
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    // Ambil data dari form
-    $nama = isset($_POST['nama']) ? $_POST['nama'] : '';
-    $usia = isset($_POST['usia']) ? intval($_POST['usia']) : 0;
-    $gender = isset($_POST['gender']) ? $_POST['gender'] : '';
-    $hb = isset($_POST['hb']) ? floatval($_POST['hb']) : 0.0;
+// Proses jika form disubmit
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    foreach ($pertanyaan as $pertanyaan_data) {
+        $id_pertanyaan = $pertanyaan_data['id_pertanyaan'];
+        $jawaban = isset($_POST["jawaban_$id_pertanyaan"]) ? $_POST["jawaban_$id_pertanyaan"] : 0;
 
-    // Validasi data input
-    if (empty($nama) || $usia <= 0 || empty($gender) || $hb <= 0) {
-        echo "Semua data harus diisi dengan benar.";
-        exit;
+        // Menyimpan jawaban ke database
+        $stmt = $conn->prepare("INSERT INTO tb_jawaban (id_user, id_pertanyaan, jawaban) VALUES (?, ?, ?)");
+        $stmt->bind_param("iii", $id_user, $id_pertanyaan, $jawaban);
+        $stmt->execute();
+
+        // Menambahkan skor
+        $skor += $jawaban;
     }
 
-    // Logika cek anemia
-    $kategori = '';
-    if ($gender === 'L') { // Laki-laki
-        if ($hb < 13) {
-            $kategori = 'Anemia';
-        } else {
-            $kategori = 'Normal';
-        }
-    } elseif ($gender === 'P') { // Perempuan
-        if ($hb < 12) {
-            $kategori = 'Anemia';
-        } else {
-            $kategori = 'Normal';
-        }
-    }
-
-    // Simpan hasil ke database
-    $stmt = $conn->prepare("INSERT INTO hasil_cek_anemia (nama, usia, gender, hb, kategori) VALUES (?, ?, ?, ?, ?)");
-    $stmt->bind_param("sisss", $nama, $usia, $gender, $hb, $kategori);
-
-    if ($stmt->execute()) {
-        echo "Hasil cek anemia berhasil disimpan.";
+    // Menyimpulkan hasil
+    if ($skor > 0) {
+        $pesan = "Anda memiliki risiko terkena anemia, disarankan untuk melakukan pengecekan ke dokter untuk kepastiannya.";
+        $id_kategori = 1; // Misalkan kategori 1 adalah Anemia
     } else {
-        echo "Gagal menyimpan hasil cek: " . $conn->error;
+        $pesan = "Skor Anda menunjukkan tidak ada risiko anemia.";
+        $id_kategori = 1; // Misalkan kategori 1 adalah Anemia
     }
 
-    $stmt->close();
+    // Menyimpan hasil analisis ke tabel riwayat_anemia
+    $stmt_riwayat = $conn->prepare("INSERT INTO tb_riwayat_anemia (id_user, id_kategori, hasil_analisis) VALUES (?, ?, ?)");
+    $stmt_riwayat->bind_param("iis", $id_user, $id_kategori, $pesan);
+    $stmt_riwayat->execute();
 }
 ?>
 
@@ -59,28 +59,66 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cek Anemia</title>
+    <title>Check Anemia</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        // Fungsi untuk menampilkan pop-up
+        function showPopup(message) {
+            var popup = document.createElement("div");
+            popup.style.position = "fixed";
+            popup.style.left = "50%";
+            popup.style.top = "50%";
+            popup.style.transform = "translate(-50%, -50%)";
+            popup.style.padding = "20px";
+            popup.style.backgroundColor = "#fff";
+            popup.style.border = "1px solid #ccc";
+            popup.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.2)";
+            popup.style.zIndex = "1000";
+            popup.style.textAlign = "center";
+            popup.innerHTML = "<h2>Hasil Pemeriksaan</h2><p>" + message + "</p><button onclick='closePopup()'>Tutup</button>";
+
+            document.body.appendChild(popup);
+        }
+
+        // Fungsi untuk menutup pop-up dan mengarahkan kembali ke halaman utama
+        function closePopup() {
+            var popup = document.querySelector("div");
+            popup.remove();
+            window.location.href = "anemia.php"; // Arahkan ke halaman utama setelah menutup pop-up
+        }
+    </script>
 </head>
 <body>
-    <h1>Form Cek Anemia</h1>
+
+    <h1>Pemeriksaan Risiko Anemia</h1>
+
     <form action="cek-anemia.php" method="POST">
-        <label for="nama">Nama:</label><br>
-        <input type="text" id="nama" name="nama" required><br><br>
-
-        <label for="usia">Usia:</label><br>
-        <input type="number" id="usia" name="usia" required><br><br>
-
-        <label for="gender">Jenis Kelamin:</label><br>
-        <select id="gender" name="gender" required>
-            <option value="">--Pilih--</option>
-            <option value="L">Laki-laki</option>
-            <option value="P">Perempuan</option>
-        </select><br><br>
-
-        <label for="hb">Kadar Hb (g/dL):</label><br>
-        <input type="number" id="hb" name="hb" step="0.1" required><br><br>
-
-        <button type="submit">Cek</button>
+        <?php if (!empty($pertanyaan)): ?>
+            <?php foreach ($pertanyaan as $pertanyaan_data): ?>
+                <div class="question">
+                    <label for="jawaban_<?php echo $pertanyaan_data['id_pertanyaan']; ?>">
+                        <?php echo $pertanyaan_data['pertanyaan']; ?>
+                    </label><br>
+                    <input type="radio" id="jawaban_<?php echo $pertanyaan_data['id_pertanyaan']; ?>" name="jawaban_<?php echo $pertanyaan_data['id_pertanyaan']; ?>" value="5" required> YA
+                    <input type="radio" id="jawaban_<?php echo $pertanyaan_data['id_pertanyaan']; ?>" name="jawaban_<?php echo $pertanyaan_data['id_pertanyaan']; ?>" value="0"> TIDAK
+                </div>
+            <?php endforeach; ?>
+            <button type="submit">Kirim</button>
+        <?php endif; ?>
     </form>
+
+    <?php if ($_SERVER['REQUEST_METHOD'] == 'POST'): ?>
+        <script>
+            // Menampilkan pop-up hasil setelah form disubmit
+            var message = "<?php echo $pesan; ?>";
+            showPopup(message);
+        </script>
+    <?php endif; ?>
+
 </body>
 </html>
+
+<?php
+// Menutup koneksi setelah penggunaan
+$conn->close();
+?>
