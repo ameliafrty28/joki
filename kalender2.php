@@ -4,70 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalender Menstruasi</title>
-    <style>
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            text-align: center;
-            padding: 10px;
-        }
-        .highlight {
-            background-color: #ffcccc;
-        }
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.5);
-            justify-content: center;
-            align-items: center;
-        }
-        .modal-content {
-            background-color: white;
-            padding: 20px;
-            border-radius: 10px;
-            width: 80%;
-            max-width: 500px;
-            text-align: center;
-        }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-            cursor: pointer;
-        }
-        .close:hover, .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="style/kalender2.css">
+    
 </head>
 <body>
-    <h1>Kalender Menstruasi</h1>
-    <form id="input-form">
-        <label for="haid-durasi">Durasi Haid (hari):</label>
-        <input type="number" id="haid-durasi" name="haid_durasi" required><br><br>
+    <header>
+        <nav>
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <h1>Web Kesehatan UNRIYO</h1>
+            <ul>
+                <li><a href="index.php#home">Home</a></li>
+                <li><a href="index.php#about">About Us</a></li>
+                <li><a href="profile.php">Akun Saya</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <label for="siklus-haid">Siklus Haid (hari):</label>
-        <input type="number" id="siklus-haid" name="siklus_haid" required><br><br>
+    <main>
+        <section class="hero-section">
+            <h1>Kalender Menstruasi</h1>
+            <p class="subtitle">
+                Alat bantu untuk mencatat siklus menstruasi Anda dengan mudah dan akurat.
+            </p>
+        </section>
 
-        <label for="haid-terakhir">Tanggal Hari Pertama Haid Terakhir:</label>
-        <input type="date" id="haid-terakhir" name="haid_terakhir" required><br><br>
+        <form id="input-form" class="form-container">
+            <label for="haid-durasi">Durasi Haid (hari):</label>
+            <input type="number" id="haid-durasi" name="haid_durasi" required>
 
-        <button type="submit">Hitung</button>
-    </form>
+            <label for="siklus-haid">Siklus Haid (hari):</label>
+            <input type="number" id="siklus-haid" name="siklus_haid" required>
 
-    <div id="result"></div>
+            <label for="haid-terakhir">Tanggal Hari Pertama Haid Terakhir:</label>
+            <input type="date" id="haid-terakhir" name="haid_terakhir" required>
+
+            <button type="submit" class="submit-btn">Hitung</button>
+        </form>
+
+        <div id="result"></div>
+    </main>
 
     <div id="info-modal" class="modal">
         <div class="modal-content">
@@ -234,5 +209,9 @@
             renderCalendar(haidTerakhir, haidDurasi, siklusHaid, year, month);
         }
     </script>
+
+    <footer>
+        <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelompok 8 Kelas 2.</p>
+    </footer>
 </body>
 </html>
