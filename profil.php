@@ -193,6 +193,7 @@
                     <th>Kategori</th>
                     <th>Skor</th>
                     <th>Hasil</th>
+                    <th>Tanggal Cek</th>
                 </tr>
             </thead>
             <tbody>
@@ -201,6 +202,8 @@
                     <td><?php echo htmlspecialchars($row['kategori']); ?></td>
                     <td><?php echo htmlspecialchars($row['skor']); ?></td>
                     <td><?php echo htmlspecialchars($row['hasil']); ?></td>
+                    <td><?php echo htmlspecialchars($row['tanggal_cek']); ?></td>
+
                 </tr>
                 <?php endwhile; ?>
             </tbody>
