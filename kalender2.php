@@ -110,11 +110,18 @@
 
             let message = '';
             if (siklusHaid >= 21 && siklusHaid <= 35 && haidDurasi >= 2 && haidDurasi <= 7) {
-                message = `Siklus menstruasi Anda normal.<br>Normal: 21-35 hari, durasi 2-7 hari.`;
+                message = 
+                    `Siklus menstruasi Anda masih dalam batas normal.<br>
+                    Normalnya, siklus menstruasi berlangsung selama 21-35 hari, dan durasi haid 2-7 hari.`
+                ;
             } else {
-                message = `Siklus menstruasi tidak normal. Silakan konsultasi ke dokter.`;
+                message = 
+                    `Siklus menstruasi Anda tidak normal.<br>
+                    Normalnya, siklus menstruasi berlangsung selama 21-35 hari, dan durasi haid 2-7 hari.<br>
+                    Jika siklus Anda lebih singkat atau lebih lama dari batas ini, Anda mungkin mengalami gangguan siklus menstruasi.<br>
+                    Silakan berkonsultasi dengan dokter untuk mengetahui penyebab masalah siklus menstruasi Anda.`
+                ;
             }
-
             modalMessage.innerHTML = message;
             modal.style.display = 'flex';
 
