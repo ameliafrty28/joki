@@ -6,10 +6,10 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #5c5c5c;
-    background-color: #fff0f5; /* Soft Pink Background */
+    color: #333;
+    background: linear-gradient(to bottom, #ffe4e9, #fff5f7); /* Gradasi warna lembut */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -23,7 +23,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 3px solid #ffb6c1;
+    margin-bottom: 1.5rem; /* Jarak antara header dan elemen berikutnya */
 }
 
 header nav {
@@ -68,35 +68,52 @@ main {
 }
 
 #home {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #ffe4e9; /* Lighter Pink */
+    background: #fff;
     padding: 2rem;
     border-radius: 15px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-in-out;
+
+}
+
+#home > p {
+    margin-bottom: 1rem; /* Jarak antara teks paragraf dan gambar */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .home-hero-container {
     display: flex;
-    justify-content: center; /* Memusatkan gambar secara horizontal */
-    align-items: center; /* Memusatkan gambar secara vertikal */
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    height: 400px; /* Tentukan tinggi kontainer sesuai keinginan */
+    height: 400px;
+    position: relative;
+    margin-bottom: 2rem;
 }
 
 .home-hero {
-    border-radius: 10px;
-    width: 100%; /* Gambar memenuhi lebar kontainer */
-    height: 100%; /* Gambar memenuhi tinggi kontainer */
-    object-fit: cover; /* Menjaga proporsi gambar */
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
     filter: brightness(0.7);
-    transition: filter 0.3s ease;
+    transition: filter 0.3s ease, transform 0.3s ease;
 }
 
 .home-hero:hover {
     filter: brightness(1);
+    transform: scale(1.05);
 }
 
 .home-hero-text {
@@ -104,20 +121,11 @@ main {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
+    color: #fff;
     text-align: center;
-    font-size: 28px;
+    font-size: 2rem;
     font-weight: bold;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.home-hero-text h2 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.home-hero-text p {
-    font-size: 18px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .home-images {
@@ -126,6 +134,7 @@ main {
     margin: 2rem 0;
     width: 100%;
     flex-wrap: wrap;
+    gap: 1.5rem;
 }
 
 .home-img {
@@ -133,20 +142,20 @@ main {
     height: 150px;
     object-fit: cover;
     border-radius: 10px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .home-img:hover {
-    transform: scale(1.05);
-    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .image-caption {
     text-align: center;
     margin-top: 10px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #333;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #444;
     text-transform: capitalize;
 }
 
@@ -154,7 +163,9 @@ main {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #f8c8dc;
+    background: linear-gradient(to right, #f8c8dc, #f071a6);
     color: #fff;
-    margin-top: auto; /* Footer stays at the bottom */
+    margin-top: auto;
+    font-weight: 500;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
