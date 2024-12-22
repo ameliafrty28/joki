@@ -22,7 +22,7 @@ if (!isset($_SESSION['id_user'])) {
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>
-                <li><a href="profile.php">Akun Saya</a></li>
+                <li><a href="profil.php">Akun Saya</a></li>
             </ul>
         </nav>
     </header>
