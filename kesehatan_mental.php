@@ -1,74 +1,121 @@
-<?php
-session_start();
-if (!isset($_SESSION['username'])) {
-    header("Location: login.php");
-    exit();
-}
-
-require 'koneksi.php';
-
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kesehatan Mental</title>
-    <link rel="stylesheet" href="style/kesehatan_mental.css">
+    <link rel="stylesheet" href="style/anemia.css">
+    <title>Informasi Kesehatan Mental</title>
 </head>
 <body>
     <header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
-            <h1>Web Kesehatan UNRIYO</h1>
+            <h1>KesehatanKu</h1>
             <ul>
                 <li><a href="index.php#home">Home</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="profil.php">Akun Saya</a></li>
+                <li><a href="index.php#about">About Us</a></li>
+                <li><a href="profile.php">Akun Saya</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <h1>Informasi Kesehatan Mental</h1>
+        <h1>Kesehatan Mental</h1>
         <img src="img/kesehatan_mental.jpg" alt="hero" class="hero">
-        <section id="info">
-            <h2 class="accordion">Tingkat Stres pada Remaja Putri</h2>
+        <section>
+            <h2 class="accordion">Apa itu Kesehatan Mental?</h2>
             <div class="content">
-            <p>Kesehatan mental adalah aspek penting dalam kehidupan, terutama bagi remaja putri yang sering menghadapi berbagai tantangan emosional dan sosial. Tingkat stres yang tinggi dapat berdampak pada kesehatan mental dan kualitas hidup secara keseluruhan.</p>
-            <p>Dengan memahami tingkat stres yang dialami, langkah-langkah pencegahan dan pengelolaan stres dapat dilakukan untuk mendukung kesehatan mental yang lebih baik.</p>
+                <p>Kesehatan jiwa atau sebutan lainnya kesehatan mental adalah kesehatan yang berkaitan dengan kondisi emosi, kejiwaan, dan psikis seseorang.</p>
+                <p>Kesehatan mental adalah kondisi di mana seseorang dapat mengatasi tekanan hidup, bekerja secara produktif, dan berkontribusi kepada komunitasnya. Kesehatan mental yang baik memungkinkan seseorang untuk menikmati kehidupan sehari-hari dan menghargai orang lain.</p>
+                <p>Kesehatan mental adalah aspek penting dari kesejahteraan secara keseluruhan karena berpengaruh langsung terhadap cara seseorang berpikir, merasa, dan berperilaku. Ketika kesehatan mental terjaga, seseorang lebih mampu menghadapi stres, menjaga hubungan yang sehat, dan membuat keputusan yang baik dalam kehidupannya.</p>
+                <p>Ketika kesehatan mental terjaga, seseorang lebih mampu menghadapi stres, menjaga hubungan yang sehat, dan membuat keputusan yang baik dalam kehidupannya.</p>
+                <p>Sebaliknya, masalah kesehatan mental yang tidak ditangani dapat berdampak buruk pada kualitas hidup, termasuk menurunnya produktivitas dan hubungan sosial.</p>
+                <P>Dengan kondisi mental yang baik, kamu nantinya bisa mengatasi stres dari tekanan hidup, memanfaatkan waktu secara produktif, dan mudah menyadari potensi yang dimiliki.</P>
+                <P>Menjaga kesehatan mental juga penting ka</P>
+                <P></P>
             </div>
-        </section>
 
-        <section id="action">
-            <h2 class="accordion">Tes Kesehatan Mental</h2>
-            <div class="content">
-            <p>Klik tombol di bawah ini untuk melakukan tes kesehatan mental dan mengetahui tingkat stres Anda. Pertanyaan dalam tes ini akan membantu mengidentifikasi faktor-faktor yang mungkin memengaruhi kesehatan mental Anda.</p>
-            <a href="tes_kesehatan_mental.php" class="btn">Mulai Tes Kesehatan Mental</a>
+            <h2 class="accordion">Penyebab Gangguan Kesehatan Mental</h2>
+            <div class="content">   
+                <p>Ada beberapa kondisi yang bisa menjadi penyebab seseorang mengalami gangguan kesehatan jiwa, antara lain: </p> 
+                <ul>
+                    <li>Cedera pada kepala.</li>
+                    <li>Faktor genetik atau terdapat riwayat pengidap gangguan kesehatan jiwa dalam keluarga.</li>
+                    <li>Kekerasan dalam rumah tangga atau bentuk pelecehan lainnya.</li>
+                    <li>Adanya riwayat kekerasan saat kanak-kanak.</li>
+                    <li>Memiliki kelainan senyawa kimia otak atau gangguan pada otak.</li>
+                    <li>Mengalami diskriminasi dan stigma.</li>
+                    <li>Kehilangan atau kematian seseorang yang sangat dekat.</li>
+                    <li>Mengalami kerugian sosial, seperti masalah kemiskinan atau utang.</li>
+                    <li>Merawat anggota keluarga atau teman yang sakit kronis.</li>
+                    <li>Pengangguran, kehilangan pekerjaan, atau tunawisma.</li>
+                    <li>Pengaruh zat racun, alkohol, atau obat-obatan yang dapat merusak otak.</li>
+                    <li>Stres berat yang terjadi dalam waktu yang lama.</li>
+                    <li>Terisolasi secara sosial atau merasa kesepian.</li>
+                    <li>Tinggal pada lingkungan perumahan yang buruk.</li>
+                    <li>Mengalami trauma yang signifikan, seperti pertempuran militer, kecelakaan serius, atau tindakan kriminal lainnya.</li>
+                </ul>
+
+                <h2 class="accordion">Pencegahan</h2>
+                <div class="content">
+                    <p>Beberapa upaya untuk mencegah terjadinya gangguan kesehatan jiwa antara lain:</p>
+                    <ol>
+                        <li>Melakukan aktivitas fisik dan tetap aktif secara fisik.</li>    
+                        <li>Membantu orang lain dengan tulus.</li>
+                        <li>Membiasakan berpikir positif.</li>
+                        <li>Memiliki kemampuan untuk mengatasi masalah.</li>
+                        <li>Mencari bantuan profesional jika memang kamu memerlukannya.</li>
+                        <li>Menjaga hubungan baik dengan orang lain.</li>
+                        <li>Memastikan tubuh mendapatkan cukup waktu istirahat.</li>
+                    </ol>
+                    <p>Perlu diperhatikan bahwa edukasi pencegahan IMS pada remaja harus disesuaikan dengan kelompok target. Edukasi pada remaja pada umumnya mungkin akan sedikit berbeda dengan edukasi pada remaja dari kelompok YKAP (young key affected population). YKAP terdiri dari remaja pekerja seks, pengguna jasa pekerja seks, kaum transjender, pengguna obat suntik, pria pelaku seks sesama jenis, dan orang yang terinfeksi HIV. Tidak semua poin dapat diaplikasikan secara efektif pada setiap situasi. Sebagai contoh, poin (h) tentang hak dan cara menjaga sistem reproduksi mungkin patut lebih diprioritaskan oleh konselor/ pendidik dalam memberi edukasi pada kelompok remaja pekerja seks. Beberapa poin bisa menjadi isu yang sensitif bagi kelompok tertentu. Oleh karena itu, pemilihan cara edukasi harus dipersiapkan dan dipertimbangkan secara bijaksana.
+                    </p>
+                </div>                
+
+                <h2 class="accordion">Pengobatan</h2>
+                <div class="content">
+                    <p>Ada beberapa cara penanganan gangguan kesehatan mental yang bisa menjadi pilihan sesuai dengan kondisi yang terjadi pada pengidap, yaitu:</p>
+                    <ol type="a">
+                        <li>Psikoterapi</li>
+                        <p>Ini merupakan jenis terapi dengan media yang aman untuk mengungkapkan perasaan dan memberikan saran yang sesuai.</p>
+                        <li>Obat</li>
+                        <li>Perawatan intensif di rumah sakit</li>
+                        <li>Supporting group</li>
+                        <li>Stimulasi pada otak</li>
+                        <li>Rehabilitas</li>
+                        <li>Perawatan mandiri</li>
+                    </ol>>
+
+                </div>
             </div>
+
+
+        </section>
+        <section>
+            <h2 >Tingkat Stress</h2>
+                <div class="content">
+                    <p>Pegukuran untuk menilai tingkat stres adalah kuesioner PSS (Perceived Stress Scales). The Perceived Stress Scale (PSS-10) adalah suatu alat untuk menilai tingkat stres, skala ini dirancang untuk mengukur stres pada seseorang dan terdiri dari 10 pertanyaan. Hasil untuk nilai stres ringan = 0-13, stres sedang = 14-26, stres berat = 27-40.</p>
+                    <p></p>
+                    <form action="tes_kesehatan_mental.php" method="GET">
+                        <button type="submit">Tes Kesehatan Mental</button>
+                    </form>               
+                </div>
         </section>
     </main>
 
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const accordions = document.querySelectorAll('.accordion');
-
-        accordions.forEach(accordion => {
-            accordion.addEventListener('click', function () {
-                // Toggle class "show" pada konten di bawahnya
-                const content = this.nextElementSibling;
-                content.classList.toggle('show');
-
-                // Tambahkan animasi jika diperlukan
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
+     var acc = document.getElementsByClassName("accordion");
+        for (var i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
                 } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
+                    content.style.display = "block";
                 }
             });
-        });
-    });
-    </script>
+        }
+</script>
 
     <footer>
         <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelompok 8 Kelas 2.</p>
