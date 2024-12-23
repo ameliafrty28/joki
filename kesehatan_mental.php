@@ -31,7 +31,7 @@ require 'koneksi.php';
     </header>
     <main>
         <h1>Informasi Kesehatan Mental</h1>
-        <img src="img/kesehatanmental.jpg" alt="hero" class="hero">
+        <img src="img/kesehatan_mental.jpg" alt="hero" class="hero">
         <section id="info">
             <h2 class="accordion">Tingkat Stres pada Remaja Putri</h2>
             <div class="content">
