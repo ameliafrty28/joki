@@ -19,8 +19,8 @@
         </nav>
     </header>
     <main>
-        <h1>Informasi Anemia</h1>
-        <img src="img/Mengatasi-anemia.jpeg" alt="hero" class="hero">
+        <h1>Kesehatan Reproduksi</h1>
+        <img src="img/KesehatanReproduksi.jpg" alt="hero" class="hero">
         <section>
             <h2 class="accordion">Apa itu Kesehatan Reproduksi?</h2>
             <div class="content">
