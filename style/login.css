@@ -105,7 +105,9 @@ form a:hover {
 footer {
     text-align: center;
     padding: 1rem;
-    background-color: #f8c8dc;
+    background: linear-gradient(to right, #f8c8dc, #f071a6);
     color: #fff;
-    margin-top: auto; /* Footer stays at the bottom */
+    margin-top: auto;
+    font-weight: 500;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }

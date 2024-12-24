@@ -71,7 +71,11 @@
             renderCalendar(haidTerakhir, haidDurasi, siklusHaid);
 
             const saveResult = await saveToDatabase(haidDurasi, siklusHaid, haidTerakhir);
-           
+            if (saveResult.success) {
+                alert('Data berhasil disimpan ke database!');
+            } else {
+                alert(`Gagal menyimpan data: ${saveResult.message}`);
+            }
         });
 
         function displayCycleInfo(haidDurasi, siklusHaid) {
@@ -113,7 +117,7 @@
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
-                        id_user: 1,
+                        id_user: id_user,
                         id_kategori: 3,
                         haid_durasi: haidDurasi,
                         siklus_haid: siklusHaid,

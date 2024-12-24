@@ -9,28 +9,29 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Kesehatan UNRIYO</title>
     <link rel="stylesheet" href="style/about.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
-<header>
+    <header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
             <h1>KesehatanKu</h1>
             <ul>
-                <li><a href="index.php#home">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>
         </nav>
     </header>
-
-   
-
+    
     <main>
-         <!-- Tombol Back -->
-    <button class="back-button" onclick="window.history.back();">
-        &#8592; <!-- Simbol panah kiri -->
-    </button>
     <section id="about-us" class="about-us">
+    <button class="back-button" onclick="window.location.href='index.php';">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
+ 
     <div class="about-grid">
         <div class="image-container">
             <img tabindex="0" src="img/medis.jpg" alt="Ilustrasi tentang platform KesehatanKu">

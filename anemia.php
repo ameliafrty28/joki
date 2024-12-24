@@ -21,6 +21,7 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/anemia.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Informasi Anemia</title>
 </head>
 <body>
@@ -29,13 +30,20 @@ $conn->close();
             <img src="img/logo.png" alt="Logo" class="logo">
             <h1>KesehatanKu</h1>
             <ul>
-                <li><a href="index.php#home">Home</a></li>
-                <li><a href="index.php#about">About Us</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
+        
+    <section id="about-us" class="about-us">
+    <button class="back-button" onclick="window.location.href='index.php';">
+        <i class="fas fa-arrow-left"></i> 
+    </button>
+
         <h1>Informasi Anemia</h1>
         <img src="img/Mengatasi-anemia.jpeg" alt="hero" class="hero">
         <section>
@@ -102,7 +110,7 @@ $conn->close();
             <h2>Ingin Mengetahui Lebih Lanjut?</h2>
             <p>Ikuti tes kesehatan anemia untuk mengetahui kondisi Anda lebih lanjut.</p>
             <form action="cek-anemia.php" method="GET">
-                <button type="submit">Mulai Tes</button>
+                <button type="submit" class="btn-tes">Mulai Tes</button>
             </form>
         </section>
     </main>

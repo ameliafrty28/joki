@@ -1,71 +1,66 @@
-body {
-    height: 100%;
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Prevent horizontal scroll */
-    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom, #ffe4e9, #fff5f7); /* Gradasi warna lembut */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    line-height: 1.6;
-    background-color: #fff8f9; /* Soft pinkish background */
 }
 
-/* Kontainer Utama */
-main {
-    flex: 1; /* Memastikan konten utama mengisi ruang yang tersisa */
-    padding-bottom: 5rem; /* Memberikan jarak di bagian bawah agar tidak tertimpa footer */
-}
-
-/* Header Styling */
 header {
     background-color: #f071a6; /* Soft Pink Header */
     color: #fff;
-    padding: 0.8rem 1.5rem; /* Mengurangi padding untuk ukuran header lebih kecil */
+    padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 3px solid #ffb6c1;
 }
 
 header nav {
     display: flex;
     align-items: center;
+    width: 100%;
 }
 
 header .logo {
-    height: 50px; /* Mengurangi ukuran logo */
+    height: 50px;
     margin-right: 1rem;
-    transition: transform 0.3s ease;
-}
-
-header .logo:hover {
-    transform: scale(1.05); /* Mengurangi efek zoom pada hover */
 }
 
 header h1 {
-    font-size: 1.6rem; /* Mengurangi ukuran font judul */
-    font-weight: bold;
+    font-size: 1.8rem;
+    color: #fff;
 }
 
 header ul {
     list-style: none;
     display: flex;
-    margin-left: 750px; /* Mengurangi jarak agar menu lebih dekat */
+    margin-left: auto; /* Memastikan menu selalu berada di kanan */
 }
 
 header ul li {
-    margin-left: 1rem; /* Mengurangi jarak antar menu */
+    margin-left: 2.5rem;
 }
 
 header ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1rem; /* Mengurangi ukuran font menu */
 }
 
 header ul li a:hover {
-    text-decoration: underline;
+color: #5c5c5c;
 }
+
 
 /* Form Styling */
 form {
@@ -158,22 +153,14 @@ p strong {
     font-size: 1.8rem;
 }
 
-/* Footer Styling */
 footer {
     text-align: center;
-    padding: 1.5rem;
-    background-color: #f8c8dc; /* Soft Pink Footer */
+    padding: 1rem;
+    background: linear-gradient(to right, #f8c8dc, #f071a6);
     color: #fff;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-    font-size: 0.9rem;
-}
-
-footer p {
-    margin: 0;
+    margin-top: auto;
+    font-weight: 500;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */

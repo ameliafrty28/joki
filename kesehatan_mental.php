@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/anemia.css">
+    <link rel="stylesheet" href="style/mental.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Informasi Kesehatan Mental</title>
 </head>
 <body>
@@ -12,16 +13,22 @@
             <img src="img/logo.png" alt="Logo" class="logo">
             <h1>KesehatanKu</h1>
             <ul>
-                <li><a href="index.php#home">Home</a></li>
-                <li><a href="index.php#about">About Us</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
+    <button class="back-button" onclick="window.location.href='index.php';">
+        <i class="fas fa-arrow-left"></i> 
+    </button>
+
         <h1>Kesehatan Mental</h1>
         <img src="img/kesehatan_mental.jpg" alt="hero" class="hero">
         <section>
+        
             <h2 class="accordion">Apa itu Kesehatan Mental?</h2>
             <div class="content">
                 <p>Kesehatan jiwa atau sebutan lainnya kesehatan mental adalah kesehatan yang berkaitan dengan kondisi emosi, kejiwaan, dan psikis seseorang.</p>
@@ -30,8 +37,7 @@
                 <p>Ketika kesehatan mental terjaga, seseorang lebih mampu menghadapi stres, menjaga hubungan yang sehat, dan membuat keputusan yang baik dalam kehidupannya.</p>
                 <p>Sebaliknya, masalah kesehatan mental yang tidak ditangani dapat berdampak buruk pada kualitas hidup, termasuk menurunnya produktivitas dan hubungan sosial.</p>
                 <P>Dengan kondisi mental yang baik, kamu nantinya bisa mengatasi stres dari tekanan hidup, memanfaatkan waktu secara produktif, dan mudah menyadari potensi yang dimiliki.</P>
-                <P>Menjaga kesehatan mental juga penting ka</P>
-                <P></P>
+                <P>Menjaga kesehatan mental juga penting karena dapat mencegah berbagai gangguan psikologis seperti depresi dan kecemasan. </P>
             </div>
 
             <h2 class="accordion">Penyebab Gangguan Kesehatan Mental</h2>
@@ -83,22 +89,17 @@
                         <li>Stimulasi pada otak</li>
                         <li>Rehabilitas</li>
                         <li>Perawatan mandiri</li>
-                    </ol>>
-
+                    </ol>
                 </div>
             </div>
 
-
         </section>
         <section>
-            <h2 >Tingkat Stress</h2>
-                <div class="content">
-                    <p>Pegukuran untuk menilai tingkat stres adalah kuesioner PSS (Perceived Stress Scales). The Perceived Stress Scale (PSS-10) adalah suatu alat untuk menilai tingkat stres, skala ini dirancang untuk mengukur stres pada seseorang dan terdiri dari 10 pertanyaan. Hasil untuk nilai stres ringan = 0-13, stres sedang = 14-26, stres berat = 27-40.</p>
-                    <p></p>
-                    <form action="tes_kesehatan_mental.php" method="GET">
-                        <button type="submit">Tes Kesehatan Mental</button>
-                    </form>               
-                </div>
+            <h2>Ingin Mengetahui Lebih Lanjut?</h2>
+            <p>Ikuti tes kesehatan mental untuk mengetahui kondisi Anda lebih lanjut.</p>
+            <form action="cek-mental.php" method="GET">
+                <button type="submit" class="btn-tes">Mulai Tes</button>
+            </form>
         </section>
     </main>
 

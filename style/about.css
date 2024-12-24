@@ -58,7 +58,7 @@ header ul li a {
 }
 
 header ul li a:hover {
-    text-decoration: underline;
+color: #5c5c5c;
 }
 
 main {
@@ -74,7 +74,6 @@ main {
     background-color: #ffffff;
     padding: 2rem 1.5rem;
     border-radius: 12px;
-    margin-top: 2rem;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -198,29 +197,32 @@ main {
     color: #5c5c5c;
 }
 
-/* Footer */
 footer {
     text-align: center;
-    background-color: #f071a6;
+    padding: 1rem;
+    background: linear-gradient(to right, #f8c8dc, #f071a6);
     color: #fff;
-    padding: 1rem 0;
-    font-size: 0.9rem;
     margin-top: auto;
+    font-weight: 500;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
- /* Style untuk tombol back */
- .back-button {
-    position: absolute;
-    top: 60px; /* Menempatkan tombol di bawah header */
-    left: 10px;
-    background: transparent;
-    border: none;
-    font-size: 24px;
-    color: #333;
-    cursor: pointer;
-    z-index: 1000;
+
+
+/* Tombol Back */
+.back-button {
+    border: none; /* Hilangkan border */
+    background: none; /* Hilangkan latar belakang */
+    color: #f071a6; /* Warna teks sesuai dengan tema */
+    font-size: 2rem; /* Ukuran teks */
+    cursor: pointer; /* Ubah cursor menjadi pointer */
+    display: flex; /* Untuk pusatkan elemen jika ada icon */
+    align-items: center; /* Rata vertikal */
+    font-weight: bold; /* Tebalkan teks */
+    margin-left: 2rem;
+    margin-top: 1.5rem;
 }
 
 .back-button:hover {
-    color: #007bff;
+    color: #d53b88; /* Ubah warna saat hover */
 }

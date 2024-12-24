@@ -60,7 +60,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Check Anemia</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style/cek-anemia.css">
     <script>
         // Fungsi untuk menampilkan pop-up
         function showPopup(message) {
@@ -88,8 +88,19 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     </script>
 </head>
+    <header>
+        <nav>
+            <img src="img/logo.png" alt="Logo" class="logo">
+            <h1>KesehatanKu</h1>
+            <ul>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about-us.php">About Us</a></li>
+                <li><a href="profile.php">Akun Saya</a></li>
+            </ul>
+        </nav>
+    </header>
 <body>
-
+<main>
     <h1>Pemeriksaan Risiko Anemia</h1>
 
     <form action="cek-anemia.php" method="POST">
@@ -114,6 +125,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             showPopup(message);
         </script>
     <?php endif; ?>
+    </main>
+    <footer>
+        <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelompok 8 Kelas 2.</p>
+    </footer>
 
 </body>
 </html>

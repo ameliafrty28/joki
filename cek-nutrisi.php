@@ -14,22 +14,22 @@ function interpretBMI($bmi) {
     if ($bmi < 18.5) {
         return [
             'category' => 'Underweight',
-            'advice' => 'Anda disarankan untuk meningkatkan asupan kalori harian Anda dengan makanan bergizi dan berkonsultasi dengan ahli gizi untuk mencapai berat badan ideal.'
+            'advice' => 'Anda disarankan untuk meningkatkan asupan kalori harian Anda dengan makanan bergizi secara teratur, mengkonsumsi suplemen nutrisi (jika perlu), aktivitas fisik seperti berjalan kaki 30 menit atau latihan kekuatan otot dan berkonsultasi dengan ahli gizi untuk mencapai berat badan ideal.'
         ];
     } elseif ($bmi >= 18.5 && $bmi < 24.9) {
         return [
             'category' => 'Normal',
-            'advice' => 'Anda berada dalam kategori berat badan ideal. Pertahankan pola makan sehat dan rutinitas olahraga Anda.'
+            'advice' => 'Anda berada dalam kategori berat badan ideal. Pertahankan pola makan sehat dan rutinitas olahraga Anda. Makan secara teratur, mengkonsumsi makanan seimbang, mengkonsumsi air yang cukup, menghindari makanan tinggi kalori dan lemak, aktivitas fisik seperti berjalan, yoga, pilates, dsb.'
         ];
     } elseif ($bmi >= 25 && $bmi < 29.9) {
         return [
             'category' => 'Overweight',
-            'advice' => 'Anda disarankan untuk meningkatkan aktivitas fisik dan mengurangi asupan kalori berlebih. Konsultasikan dengan ahli gizi untuk rencana penurunan berat badan yang sehat.'
+            'advice' => 'Anda disarankan untuk meningkatkan aktivitas fisik dan mengurangi asupan kalori berlebih. Mengatur waktu dan porsi makan yang tepat, menghindari makan sebelum tidur, menghindari makan-makanan yang tinggi kalori dan lemak, berjalan kaki secara teratur, menggunakan tangga dari pada lift atau eskalator. Konsultasikan dengan ahli gizi untuk rencana penurunan berat badan yang sehat.'
         ];
     } else {
         return [
-            'category' => 'Obese',
-            'advice' => 'Anda disarankan untuk segera berkonsultasi dengan dokter atau ahli gizi untuk penanganan lebih lanjut guna menurunkan berat badan secara aman dan efektif.'
+            'category' => 'Obesitas',
+            'advice' => 'Anda disarankan untuk mengatur porsi makanan yang tepat, mengatur waktu makan, menghindari makan-makanan yang tinggi kalori dan lemak, menghindari makan sebelum tidur, mengkonsumsi makanan yang kaya serat, berjalan kaki secara rutin selama 30 menit, aktivitas fisik seperti yoga, pilates, dan latihan kekuatan otot. Segera berkonsultasi dengan dokter atau ahli gizi untuk penanganan lebih lanjut guna menurunkan berat badan secara aman dan efektif. '
         ];
     }
 }
@@ -101,11 +101,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
-            <h1>Web Kesehatan UNRIYO</h1>
+            <h1>KesehatanKu</h1>
             <ul>
-                <li><a href="index.php#home">Home</a></li>
-                <li><a href="index.php#about">About Us</a></li>
-                <li><a href="profil.php">Akun Saya</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about-us.php">About Us</a></li>
+                <li><a href="profile.php">Akun Saya</a></li>
             </ul>
         </nav>
     </header>

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/anemia.css">
+    <link rel="stylesheet" href="style/reproduksi.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Informasi Kesehatan Reproduksi</title>
 </head>
 <body>
@@ -12,13 +13,17 @@
             <img src="img/logo.png" alt="Logo" class="logo">
             <h1>KesehatanKu</h1>
             <ul>
-                <li><a href="index.php#home">Home</a></li>
-                <li><a href="index.php#about">About Us</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>
         </nav>
     </header>
     <main>
+    <button class="back-button" onclick="window.location.href='index.php';">
+        <i class="fas fa-arrow-left"></i>
+    </button>
+
         <h1>Kesehatan Reproduksi</h1>
         <img src="img/KesehatanReproduksi.jpg" alt="hero" class="hero">
         <section>
@@ -198,7 +203,7 @@
             <h2>Kalender Menstruasi</h2>
             <p></p>
             <form action="kalender2.php" method="GET">
-                <button type="submit">Buka Kalender Menstruasi</button>
+                <button type="submit" class="btn-tes">Buka Kalender Menstruasi</button>
             </form>
         </section>
     </main>

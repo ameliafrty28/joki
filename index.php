@@ -15,12 +15,12 @@ if (!isset($_SESSION['id_user'])) {
     <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
-<header>
+    <header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
             <h1>KesehatanKu</h1>
             <ul>
-                <li><a href="index.php#home">Home</a></li>
+                <li><a href="index.php">Home</a></li>
                 <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>

@@ -22,16 +22,16 @@ if ($result->num_rows > 0) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tes Kesehatan Mental</title>
-    <link rel="stylesheet" href="style/mental.css">
+    <link rel="stylesheet" href="style/cek-mental.css">
 </head>
 <body>
     <header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
-            <h1>Web Kesehatan UNRIYO</h1>
+            <h1>KesehatanKu</h1>
             <ul>
-                <li><a href="index.php#home">Home</a></li>
-                <li><a href="index.php#about">About Us</a></li>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>
         </nav>

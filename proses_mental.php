@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt_hasil->close();
 
         // Tampilkan hasil tes
-        echo "<html>\n<head>\n    <title>Hasil Tes Kesehatan Mental</title>\n    <link rel='stylesheet' href='style/hasil-tes.css'>\n</head>\n<body>\n<div class='result-container'>\n    <h1>Hasil Tes Kesehatan Mental</h1>\n    <p>Total skor Anda: <span class='score'>$total_skor</span></p>\n    <p class='result'>$hasil</p>\n    <a href='tes_kesehatan_mental.php' class='back-button'>Kembali ke Beranda</a>\n</div>\n</body>\n</html>";
+        echo "<html>\n<head>\n    <title>Hasil Tes Kesehatan Mental</title>\n    <link rel='stylesheet' href='style/hasil-tes.css'>\n</head>\n<body>\n<div class='result-container'>\n    <h1>Hasil Tes Kesehatan Mental</h1>\n    <p>Total skor Anda: <span class='score'>$total_skor</span></p>\n    <p class='result'>$hasil</p>\n    <a href='kesehatan_mental.php' class='back-button'>Kembali ke Beranda</a>\n</div>\n</body>\n</html>";
     } else {
         echo "<p>Data tidak valid. Harap isi semua pertanyaan.</p>";
     }
