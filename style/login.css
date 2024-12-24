@@ -1,8 +1,15 @@
-body {
-    height: 100%;
+* {
     margin: 0;
     padding: 0;
-    overflow-x: hidden; /* Mencegah scroll horizontal */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    color: #5c5c5c;
+    background-color: #fff0f5; /* Soft Pink Background */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -15,6 +22,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-bottom: 3px solid #ffb6c1;
 }
 
 header nav {
@@ -31,6 +39,7 @@ header h1 {
     font-size: 1.8rem;
     color: #fff;
 }
+
 
 .login-form,
 form {
@@ -98,8 +107,5 @@ footer {
     padding: 1rem;
     background-color: #f8c8dc;
     color: #fff;
-    width: 100%; /* Pastikan footer selebar layar */
-    position: fixed; /* Membuat footer tetap di bagian bawah layar */
-    bottom: 0; /* Letakkan tepat di ujung bawah */
-    left: 0; /* Pastikan melekat di sisi kiri layar */
+    margin-top: auto; /* Footer stays at the bottom */
 }

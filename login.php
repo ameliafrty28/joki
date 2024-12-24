@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
-            <h1>Web Kesehatan UNRIYO</h1>
+            <h1>KesehatanKu</h1>
         </nav>
     </header>
 

@@ -14,7 +14,7 @@ session_start();
     <header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
-            <h1>Kesehatanku</h1>
+            <h1>KesehatanKu</h1>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>

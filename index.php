@@ -15,14 +15,14 @@ if (!isset($_SESSION['id_user'])) {
     <link rel="stylesheet" href="style/index.css">
 </head>
 <body>
-    <header>
+<header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
-            <h1>Web Kesehatan UNRIYO</h1>
+            <h1>KesehatanKu</h1>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about-us">About Us</a></li>
-                <li><a href="profil.php">Akun Saya</a></li>
+                <li><a href="index.php#home">Home</a></li>
+                <li><a href="about-us.php">About Us</a></li>
+                <li><a href="profile.php">Akun Saya</a></li>
             </ul>
         </nav>
     </header>
@@ -30,14 +30,13 @@ if (!isset($_SESSION['id_user'])) {
     <main>
     <section id="home">
         <h2>Selamat Datang, <?= $_SESSION['username']; ?></h2>
-        <p>Selamat datang di platform kesehatan UNRIYO. Di sini Anda bisa menemukan informasi penting mengenai berbagai topik kesehatan, dari anemia hingga kesehatan mental. Pilih kategori di bawah untuk memulai perjalanan informasi kesehatan Anda.</p>
+        <p>Selamat datang di platform KESEHATANKU. Di sini Anda bisa menemukan informasi penting mengenai berbagai topik kesehatan, dari anemia hingga kesehatan mental. Pilih kategori di bawah untuk memulai perjalanan informasi kesehatan Anda.</p>
         <p>Website ini bertujuan untuk mengetahui pengtingnya informasi terkait masalah kesehatan yang dialami remaja putri seperti Anemia, Kesehatan reproduksi, Kesehatan Mental dan Masalah nutrisi </p>
         <p></p>
         <div class="home-hero-container">
             <img src="img/hero.jpg" alt="Hero utama" class="home-hero">
             <div class="home-hero-text">
-                <h2>Selamat Datang di Web Kesehatan UNRIYO</h2>
-        
+                <h1>Selamat Datang di KESEHATANKU</h1>
                 <p>Temukan informasi kesehatan yang bermanfaat untuk hidup lebih sehat!</p>
             </div>
         </div>
