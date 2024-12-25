@@ -1,6 +1,8 @@
 <?php
 include 'koneksi.php';
 
+$success = ""; // Variabel untuk menampung pesan keberhasilan
+
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $nama = $_POST['nama'];
     $username = $_POST['username'];
@@ -31,13 +33,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $stmt3->bind_param("ssssi", $nama, $username, $email, $password, $umur);
 
         if ($stmt3->execute()) {
-            echo "Registrasi berhasil. <a href='login.php'>Login</a>";
+            $success = "Registrasi berhasil! Klik Login untuk melanjutkan.";
         } else {
-            echo "Error: " . $conn->error;
+            $error = "Error: " . $conn->error;
         }
     }
 }
 ?>
+
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -45,6 +49,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrasi Akun</title>
     <link rel="stylesheet" href="style/login.css">
+
+    <script>
+        // Fungsi untuk menampilkan modal pop-up
+        function showModal() {
+            const modal = document.getElementById('successModal');
+            modal.style.display = 'block';
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -53,7 +65,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <h1>KesehatanKu</h1>
         </nav>
     </header>
-
 
     <main>
         <form method="POST">
@@ -84,7 +95,22 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </main>
 
     <footer>
-        <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelompok 8 Kelas 2.</p>
+    <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>
     </footer>
+
+    <!-- Modal Pop-up -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <h3>Registrasi Berhasil!</h3>
+            <p>Silakan klik tombol di bawah untuk login.</p>
+            <a href="login.php">Login</a>
+        </div>
+    </div>
+
+    <?php if (!empty($success)): ?>
+        <script>
+            showModal();
+        </script>
+    <?php endif; ?>
 </body>
 </html>

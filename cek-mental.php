@@ -68,7 +68,7 @@ if ($result->num_rows > 0) {
         </form>
     </main>
     <footer>
-        <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelompok 8 Kelas 2.</p>
+    <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>
     </footer>
 </body>
 </html>

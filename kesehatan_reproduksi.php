@@ -202,7 +202,7 @@
         <section>
             <h2>Kalender Menstruasi</h2>
             <p></p>
-            <form action="kalender2.php" method="GET">
+            <form action="kalender.php" method="GET">
                 <button type="submit" class="btn-tes">Buka Kalender Menstruasi</button>
             </form>
         </section>
@@ -224,7 +224,7 @@
 </script>
 
     <footer>
-        <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelompok 8 Kelas 2.</p>
+    <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>
     </footer>
 </body>
 </html>
