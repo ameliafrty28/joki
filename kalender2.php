@@ -1,15 +1,3 @@
-<?php
-include 'koneksi.php';
-session_start();
-header('Content-Type: application/json');
-
-
-if (!isset($_SESSION['id_user'])) {
-    header("Location: login.php"); // Redirect ke halaman login jika belum login
-    exit;
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -124,33 +112,26 @@ if (!isset($_SESSION['id_user'])) {
         }
 
         async function saveToDatabase(haidDurasi, siklusHaid, haidTerakhir) {
-    try {
-        const response = await fetch('save-riwayat.php', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({
-                haid_durasi: haidDurasi,
-                siklus_haid: siklusHaid,
-                haid_terakhir: haidTerakhir.toISOString().split('T')[0],
-                hasil_analisis: hasilAnalisis(haidDurasi, siklusHaid),
-            }),
-        });
+            try {
+                const response = await fetch('save-riwayat.php', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        id_user: id_user,
+                        id_kategori: 3,
+                        haid_durasi: haidDurasi,
+                        siklus_haid: siklusHaid,
+                        haid_terakhir: haidTerakhir.toISOString().split('T')[0],
+                        hasil_analisis: siklusHaid >= 21 && siklusHaid <= 35 && haidDurasi >= 2 && haidDurasi <= 7 ? 'Normal' : 'Tidak Normal',
+                    }),
+                });
 
-        return await response.json();
-    } catch (error) {
-        console.error('Error saving to database:', error);
-        return { success: false, message: 'Terjadi kesalahan saat menghubungi server.' };
-    }
-}
-
-function hasilAnalisis(haidDurasi, siklusHaid) {
-    if (siklusHaid >= 21 && siklusHaid <= 35 && haidDurasi >= 2 && haidDurasi <= 7) {
-        return "Siklus haid Anda normal.";
-    }
-    return "Siklus haid Anda tidak normal. Harap konsultasi dengan dokter.";
-}
-
-
+                return await response.json();
+            } catch (error) {
+                console.error('Error saving to database:', error);
+                return { success: false, message: 'Terjadi kesalahan saat menghubungi server.' };
+            }
+        }
 
         function renderCalendar(haidTerakhir, haidDurasi, siklusHaid, year = haidTerakhir.getFullYear(), month = haidTerakhir.getMonth()) {
             const calendarContainer = document.getElementById('calendar-container');
@@ -206,14 +187,8 @@ function hasilAnalisis(haidDurasi, siklusHaid) {
 
             calendarHTML += '</tr></table>';
             calendarContainer.innerHTML = `
-            <div id="calendar-navigation">
-                <button class="nav-btn" onclick="changeMonth(${year}, ${month - 1})">
-                    &lt; Sebelumnya
-                </button>
-                <button class="nav-btn" onclick="changeMonth(${year}, ${month + 1})">
-                    Berikutnya &gt;
-                </button>
-            </div>
+                <button onclick="changeMonth(${year}, ${month - 1})">&lt; Sebelumnya</button>
+                <button onclick="changeMonth(${year}, ${month + 1})">Berikutnya &gt;</button>
                 ${calendarHTML}
             `;
         }
@@ -236,7 +211,7 @@ function hasilAnalisis(haidDurasi, siklusHaid) {
     </script>
 
     <footer>
-    <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>
+        <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelompok 8 Kelas 2.</p>
     </footer>
 </body>
 </html>

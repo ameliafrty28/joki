@@ -15,6 +15,7 @@ body {
     flex-direction: column;
 }
 
+/* Header Styling */
 header {
     background-color: #f071a6; /* Soft Pink Header */
     color: #fff;
@@ -58,8 +59,8 @@ header ul li a {
 }
 
 header ul li a:hover {
-color: #5c5c5c;
-}
+    color: #5c5c5c;
+    }
 
 
 /* Form Styling */

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -202,7 +203,7 @@
         <section>
             <h2>Kalender Menstruasi</h2>
             <p></p>
-            <form action="kalender.php" method="GET">
+            <form action="teskalender.php" method="GET">
                 <button type="submit" class="btn-tes">Buka Kalender Menstruasi</button>
             </form>
         </section>

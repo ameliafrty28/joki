@@ -66,32 +66,32 @@ session_start();
             <h2 tabindex="0">Anggota Kelompok Kami</h2>
             <div class="team-grid">
                 <div class="team-member">
-                    <img tabindex="0" src="img/kesehatan.png" alt="Foto Sharon Saully A.B">
+                    <img tabindex="0" src="img/sharon.png" alt="Foto Sharon Saully A.B">
                     <h3 tabindex="0">Sharon Saully A.B</h3>
                     <p tabindex="0">[22130022] Prodi. Keperawatan</p>
                 </div>
                 <div class="team-member">
-                    <img tabindex="0" src="img/kesehatan.png" alt="Foto Yulaikha Handayani">
+                    <img tabindex="0" src="img/yulaikha.png" alt="Foto Yulaikha Handayani">
                     <h3 tabindex="0">Yulaikha Handayani</h3>
                     <p tabindex="0">[22130023] Prodi. Keperawatan</p>
                 </div>
                 <div class="team-member">
-                    <img tabindex="0" src="img/kesehatan.png" alt="Foto Nasya Aulina">
+                    <img tabindex="0" src="img/nasya.png" alt="Foto Nasya Aulina">
                     <h3 tabindex="0">Nasya Aulina</h3>
                     <p tabindex="0">[22110015] Prodi. Kesehatan Masyarakat</p>
                 </div>
                 <div class="team-member">
-                    <img tabindex="0" src="img/kesehatan.png" alt="Foto Arya Jaya Pradana">
+                    <img tabindex="0" src="img/arya.png" alt="Foto Arya Jaya Pradana">
                     <h3 tabindex="0">Arya Jaya Pradana</h3>
                     <p tabindex="0">[22110016] Prodi. Kesehatan Masyarakat</p>
                 </div>
                 <div class="team-member">
-                    <img tabindex="0" src="img/kesehatan.png" alt="Foto Maria Karlina Lero">
+                    <img tabindex="0" src="img/maria.png" alt="Foto Maria Karlina Lero">
                     <h3 tabindex="0">Maria Karlina Lero</h3>
                     <p tabindex="0">[22180014] Prodi. Kebidanan</p>
                 </div>
                 <div class="team-member">
-                    <img tabindex="0" src="img/kesehatan.png" alt="Foto Amanda Amelia Geli">
+                    <img tabindex="0" src="img/amanda2.png" alt="Foto Amanda Amelia Geli">
                     <h3 tabindex="0">Amanda Amelia Geli</h3>
                     <p tabindex="0">[22180015] Prodi. Kebidanan</p>
                 </div>

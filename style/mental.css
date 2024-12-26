@@ -30,7 +30,6 @@ header nav {
     display: flex;
     align-items: center;
     width: 100%;
-    flex-wrap: wrap;
 }
 
 header .logo {
@@ -46,24 +45,22 @@ header h1 {
 header ul {
     list-style: none;
     display: flex;
-    margin-left: auto;
-    flex-wrap: wrap;
+    margin-left: auto; /* Memastikan menu selalu berada di kanan */
 }
 
 header ul li {
-    margin-left: 2rem;
+    margin-left: 2.5rem;
 }
 
 header ul li a {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.3s ease;
 }
 
 header ul li a:hover {
     color: #5c5c5c;
-}
+    }
 
 /* Hero Image Styling */
 .hero {

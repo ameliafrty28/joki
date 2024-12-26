@@ -8,14 +8,14 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    color: #5c5c5c;
-    background-color: #fff0f5; /* Soft Pink Background */
+    color: #333;
+    background: linear-gradient(to bottom, #ffe4e9, #fff5f7); /* Gradasi warna lembut */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-/* Header Styling *//* Header Styling */
+/* Header Styling */
 header {
     background-color: #f071a6; /* Soft Pink Header */
     color: #fff;
@@ -61,7 +61,6 @@ header ul li a {
 header ul li a:hover {
     color: #5c5c5c;
     }
-
 
 main {
     padding: 2rem;
