@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     // Persiapkan statement SQL
     $stmt = $conn->prepare(
-        "INSERT INTO tb_riwayat_haid (id_user, id_kategori, haid_durasi, siklus_haid, haid_terakhir, hasil_analisis, tanggal_cek) 
+        query: "INSERT INTO tb_riwayat_haid (id_user, id_kategori, haid_durasi, siklus_haid, haid_terakhir, hasil_analisis, tanggal_cek) 
          VALUES (?, ?, ?, ?, ?, ?, NOW())"
     );
 
