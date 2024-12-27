@@ -52,14 +52,6 @@
                         <li>Tonjolan seperti jengger ayam yang tumbuh disekitar alat kelamin.</li>
                         <li>Sakit pada bagian bawah perut yaitu rasa sakit yang hilang muncul dan tidak berkaitan dengan menstruasi bisa menjadi tanda infeksi saluran reproduksi (infeksi yang telah berpindah kebagian dalam sistemik reproduksi, termasuk tuba fallopi dan ovarium).</li>
                     </ul>
-                    <h3>Pada Laki-Laki:</h3>
-                    <ul>
-                        <li>Luka dengan atau tanpa rasa sakit di sekitar alat kelamin, anus, mulut atau bagian tubuh yang lain, tonjolan kecil-kecil, diikuti luka yang sangat sakit di sekitar alat kelamin.</li>
-                        <li>Cairan tidak normal yaitu cairan bening atau bewarna berasal dari pembukaan kepala penis atau anus.</li>
-                        <li>Sakit pada saat buang air kecil yaitu rasa terbakar atau rasa sakit selama atau setelah urination.</li>
-                        <li>Kemerahan pada sekitar alat kelamin, kemerahan dan sakit di kantong zakar.</li>
-
-                    </ul>
                 </div>
                 
                 <h2 class="accordion">Pencegahan</h2>

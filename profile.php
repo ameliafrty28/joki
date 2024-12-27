@@ -167,7 +167,7 @@
             </tbody>
         </table>
 
-        <a class="logout" href="logout.php">Logout</a>
+        <a class="logout" href="tampilanawal.php">Logout</a>
     </div>
     </main>
 
