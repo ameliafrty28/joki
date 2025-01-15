@@ -96,7 +96,7 @@
         </section>
         <section>
             <h2>Ingin Mengetahui Lebih Lanjut?</h2>
-            <p>Ikuti tes kesehatan mental untuk mengetahui kondisi Anda lebih lanjut.</p>
+            <p>Ikuti tes kesehatan mental (tingkat stres) untuk mengetahui kondisi Anda lebih lanjut.</p>
             <form action="cek-mental.php" method="GET">
                 <button type="submit" class="btn-tes">Mulai Tes</button>
             </form>

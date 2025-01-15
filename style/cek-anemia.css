@@ -64,14 +64,17 @@ header ul li a:hover {
 
 
 /* Halaman utama */
-main h1 {
-    text-align: center;
-    margin: 20px 0;
-    color: #333;
+/* Menambahkan Container */
+.container {
+    width: 100%;
+    max-width: 800px;  /* Lebar maksimal 800px */
+    margin: 0 auto;    /* Membuat container tetap berada di tengah */
+    padding: 20px;
 }
 
+/* Memastikan form berada di dalam container */
 form {
-    max-width: 600px;
+    max-width: 100%; /* Pastikan form tidak melebihi lebar container */
     margin: 20px auto;
     background: #fff;
     padding: 20px;
@@ -79,35 +82,96 @@ form {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+/* Halaman utama */
+main h1 {
+    text-align: center;
+    margin: 20px 0;
+    color: #333;
+}
+
+/* Menambahkan jarak antar <h2> */
+h2 {
+    margin-top: 20px;    /* Jarak atas */
+    margin-bottom: 10px; /* Jarak bawah */
+    font-size: 23px;     /* Ukuran font untuk <h2> */
+    color: #f669b4;         /* Warna teks */
+}
+
+
+/* Styling untuk pertanyaan */
 form .question {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    background: #f9f9f9;
+    border-left: 5px solid #f071a6; /* Border warna merah muda untuk menonjolkan */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+form .question:hover {
+    transform: scale(1.02); /* Efek hover untuk memberi animasi */
 }
 
 form label {
     font-weight: bold;
-    margin-bottom: 10px;
+    color: #444;
+    font-size: 18px;
     display: block;
+    margin-bottom: 10px;
 }
 
+/* Styling untuk input radio */
 form input[type="radio"] {
     margin-right: 10px;
+    accent-color: #f071a6; /* Mengubah warna radio button */
+    transition: transform 0.2s ease;
 }
 
+/* Efek hover pada radio button */
+form input[type="radio"]:hover {
+    transform: scale(1.1);
+}
+
+/* Styling untuk tombol kirim */
 form button {
     display: block;
     width: 100%;
-    padding: 10px 20px;
+    padding: 12px 20px;
     background: #f071a6;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-top: 20px;
 }
 
 form button:hover {
     background: #c4469c;
+    transform: scale(1.05);
+}
+
+form button:focus {
+    outline: none;
+}
+
+/* Styling untuk select dropdown */
+form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    transition: border-color 0.3s ease;
+}
+
+/* Mengubah border saat hover pada select */
+form select:hover {
+    border-color: #f071a6;
 }
 
 footer {
@@ -120,22 +184,63 @@ footer {
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Pop-up */
-div[style*="position: fixed"] h2 {
-    margin-bottom: 10px;
-    color: #333;
+/* Pop-up Styling */
+.popup-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
 }
 
-div[style*="position: fixed"] button {
-    margin-top: 15px;
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+}
+
+.popup-content h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.popup-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.close-button {
     padding: 10px 20px;
-    background: #f071a6;
+    background-color: #f071a6;
     color: #fff;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
 }
 
-div[style*="position: fixed"] button:hover {
-    background: #f071a6;
+.close-button:hover {
+    background-color: #c4469c;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: linear-gradient(to right, #f8c8dc, #f071a6);
+    color: #fff;
+    margin-top: auto;
+    font-weight: 500;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }

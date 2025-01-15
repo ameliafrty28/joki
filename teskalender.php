@@ -32,7 +32,7 @@
             <label for="siklusHaid">Siklus Haid (hari):</label>
             <input type="number" id="siklusHaid" placeholder="Masukkan siklus haid">
 
-            <label for="tanggalHaid">Tanggal Hari Pertama Haid Terakhir:</label>
+            <label for="tanggalHaid">Tanggal Hari Pertama Haid:</label>
             <input type="date" id="tanggalHaid">
 
             <button onclick="hitungMenstruasi()">Hitung</button>
@@ -53,6 +53,10 @@
                 <div id="popupMessage"></div>
                 <button onclick="closePopup()">Tutup</button>
             </div>
+
+            <div class="mental-health-button">
+            <a href="kesehatan_reproduksi.php" class="btn">Kunjungi Halaman Kesehatan Reproduksi</a>
+        </div>
         </main>
     <script>
     let currentYear;
@@ -70,7 +74,7 @@
 
         const tanggalPertama = new Date(tanggalHaid);
         const hariBerikutnya = new Date(tanggalPertama);
-        hariBerikutnya.setDate(tanggalPertama.getDate() + siklusHaid);
+        hariBerikutnya.setDate(tanggalPertama.getDate() + siklusHaid +1);
 
         const tanggalBerikutnya = hariBerikutnya.toLocaleDateString('id-ID', {
             day: 'numeric',
@@ -126,7 +130,7 @@
         const calendar = document.getElementById('calendar');
         calendar.innerHTML = '';
 
-        const firstDayOfMonth = new Date(currentYear, currentMonth, 1);
+        const firstDayOfMonth = new Date(currentYear, currentMonth, -1);
         const lastDayOfMonth = new Date(currentYear, currentMonth + 1, 0);
 
         const calendarTitle = document.getElementById('calendar-title');

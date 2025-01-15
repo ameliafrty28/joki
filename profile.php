@@ -26,7 +26,7 @@
 
     <main>
     <div class="container">
-        <?php
+    <?php
         session_start();
         require 'koneksi.php';
 
@@ -36,13 +36,12 @@
         }
 
         $id_user = $_SESSION['id_user'];
-        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['update_profile'])) {
             $nama = htmlspecialchars($_POST['nama']);
             $username = htmlspecialchars($_POST['username']);
             $email = htmlspecialchars($_POST['email']);
             $umur = (int)$_POST['umur'];
         
-            // Cek apakah username atau email sudah ada di database
             $checkQuery = "SELECT id_user FROM tb_user WHERE (username = ? OR email = ?) AND id_user != ?";
             $stmt = $conn->prepare($checkQuery);
             $stmt->bind_param("ssi", $username, $email, $id_user);
@@ -50,20 +49,51 @@
             $existingUser = $stmt->get_result()->fetch_assoc();
         
             if ($existingUser) {
-                // Jika username atau email sudah ada, tampilkan peringatan
                 $error = "Username atau email sudah digunakan oleh pengguna lain. Silakan gunakan yang lain.";
             } else {
-                // Update data user jika username dan email unik
                 $updateQuery = "UPDATE tb_user SET nama = ?, username = ?, email = ?, umur = ? WHERE id_user = ?";
                 $stmt = $conn->prepare($updateQuery);
                 $stmt->bind_param("sssii", $nama, $username, $email, $umur, $id_user);
         
                 if ($stmt->execute()) {
-                    // Redirect kembali ke halaman profil setelah berhasil mengupdate data
                     header("Location: profile.php");
                     exit;
                 } else {
                     $error = "Gagal memperbarui data. Silakan coba lagi.";
+                }
+            }
+        }
+
+        if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['change_password'])) {
+            $old_password = $_POST['old_password'];
+            $new_password = $_POST['new_password'];
+            $confirm_password = $_POST['confirm_password'];
+
+            if (empty($old_password) || empty($new_password) || empty($confirm_password)) {
+                $password_error = "Semua bidang harus diisi.";
+            } elseif ($new_password !== $confirm_password) {
+                $password_error = "Password baru dan konfirmasi tidak cocok.";
+            } elseif (!preg_match('/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/', $new_password)) {
+                $password_error = "Password baru harus minimal 8 karakter dan terdiri dari huruf besar, huruf kecil, angka, dan karakter khusus.";
+            } else {
+                $queryPassword = "SELECT password FROM tb_user WHERE id_user = ?";
+                $stmt = $conn->prepare($queryPassword);
+                $stmt->bind_param("i", $id_user);
+                $stmt->execute();
+                $resultPassword = $stmt->get_result()->fetch_assoc();
+
+                if ($resultPassword && $resultPassword['password'] === $old_password) {
+                    $updatePasswordQuery = "UPDATE tb_user SET password = ? WHERE id_user = ?";
+                    $stmt = $conn->prepare($updatePasswordQuery);
+                    $stmt->bind_param("si", $new_password, $id_user);
+
+                    if ($stmt->execute()) {
+                        $password_success = "Password berhasil diubah.";
+                    } else {
+                        $password_error = "Gagal mengubah password. Silakan coba lagi.";
+                    }
+                } else {
+                    $password_error = "Password lama salah.";
                 }
             }
         }
@@ -84,57 +114,75 @@
         $resultHasil = $stmt->get_result();
 
         // Ambil data riwayat haid
-        $queryHaid = "SELECT * FROM tb_riwayat_haid WHERE id_user = ?";
+        $queryHaid = "SELECT tb_riwayat_haid.*, tb_kategorikesehatan.kategori FROM tb_riwayat_haid INNER JOIN tb_kategorikesehatan ON tb_riwayat_haid.id_kategori = tb_kategorikesehatan.id_kategori  WHERE tb_riwayat_haid.id_user = ?";
         $stmt = $conn->prepare($queryHaid);
         $stmt->bind_param("i", $id_user);
         $stmt->execute();
         $resultHaid = $stmt->get_result();
 
         // Ambil data riwayat anemia
-        $queryAnemia = "SELECT * FROM tb_riwayat_anemia WHERE id_user = ?";
+        $queryAnemia = " SELECT tb_riwayat_anemia.*, tb_kategorikesehatan.kategori FROM tb_riwayat_anemia INNER JOIN tb_kategorikesehatan ON tb_riwayat_anemia.id_kategori = tb_kategorikesehatan.id_kategori WHERE tb_riwayat_anemia.id_user = ?";
         $stmt = $conn->prepare($queryAnemia);
         $stmt->bind_param("i", $id_user);
         $stmt->execute();
         $resultAnemia = $stmt->get_result();
 
         // Ambil data riwayat IMT
-        $queryIMT = "SELECT * FROM tb_riwayat_imt WHERE id_user = ?";
+        $queryIMT = "SELECT tb_riwayat_imt.*, tb_kategorikesehatan.kategori FROM tb_riwayat_imt INNER JOIN tb_kategorikesehatan ON tb_riwayat_imt.id_kategori = tb_kategorikesehatan.id_kategori WHERE tb_riwayat_imt.id_user = ?";
         $stmt = $conn->prepare($queryIMT);
         $stmt->bind_param("i", $id_user);
         $stmt->execute();
         $resultIMT = $stmt->get_result();
         ?>
-
+        
         <h2>Profil Pengguna</h2>
-            <p><strong>Nama:</strong> <span id="nama"><?php echo htmlspecialchars($resultUser['nama']); ?></span></p>
-            <p><strong>Username:</strong> <span id="username"><?php echo htmlspecialchars($resultUser['username']); ?></span></p>
-            <p><strong>Email:</strong> <span id="email"><?php echo htmlspecialchars($resultUser['email']); ?></span></p>
-            <p><strong>Umur:</strong> <span id="umur"><?php echo htmlspecialchars($resultUser['umur']); ?></span> tahun</p>
+        <p><strong>Nama:</strong> <?php echo htmlspecialchars($resultUser['nama']); ?></p>
+        <p><strong>Username:</strong> <?php echo htmlspecialchars($resultUser['username']); ?></p>
+        <p><strong>Email:</strong> <?php echo htmlspecialchars($resultUser['email']); ?></p>
+        <p><strong>Umur:</strong> <?php echo htmlspecialchars($resultUser['umur']); ?> tahun</p>
 
-            <button id="edit-button">Ubah Data</button>
+        <button id="edit-button">Ubah Data</button>
 
-            <form id="edit-form" style="display: none;" method="POST" action="">
+        <form id="edit-form" style="display: none;" method="POST" action="">
+            <input type="hidden" name="update_profile" value="1">
             <?php if (!empty($error)): ?>
-                <div class="error-message" style="color: red; margin-bottom: 20px;">
-                    <?php echo htmlspecialchars($error); ?>
-                </div>
+                <div style="color: red;"> <?php echo htmlspecialchars($error); ?> </div>
             <?php endif; ?>
+            <label>Nama:</label>
+            <input type="text" name="nama" value="<?php echo htmlspecialchars($resultUser['nama']); ?>" required>
 
-            <label for="edit-nama">Nama:</label>
-            <input type="text" id="edit-nama" name="nama" value="<?php echo htmlspecialchars($resultUser['nama']); ?>" required>
+            <label>Username:</label>
+            <input type="text" name="username" value="<?php echo htmlspecialchars($resultUser['username']); ?>" required>
 
-            <label for="edit-username">Username:</label>
-            <input type="text" id="edit-username" name="username" value="<?php echo htmlspecialchars($resultUser['username']); ?>" required>
+            <label>Email:</label>
+            <input type="email" name="email" value="<?php echo htmlspecialchars($resultUser['email']); ?>" readonly>
 
-            <label for="edit-email">Email:</label>
-            <input type="email" id="edit-email" name="email" value="<?php echo htmlspecialchars($resultUser['email']); ?>" readonly>
-
-            <label for="edit-umur">Umur:</label>
-            <input type="number" id="edit-umur" name="umur" value="<?php echo htmlspecialchars($resultUser['umur']); ?>" required>
+            <label>Umur:</label>
+            <input type="number" name="umur" value="<?php echo htmlspecialchars($resultUser['umur']); ?>" required>
 
             <button type="submit">Simpan Perubahan</button>
         </form>
 
+        <form id="password-form" style="display: none;" method="POST" action="">
+            <input type="hidden" name="change_password" value="1">
+            <?php if (!empty($password_error)): ?>
+                <div style="color: red;"> <?php echo htmlspecialchars($password_error); ?> </div>
+            <?php elseif (!empty($password_success)): ?>
+                <div style="color: green;"> <?php echo htmlspecialchars($password_success); ?> </div>
+            <?php endif; ?>
+            <label>Password Lama:</label>
+            <input type="password" name="old_password" required>
+
+            <label>Password Baru:</label>
+            <input type="password" name="new_password" required>
+
+            <label>Konfirmasi Password Baru:</label>
+            <input type="password" name="confirm_password" required>
+
+            <button type="submit">Simpan Password Baru</button>
+        </form>
+
+        <button id="toggle-password-form">Ubah Password</button>
 
 
         <h2>Hasil Pemeriksaan Kesehatan Mental</h2>
@@ -144,15 +192,17 @@
                     <th>Kategori</th>
                     <th>Skor</th>
                     <th>Hasil</th>
+                    <th>Saran</th>
                     <th>Tanggal Cek</th>
                 </tr>
             </thead>
             <tbody>
                 <?php while ($row = $resultHasil->fetch_assoc()): ?>
                 <tr>
-                    <td><?php echo htmlspecialchars($row['kategori']); ?></td>
+                    <td><?php echo htmlspecialchars(string: $row['kategori']); ?></td>
                     <td><?php echo htmlspecialchars($row['skor']); ?></td>
                     <td><?php echo htmlspecialchars($row['hasil']); ?></td>
+                    <td><?php echo htmlspecialchars($row['saran']); ?></td>
                     <td><?php echo htmlspecialchars($row['tanggal_cek']); ?></td>
                 </tr>
                 <?php endwhile; ?>
@@ -163,14 +213,26 @@
         <table>
             <thead>
                 <tr>
+                    <th>Kategori</th>
                     <th>Hasil Analisis</th>
+                    <th>Pola Menstruasi</th>
+                    <th>Lama Menstruasi</th>
+                    <th>Konsumsi Makanan</th>
+                    <th>Konsumsi TTD</th>
+                    <th>Penngetahuan</th>
                     <th>Tanggal Cek</th>
                 </tr>
             </thead>
             <tbody>
                 <?php while ($row = $resultAnemia->fetch_assoc()): ?>
                 <tr>
+                    <td><?php echo htmlspecialchars(string: $row['kategori']); ?></td>
                     <td><?php echo htmlspecialchars($row['hasil_analisis']); ?></td>
+                    <td><?php echo htmlspecialchars($row['pola_menstruasi']); ?></td>
+                    <td><?php echo htmlspecialchars($row['lama_menstruasi']); ?></td>
+                    <td><?php echo htmlspecialchars($row['konsumsi_makanan']); ?></td>
+                    <td><?php echo htmlspecialchars($row['mengkonsumsi_ttd']); ?></td>
+                    <td><?php echo htmlspecialchars($row['pengetahuan']); ?></td>
                     <td><?php echo htmlspecialchars($row['tanggal_cek']); ?></td>
                 </tr>
                 <?php endwhile; ?>
@@ -181,6 +243,7 @@
         <table>
             <thead>
                 <tr>
+                    <th>Kategori</th>
                     <th>Tinggi Badan (cm)</th>
                     <th>Berat Badan (kg)</th>
                     <th>IMT</th>
@@ -191,6 +254,7 @@
             <tbody>
                 <?php while ($row = $resultIMT->fetch_assoc()): ?>
                 <tr>
+                    <td><?php echo htmlspecialchars(string: $row['kategori']); ?></td>
                     <td><?php echo htmlspecialchars($row['tinggi_badan']); ?></td>
                     <td><?php echo htmlspecialchars($row['berat_badan']); ?></td>
                     <td><?php echo htmlspecialchars($row['skor_imt']); ?></td>
@@ -205,6 +269,7 @@
         <table>
             <thead>
                 <tr>
+                    <th>Kategori</th>
                     <th>Durasi Menstruasi</th>
                     <th>Siklus Menstruasi</th>
                     <th>Menstruasi Terakhir</th>
@@ -215,6 +280,7 @@
             <tbody>
                 <?php while ($row = $resultHaid->fetch_assoc()): ?>
                 <tr>
+                    <td><?php echo htmlspecialchars(string: $row['kategori']); ?></td>
                     <td><?php echo htmlspecialchars($row['haid_durasi']); ?> hari</td>
                     <td><?php echo htmlspecialchars($row['siklus_haid']); ?> hari</td>
                     <td><?php echo htmlspecialchars($row['haid_terakhir']); ?></td>
@@ -234,12 +300,18 @@
     </footer>
 
     <script>
-        const editButton = document.getElementById('edit-button');
-        const editForm = document.getElementById('edit-form');
+            const editButton = document.getElementById('edit-button');
+            const editForm = document.getElementById('edit-form');
+            const togglePasswordForm = document.getElementById('toggle-password-form');
+            const passwordForm = document.getElementById('password-form');
 
-        editButton.addEventListener('click', () => {
-            editForm.style.display = editForm.style.display === 'none' ? 'block' : 'none';
-        });
-    </script>
+            editButton.addEventListener('click', () => {
+                editForm.style.display = editForm.style.display === 'none' ? 'block' : 'none';
+            });
+
+            togglePasswordForm.addEventListener('click', () => {
+                passwordForm.style.display = passwordForm.style.display === 'none' ? 'block' : 'none';
+            });
+        </script>
 </body>
 </html>

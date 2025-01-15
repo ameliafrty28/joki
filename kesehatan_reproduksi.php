@@ -68,7 +68,7 @@
                         <li>Menolak ajakan pasangan yang meminta untuk melakukan hubungan seksual tidak aman.</li>
                         <li>Bersikap waspada, mampu membaca situasi, dan melindungi diri. Misalnya ketika pergi ke pesta atau clubbing, usahakan pergi bersama teman atau anggota keluarga yang dapat dipercaya. Minum minuman yang memabukkan (baik disengaja maupun tidak) juga merupakan gerbang menuju perilaku seksual tidak aman.</li>
                         <li>Mengetahui hak atas serta cara untuk menjaga kesehatan reproduksinya. Misalnya penggunaan kondom.</li>
-                    </ol>
+                    </ol>            
                     <p>Perlu diperhatikan bahwa edukasi pencegahan IMS pada remaja harus disesuaikan dengan kelompok target. Edukasi pada remaja pada umumnya mungkin akan sedikit berbeda dengan edukasi pada remaja dari kelompok YKAP (young key affected population). YKAP terdiri dari remaja pekerja seks, pengguna jasa pekerja seks, kaum transjender, pengguna obat suntik, pria pelaku seks sesama jenis, dan orang yang terinfeksi HIV. Tidak semua poin dapat diaplikasikan secara efektif pada setiap situasi. Sebagai contoh, poin (h) tentang hak dan cara menjaga sistem reproduksi mungkin patut lebih diprioritaskan oleh konselor/ pendidik dalam memberi edukasi pada kelompok remaja pekerja seks. Beberapa poin bisa menjadi isu yang sensitif bagi kelompok tertentu. Oleh karena itu, pemilihan cara edukasi harus dipersiapkan dan dipertimbangkan secara bijaksana.
                     </p>
                 </div>
@@ -83,12 +83,13 @@
                         <li>Kehamilan ektopik (di luar kandungan) dan memudahkan penularan infeksi HIV</li>
                         <li>Penyakit sifilis disebut juga raja singa, disebabkan bakteri Treponema pallidum</li>
                     </ol>
-                    <h3>Imunisasi HPV</h3>
-                    <p>Hal ini merupakan pencegahan primer sebaiknya dilakukan sedini mungkin dan dapat diberikan mulai remaja putri berusia 10 tahun (sebelum mereka memulai hubun- gan seksual) sampai dengan usia 55 tahun. Jadwal pemberian vaksin yaitu pemberian bulan 0, 1 atau 2, dan 6.</p>
                 </div>
                 
                 <h2 class="accordion">Pengobatan</h2>
                 <div class="content">
+                <h3>Imunisasi HPV</h3>
+                    <p>Hal ini merupakan pencegahan primer sebaiknya dilakukan sedini mungkin dan dapat diberikan mulai remaja putri berusia 10 tahun (sebelum mereka memulai hubungan seksual) sampai dengan usia 55 tahun. Jadwal pemberian vaksin yaitu pemberian bulan 0, 1 atau 2, dan 6.</p>
+                    <br> 
                     <p>Segera periksa ke dokter atau petugas kesehatan,jangan malu menyampaikan keluhan kepada dokter atau tenaga kesehatan,memenuhi aturan pengobatan sesuai petunjuk dokter atau petugas kesehatan,jangan melakukan hubungan seksual kecuali menggunakan kondom,pasangan sex sebaiknya memeriksakan diri,beritahu tentang akiba PMS yang berbahaya bagi kesehatan diri (Suryani & Harahap, 2021).Komponen penanganan kasus IMS harus dilakukan secara paripurna meliputi: anamnesis, pemeriksaan klinis, diagnosis yang tepat, pengobatan dini dan efektif, edukasi pasien, penyediaan dan anjuran untuk menggunaan kondom, notifikasi dan penanganan pasangan seksnya.</p>
                 </div>
             </div>

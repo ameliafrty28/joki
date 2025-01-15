@@ -36,8 +36,8 @@ if (!isset($_SESSION['id_user'])) {
         <div class="home-hero-container">
             <img src="img/hero.jpg" alt="Hero utama" class="home-hero">
             <div class="home-hero-text">
-                <h1>Selamat Datang di KESEHATANKU</h1>
-                <p>Platform ini menyediakan informasi mengenai dan ditujukan pada kesehatan Remaja Putri.</p>
+                <h2>Selamat Datang di KESEHATANKU</h2>
+                <p>Platform ini menyediakan informasi yang ditujukan pada kesehatan Remaja Putri.</p>
                 <p>Temukan informasi kesehatan yang bermanfaat untuk hidup lebih sehat!</p>
             </div>
         </div>
@@ -45,19 +45,19 @@ if (!isset($_SESSION['id_user'])) {
         <div class="home-images">
             <a href="cek-anemia.php">
                 <img src="img/anemia2.jpg" alt="Anemia" class="home-img">
-                <div class="image-caption">Anemia</div>
+                <div class="image-caption">Cek Anemia</div>
             </a>
             <a href="cek-mental.php">
                 <img src="img/mental.jpeg" alt="Kesehatan Mental" class="home-img">
-                <div class="image-caption">Kesehatan Mental</div>
+                <div class="image-caption">Cek Kesehatan Mental</div>
             </a>
             <a href="teskalender.php">
                 <img src="img/reproduksi.jpg" alt="Kesehatan Reproduksi" class="home-img">
-                <div class="image-caption">Kesehatan Reproduksi</div>
+                <div class="image-caption">Cek Kesehatan Reproduksi</div>
             </a>
             <a href="cek-nutrisi.php">
                 <img src="img/nutrisi.jpg" alt="Masalah Nutrisi" class="home-img">
-                <div class="image-caption">Masalah Nutrisi</div>
+                <div class="image-caption">Cek Masalah Nutrisi</div>
             </a>
         </div>
     </section>

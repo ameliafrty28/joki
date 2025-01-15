@@ -256,6 +256,27 @@ footer {
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.mental-health-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.mental-health-button .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e84176; /* Warna hijau */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.mental-health-button .btn:hover {
+    background-color: #870a4f; /* Warna hijau lebih gelap saat hover */
+}
+
+
 /* Responsive Design */
 @media (max-width: 768px) {
     main {

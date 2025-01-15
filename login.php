@@ -5,6 +5,7 @@ include 'koneksi.php';
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $username_or_email = $conn->real_escape_string($_POST['username_or_email']);
     $password = $_POST['password'];
+    $confirmPassword = $_POST['confirm_password'];
     $captcha = $_POST['g-recaptcha-response'];
 
     // Verifikasi CAPTCHA dengan Google reCAPTCHA
@@ -12,10 +13,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$captcha");
     $responseKeys = json_decode($response, true);
 
-    if(intval($responseKeys["success"]) !== 1) {
+    if (intval($responseKeys["success"]) !== 1) {
         $error = "Verifikasi CAPTCHA gagal, coba lagi.";
+    } elseif ($password !== $confirmPassword) {
+        $error = "Password dan Konfirmasi Password tidak cocok.";
     } else {
-        // CAPTCHA berhasil, lanjutkan proses login
+        // CAPTCHA berhasil dan password cocok, lanjutkan proses login
         $sql = "SELECT * FROM tb_user WHERE (username = '$username_or_email' OR email = '$username_or_email') AND password = '$password'";
         $result = $conn->query($sql);
 
@@ -69,6 +72,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <label for="password">Password:</label>
             <input type="password" id="password" name="password" required placeholder="Masukkan Password">
 
+            <label for="confirm_password">Konfirmasi Password:</label>
+            <input type="password" id="confirm_password" name="confirm_password" required placeholder="Konfirmasi Password">
+
             <!-- Tambahkan CAPTCHA -->
             <div class="g-recaptcha" data-sitekey="6LdLF7gqAAAAADqTgQxUxz8x6jzCZZBVUlJ-1Zte"></div>
 
@@ -78,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     </main>
 
     <footer>
-    <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>
+        <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>
     </footer>
 </body>
 </html>

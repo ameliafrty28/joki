@@ -27,7 +27,7 @@ session_start();
     <section id="home">
         <div class="home-text">
             <h2>Selamat Datang di KESEHATANKU</h2>
-            <p>Platform ini menyediakan informasi mengenai dan ditujukan pada kesehatan Remaja Putri.</p>
+            <p>Platform ini menyediakan informasi yang ditujukan pada kesehatan Remaja Putri.</p>
             <p>Platform ini menyediakan informasi yang berguna tentang kesehatan remaja putri.</p>
             <a href="login.php" class="btn-login">Login</a>
             <a href="register.php" class="btn-register">Daftar Akun</a>
