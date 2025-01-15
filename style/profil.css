@@ -111,6 +111,68 @@ td {
     text-align: left;
 }
 
+/* Profile Edit Section */
+#edit-form {
+    display: none;
+    margin-top: 20px;
+}
+
+#edit-form label {
+    display: block;
+    font-size: 1rem;
+    color: #666;
+    margin-top: 10px;
+}
+
+#edit-form input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    background-color: #fff;
+}
+
+#edit-form button {
+    background-color: #ff8fab;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+#edit-form button:hover {
+    background-color: #ff4d6d;
+}
+
+#error-message {
+    color: red;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Profile Display */
+#edit-button {
+    background-color: #ff8fab;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#edit-button:hover {
+    background-color: #ff4d6d;
+}
+
+
 .logout {
     display: block;
     width: 97%;

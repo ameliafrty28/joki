@@ -36,7 +36,39 @@
         }
 
         $id_user = $_SESSION['id_user'];
-
+        if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+            $nama = htmlspecialchars($_POST['nama']);
+            $username = htmlspecialchars($_POST['username']);
+            $email = htmlspecialchars($_POST['email']);
+            $umur = (int)$_POST['umur'];
+        
+            // Cek apakah username atau email sudah ada di database
+            $checkQuery = "SELECT id_user FROM tb_user WHERE (username = ? OR email = ?) AND id_user != ?";
+            $stmt = $conn->prepare($checkQuery);
+            $stmt->bind_param("ssi", $username, $email, $id_user);
+            $stmt->execute();
+            $existingUser = $stmt->get_result()->fetch_assoc();
+        
+            if ($existingUser) {
+                // Jika username atau email sudah ada, tampilkan peringatan
+                $error = "Username atau email sudah digunakan oleh pengguna lain. Silakan gunakan yang lain.";
+            } else {
+                // Update data user jika username dan email unik
+                $updateQuery = "UPDATE tb_user SET nama = ?, username = ?, email = ?, umur = ? WHERE id_user = ?";
+                $stmt = $conn->prepare($updateQuery);
+                $stmt->bind_param("sssii", $nama, $username, $email, $umur, $id_user);
+        
+                if ($stmt->execute()) {
+                    // Redirect kembali ke halaman profil setelah berhasil mengupdate data
+                    header("Location: profile.php");
+                    exit;
+                } else {
+                    $error = "Gagal memperbarui data. Silakan coba lagi.";
+                }
+            }
+        }
+        
+        
         // Ambil data user
         $queryUser = "SELECT * FROM tb_user WHERE id_user = ?";
         $stmt = $conn->prepare($queryUser);
@@ -74,12 +106,38 @@
         ?>
 
         <h2>Profil Pengguna</h2>
-        <p><strong>Nama:</strong> <?php echo htmlspecialchars($resultUser['nama']); ?></p>
-        <p><strong>Username:</strong> <?php echo htmlspecialchars($resultUser['username']); ?></p>
-        <p><strong>Email:</strong> <?php echo htmlspecialchars($resultUser['email']); ?></p>
-        <p><strong>Umur:</strong> <?php echo htmlspecialchars($resultUser['umur']); ?> tahun</p>
+            <p><strong>Nama:</strong> <span id="nama"><?php echo htmlspecialchars($resultUser['nama']); ?></span></p>
+            <p><strong>Username:</strong> <span id="username"><?php echo htmlspecialchars($resultUser['username']); ?></span></p>
+            <p><strong>Email:</strong> <span id="email"><?php echo htmlspecialchars($resultUser['email']); ?></span></p>
+            <p><strong>Umur:</strong> <span id="umur"><?php echo htmlspecialchars($resultUser['umur']); ?></span> tahun</p>
 
-        <h2>Riwayat Pemeriksaan</h2>
+            <button id="edit-button">Ubah Data</button>
+
+            <form id="edit-form" style="display: none;" method="POST" action="">
+            <?php if (!empty($error)): ?>
+                <div class="error-message" style="color: red; margin-bottom: 20px;">
+                    <?php echo htmlspecialchars($error); ?>
+                </div>
+            <?php endif; ?>
+
+            <label for="edit-nama">Nama:</label>
+            <input type="text" id="edit-nama" name="nama" value="<?php echo htmlspecialchars($resultUser['nama']); ?>" required>
+
+            <label for="edit-username">Username:</label>
+            <input type="text" id="edit-username" name="username" value="<?php echo htmlspecialchars($resultUser['username']); ?>" required>
+
+            <label for="edit-email">Email:</label>
+            <input type="email" id="edit-email" name="email" value="<?php echo htmlspecialchars($resultUser['email']); ?>" readonly>
+
+            <label for="edit-umur">Umur:</label>
+            <input type="number" id="edit-umur" name="umur" value="<?php echo htmlspecialchars($resultUser['umur']); ?>" required>
+
+            <button type="submit">Simpan Perubahan</button>
+        </form>
+
+
+
+        <h2>Hasil Pemeriksaan Kesehatan Mental</h2>
         <table>
             <thead>
                 <tr>
@@ -101,7 +159,7 @@
             </tbody>
         </table>
 
-        <h2>Riwayat Anemia</h2>
+        <h2>Hasil Pemeriksan Anemia</h2>
         <table>
             <thead>
                 <tr>
@@ -119,7 +177,7 @@
             </tbody>
         </table>
 
-        <h2>Riwayat IMT</h2>
+        <h2>Hasil Pemeriksaa Indeks Massa Tubuh (IMT)</h2>
         <table>
             <thead>
                 <tr>
@@ -143,13 +201,13 @@
             </tbody>
         </table>
 
-        <h2>Riwayat Haid</h2>
+        <h2>Hasil Pemeriksa Menstruasi</h2>
         <table>
             <thead>
                 <tr>
-                    <th>Durasi Haid</th>
-                    <th>Siklus Haid</th>
-                    <th>Haid Terakhir</th>
+                    <th>Durasi Menstruasi</th>
+                    <th>Siklus Menstruasi</th>
+                    <th>Menstruasi Terakhir</th>
                     <th>Hasil Analisis</th>
                     <th>Tanggal Cek</th>
                 </tr>
@@ -174,5 +232,14 @@
     <footer>
     <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>
     </footer>
+
+    <script>
+        const editButton = document.getElementById('edit-button');
+        const editForm = document.getElementById('edit-form');
+
+        editButton.addEventListener('click', () => {
+            editForm.style.display = editForm.style.display === 'none' ? 'block' : 'none';
+        });
+    </script>
 </body>
 </html>

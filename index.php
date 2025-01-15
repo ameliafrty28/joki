@@ -37,24 +37,25 @@ if (!isset($_SESSION['id_user'])) {
             <img src="img/hero.jpg" alt="Hero utama" class="home-hero">
             <div class="home-hero-text">
                 <h1>Selamat Datang di KESEHATANKU</h1>
+                <p>Platform ini menyediakan informasi mengenai dan ditujukan pada kesehatan Remaja Putri.</p>
                 <p>Temukan informasi kesehatan yang bermanfaat untuk hidup lebih sehat!</p>
             </div>
         </div>
 
         <div class="home-images">
-            <a href="anemia.php">
+            <a href="cek-anemia.php">
                 <img src="img/anemia2.jpg" alt="Anemia" class="home-img">
                 <div class="image-caption">Anemia</div>
             </a>
-            <a href="kesehatan_mental.php">
+            <a href="cek-mental.php">
                 <img src="img/mental.jpeg" alt="Kesehatan Mental" class="home-img">
                 <div class="image-caption">Kesehatan Mental</div>
             </a>
-            <a href="kesehatan_reproduksi.php">
+            <a href="teskalender.php">
                 <img src="img/reproduksi.jpg" alt="Kesehatan Reproduksi" class="home-img">
                 <div class="image-caption">Kesehatan Reproduksi</div>
             </a>
-            <a href="nutrisi.php">
+            <a href="cek-nutrisi.php">
                 <img src="img/nutrisi.jpg" alt="Masalah Nutrisi" class="home-img">
                 <div class="image-caption">Masalah Nutrisi</div>
             </a>
