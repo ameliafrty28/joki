@@ -45,19 +45,19 @@ if (!isset($_SESSION['id_user'])) {
         <div class="home-images">
             <a href="cek-anemia.php">
                 <img src="img/anemia2.jpg" alt="Anemia" class="home-img">
-                <div class="image-caption">Cek Anemia</div>
+                <div class="image-caption">Cek Risiko Anemia</div>
             </a>
             <a href="cek-mental.php">
                 <img src="img/mental.jpeg" alt="Kesehatan Mental" class="home-img">
-                <div class="image-caption">Cek Kesehatan Mental</div>
+                <div class="image-caption">Cek Tingkat Stres</div>
             </a>
             <a href="teskalender.php">
                 <img src="img/reproduksi.jpg" alt="Kesehatan Reproduksi" class="home-img">
-                <div class="image-caption">Cek Kesehatan Reproduksi</div>
+                <div class="image-caption">Cek Siklus Menstruasi</div>
             </a>
             <a href="cek-nutrisi.php">
                 <img src="img/nutrisi.jpg" alt="Masalah Nutrisi" class="home-img">
-                <div class="image-caption">Cek Masalah Nutrisi</div>
+                <div class="image-caption">Cek Indeks Massa Tubuh (IMT)</div>
             </a>
         </div>
     </section>

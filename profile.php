@@ -185,14 +185,13 @@
         <button id="toggle-password-form">Ubah Password</button>
 
 
-        <h2>Hasil Pemeriksaan Kesehatan Mental</h2>
+        <h2 style="color: red; ">Hasil Pengecekan Tingkat Stres</h2>
         <table>
             <thead>
                 <tr>
                     <th>Kategori</th>
                     <th>Skor</th>
                     <th>Hasil</th>
-                    <th>Saran</th>
                     <th>Tanggal Cek</th>
                 </tr>
             </thead>
@@ -202,14 +201,13 @@
                     <td><?php echo htmlspecialchars(string: $row['kategori']); ?></td>
                     <td><?php echo htmlspecialchars($row['skor']); ?></td>
                     <td><?php echo htmlspecialchars($row['hasil']); ?></td>
-                    <td><?php echo htmlspecialchars($row['saran']); ?></td>
                     <td><?php echo htmlspecialchars($row['tanggal_cek']); ?></td>
                 </tr>
                 <?php endwhile; ?>
             </tbody>
         </table>
 
-        <h2>Hasil Pemeriksan Anemia</h2>
+        <h2 style="color: green; ">Hasil Pengecekan Risiko Anemia</h2>
         <table>
             <thead>
                 <tr>
@@ -239,7 +237,7 @@
             </tbody>
         </table>
 
-        <h2>Hasil Pemeriksaa Indeks Massa Tubuh (IMT)</h2>
+        <h2 style="color: red; ">Hasil Pengecekan Indeks Massa Tubuh (IMT)</h2>
         <table>
             <thead>
                 <tr>
@@ -265,7 +263,7 @@
             </tbody>
         </table>
 
-        <h2>Hasil Pemeriksa Menstruasi</h2>
+        <h2 style="color: green; ">Hasil Pengecekan Siklus Menstruasi</h2>
         <table>
             <thead>
                 <tr>
