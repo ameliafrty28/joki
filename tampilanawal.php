@@ -15,13 +15,20 @@ session_start();
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
             <h1>KesehatanKu</h1>
-            <ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="main-menu" class="nav-menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#team">Team</a></li>
             </ul>
+
         </nav>
     </header>
+
 
     <main>
     <section id="home">
@@ -89,6 +96,7 @@ session_start();
             </div>
         </section>
     </main>
+    <script src="hamburger.js" defer></script>
 
     <footer>
         <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>
