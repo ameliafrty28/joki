@@ -7,7 +7,7 @@
 
 /* Body Styling */
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   line-height: 1.6;
   color: #333;
   background: linear-gradient(to bottom, #ffe4e9, #fff5f7);
@@ -168,33 +168,8 @@ header ul li a:hover {
     font-size: 12px;
   }
 
-  .hamburger {
-    display: flex;
-  }
-
   header ul {
     display: none;
-  }
-
-  .nav-menu.active {
-    display: flex;
-  }
-
-  .hamburger.active span:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-  }
-
-  .hamburger.active span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-  }
-
-  header {
-    flex-wrap: wrap;
-    padding: 1rem;
   }
 
   header .logo {
@@ -203,11 +178,6 @@ header ul li a:hover {
 
   header h1 {
     font-size: 1.3rem;
-  }
-
-  header ul {
-    flex-direction: column;
-    gap: 1rem;
   }
 
   .about-us {
@@ -232,7 +202,35 @@ header ul li a:hover {
   .home-text h2 {
     font-size: 2rem;
   }
+  
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute; /* Tambahkan untuk mengatur posisi absolut */
+    right: 20px; /* Atur jarak dari kanan */
+    top: 35px; /* Atur jarak dari atas */
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
 }
+
 
 @media (max-width: 370px) {
   body {
