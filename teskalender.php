@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kalender Menstruasi</title>
     <link rel="stylesheet" href="style/kalender.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+
 
 </head>
 <body>
@@ -13,11 +15,17 @@
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
             <h1>KesehatanKu</h1>
-            <ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="main-menu" class="nav-menu">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>
+
         </nav>
     </header>
     <main>
@@ -182,6 +190,7 @@
         renderCalendar(tanggalPertama, durasiHaid, siklusHaid);
     }
 </script>
+<script src="hamburger.js" defer></script>
 
 <footer>
         <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>

@@ -189,6 +189,33 @@ header ul li a:hover {
   .about-us img {
     margin: 0 auto 1rem;
   }
+  
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute; /* Tambahkan untuk mengatur posisi absolut */
+    right: 20px; /* Atur jarak dari kanan */
+    top: 28px; /* Atur jarak dari atas */
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
 }
 
 @media (max-width: 490px) {

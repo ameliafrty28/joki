@@ -289,14 +289,6 @@ footer {
     font-size: 1.4rem;
   }
 
-  .about-us {
-    flex-direction: column;
-  }
-
-  .about-us img {
-    margin: 0 auto 1rem;
-  }
-
   .home-hero-container {
     height: 400px;
   }
@@ -326,15 +318,6 @@ footer {
     font-size: 1.3rem;
   }
 
-  .about-us {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-us img {
-    margin: 0 auto 1rem;
-  }
-
   .home-hero-container {
     height: 350px;
   }
@@ -344,6 +327,33 @@ footer {
   .home-hero-text p {
     font-size: 1.2rem;
     padding: 0 1rem; /* Tambahkan padding agar teks tidak terlalu mepet */
+  }
+  
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute; /* Tambahkan untuk mengatur posisi absolut */
+    right: 20px; /* Atur jarak dari kanan */
+    top: 28px; /* Atur jarak dari atas */
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
   }
 }
 

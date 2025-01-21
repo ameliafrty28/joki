@@ -9,6 +9,8 @@ session_start();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Kesehatan UNRIYO</title>
     <link rel="stylesheet" href="style/tampilanawal.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+
 </head>
 <body>
     <header>

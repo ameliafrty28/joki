@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/mental.css">
+    <link rel="icon" href="favicon.png" type="image/png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Informasi Kesehatan Mental</title>
 </head>
 <body>
-    <header>
+<header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
             <h1>KesehatanKu</h1>
-            <ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="main-menu" class="nav-menu">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>
+
         </nav>
     </header>
 
@@ -82,7 +89,6 @@
                     <p>Ada beberapa cara penanganan gangguan kesehatan mental yang bisa menjadi pilihan sesuai dengan kondisi yang terjadi pada pengidap, yaitu:</p>
                     <ol type="a">
                         <li>Psikoterapi</li>
-                        <p>Ini merupakan jenis terapi dengan media yang aman untuk mengungkapkan perasaan dan memberikan saran yang sesuai.</p>
                         <li>Obat</li>
                         <li>Perawatan intensif di rumah sakit</li>
                         <li>Supporting group</li>
@@ -101,6 +107,16 @@
                 <button type="submit" class="btn-tes">Mulai Tes</button>
             </form>
         </section>
+        <section class="references">
+            <h2 class="references-title">Referensi</h2>
+            <ul class="references-list">
+                <li class="references-item">
+                    <a href="https://doi.org/10.35720/tscs1kep.v9i01.495" target="_blank" class="references-link">
+                    Agustiana, M., Riniasih, W., Sukmayadi, S., & Fatchulloh, F. (2024). PENGARUH JOGING TERHADAP PENURUNAN TINGKAT STRES PADA REMAJA SMAN 1 TOROH. The Shine Cahaya Dunia S-1 Keperawatan, 9(01)."
+                    </a>
+                </li>
+            </ul>
+</section>
     </main>
 
     <script>
@@ -117,6 +133,7 @@
             });
         }
 </script>
+<script src="hamburger.js" defer></script>
 
     <footer>
     <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>

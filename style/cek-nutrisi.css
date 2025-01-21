@@ -6,25 +6,37 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     line-height: 1.6;
     color: #333;
-    background: linear-gradient(to bottom, #ffe4e9, #fff5f7); /* Gradasi warna lembut */
+    background: linear-gradient(
+      to bottom,
+      #ffe4e9,
+      #fff5f7
+    ); /* Gradasi warna lembut */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-}
-
-/* Header Styling */
-header {
-    background-color: #f071a6; /* Soft Pink Header */
+    padding-top: 80px; /* Tinggi header */
+  }
+  /* Header Styling */
+  header {
+    background-color: #f071a6;
     color: #fff;
     padding: 1rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     border-bottom: 3px solid #ffb6c1;
-}
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 80px; /* Tentukan tinggi header */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
 
 header nav {
     display: flex;
@@ -120,39 +132,57 @@ h2 {
     font-size: 2rem;
 }
 
-p {
-    font-size: 1rem;
-    margin: 0.5rem 0;
+ 
+/* Pop-up Styling */
+.popup-overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     text-align: center;
+    width: 80%;
+    max-width: 500px;
 }
 
-p strong {
-    color: #ff5c91;
+.popup-content h2 {
+    color: #333;
+    margin-bottom: 15px;
 }
 
-/* Styling untuk hasil perhitungan */
-.result {
-    max-width: 400px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background: #ffe3ec; /* Warna pink lembut */
-    border: 1px solid #ff8eb3;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
+.popup-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
-.result p {
-    font-size: 1rem;
-    margin: 0.5rem 0;
-    color: #444; /* Warna teks yang mudah dibaca */
+.close-button {
+    padding: 10px 20px;
+    background-color: #f071a6;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
 }
 
-.result h2 {
-    margin-bottom: 1rem;
-    color: #ff5c91;
-    font-size: 1.8rem;
+.close-button:hover {
+    background-color: #c4469c;
 }
+
 
 footer {
     text-align: center;
@@ -164,25 +194,224 @@ footer {
     box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
+.nutrisi-button {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.nutrisi-button .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #e84176; /* Warna hijau */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.nutrisi-button .btn:hover {
+    background-color: #870a4f; /* Warna hijau lebih gelap saat hover */
+}
+
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 4px;
+  }
+  
+  .hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-menu {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-menu.active {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f071a6;
+    width: 100%;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    animation: slideIn 0.3s ease;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20%);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1350px) {
+    body {
+      font-size: 15px;
+    }
+  
     header h1 {
-        font-size: 1.4rem;
+      font-size: 1.6rem;
     }
-
-    header .logo {
-        height: 50px;
+  }
+  
+  @media (max-width: 1066px) {
+    body {
+      font-size: 14px;
     }
-
-    form {
+  
+    header h1 {
+      font-size: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    body {
+      font-size: 13px;
+    }
+  
+  
+    header h1 {
+      font-size: 1.4rem;
+    }
+  
+    .about-us {
+      flex-direction: column;
+    }
+  
+    .about-us img {
+      margin: 0 auto 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 12px;
+    }
+    main {
         padding: 1.5rem;
     }
-
-    form button {
-        font-size: 1rem;
+  
+    header ul {
+      display: none;
     }
-
-    h2 {
-        font-size: 1.6rem;
+  
+    header .logo {
+      margin-bottom: 0.5rem;
+      max-height: 40px;
     }
+  
+    header h1 {
+      font-size: 1.3rem;
+    }
+    
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute; /* Tambahkan untuk mengatur posisi absolut */
+    right: 20px; /* Atur jarak dari kanan */
+    top: 28px; /* Atur jarak dari atas */
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  form {
+    padding: 1.5rem;
 }
+
+form button {
+    font-size: 1rem;
+}
+
+h2 {
+    font-size: 1.6rem;
+}
+  }
+  
+  @media (max-width: 490px) {
+    body {
+      font-size: 11px;
+    }
+  
+    header h1 {
+      font-size: 1.2rem;
+    }
+  
+    main h1 {
+      font-size: 1.8rem;
+    }
+  
+    .references-title {
+      font-size: 1.2rem;
+    }
+  
+    .nav-menu {
+      display: none;
+    }
+  
+    .nav-menu.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex;
+      position: absolute; /* Tambahkan untuk mengatur posisi absolut */
+      right: 20px; /* Atur jarak dari kanan */
+      top: 28px; /* Atur jarak dari atas */
+    }
+  
+    .hamburger.active span:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+  
+    .hamburger.active span:nth-child(2) {
+      opacity: 0;
+    }
+  
+    .hamburger.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+  
+  @media (max-width: 370px) {
+    body {
+      font-size: 10px;
+    }
+  
+    header h1 {
+      font-size: 1rem;
+    }
+  }
+  

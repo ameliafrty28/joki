@@ -48,6 +48,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="style/login.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+
     <!-- Tambahkan reCAPTCHA v2 script -->
     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>

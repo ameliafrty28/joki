@@ -57,6 +57,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrasi Akun</title>
     <link rel="stylesheet" href="style/login.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+
 
     <script>
         // Fungsi untuk menampilkan modal pop-up

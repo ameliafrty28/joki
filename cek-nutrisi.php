@@ -96,17 +96,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pengecekan Masalah Nutrisi</title>
     <link rel="stylesheet" href="style/cek-nutrisi.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+
 </head>
 <body>
-    <header>
+<header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
             <h1>KesehatanKu</h1>
-            <ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="main-menu" class="nav-menu">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>
+
         </nav>
     </header>
 
@@ -122,19 +130,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <button type="submit">Hitung IMT</button>
         </form>
 
-        <?php if (isset($bmi)): ?>
-            <div class="result">
-            <h2>Hasil</h2>
-            <p>Berat Badan Anda: <?= htmlspecialchars($weight) ?> kg</p>
-            <p>Tinggi Badan Anda: <?= htmlspecialchars($height) ?> cm</p>
-            <p>IMT Anda: <?= number_format($bmi, 2) ?></p>
-            <p>Kategori: <?= htmlspecialchars($interpretation['category']) ?></p>
-            <p>Saran: <?= htmlspecialchars($interpretation['advice']) ?></p>
+        <?php if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($bmi)): ?>
+        <div class="popup-overlay">
+            <div class="popup-content">
+                <h2>Hasil IMT</h2>
+                <p><strong>Berat Badan:</strong> <?= htmlspecialchars($weight) ?> kg</p>
+                <p><strong>Tinggi Badan:</strong> <?= htmlspecialchars($height) ?> cm</p>
+                <p><strong>IMT:</strong> <?= number_format($bmi, 2) ?></p>
+                <p><strong>Kategori:</strong> <?= htmlspecialchars($interpretation['category']) ?></p>
+                <p><strong>Saran:</strong><br><?= nl2br(htmlspecialchars($interpretation['advice'])) ?></p>
+                <a href="nutrisi.php"><button class="close-button">Tutup</button></a>
             </div>
-        <?php elseif (isset($error)): ?>
-            <p style="color: red;"><?= htmlspecialchars($error) ?></p>
-        <?php endif; ?>
+        </div>
+    <?php endif; ?>
     </main>
+    <script src="hamburger.js" defer></script>
+
 
     <footer>
     <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>

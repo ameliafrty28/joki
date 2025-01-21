@@ -5,19 +5,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/reproduksi.css">
+    <link rel="icon" href="favicon.png" type="image/png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Informasi Kesehatan Reproduksi</title>
 </head>
 <body>
-    <header>
+<header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
             <h1>KesehatanKu</h1>
-            <ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="main-menu" class="nav-menu">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>
+
         </nav>
     </header>
     <main>
@@ -156,8 +163,11 @@
                 <div class="content">   
                     <p>Menstruasi atau haid adalah proses keluarnya darah dan sel-sel tubuh dari vagina yang terjadi secara periodik setiap bulan. Menstruasi merupakan bagian dari proses normal organ reproduksi wanita untuk mempersiapkan kehamilan.</p>
                     <p>Menstruasi menandai dimulainya pubertas dan kemampuan seorang wanita untuk mengandung anak. Siklus menstruasi pertama biasanya dimulai pada usia 12 tahun, atau 2–3 tahun setelah payudara tumbuh. Siklus ini akan terus berlangsung hingga memasuki masa menopause.</p>        
-                    
+                    </div>
+                
                     <h2 class="accordion">Ciri-Ciri</h2>
+                    <div class="content">   
+
                     <p>Ciri-ciri menstruasi yang normal adalah:</p>
                     <ul>
                         <li>Siklusnya terjadi dalam kisaran 21-35 hari</li>
@@ -200,6 +210,16 @@
                 <button type="submit" class="btn-tes">Buka Kalender Menstruasi</button>
             </form>
         </section>
+        <section class="references">
+            <h2 class="references-title">Referensi</h2>
+            <ul class="references-list">
+                <li class="references-item">
+                    <a href="https://jurnal.umj.ac.id/index.php/MyJM/article/view/18938 " target="_blank" class="references-link">
+                    Aima, S., & Erwandi, D. (2024). Determinan Perilaku Seksual Pada Remaja di Indonesia: Sistematik Review. Muhammadiyah Journal of Midwifery, 4(2), 85-93."
+                    </a>
+                </li>
+            </ul>
+</section>
     </main>
 
     <script>
@@ -216,6 +236,8 @@
             });
         }
 </script>
+<script src="hamburger.js" defer></script>
+
 
     <footer>
     <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>

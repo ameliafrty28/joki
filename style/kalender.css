@@ -1,303 +1,472 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: linear-gradient(to bottom, #ffe4e9, #fff5f7);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(to bottom, #ffe4e9, #fff5f7);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 header {
-    background-color: #f071a6;
-    color: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 3px solid #ffb6c1;
+  background-color: #f071a6;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #ffb6c1;
 }
 
 header nav {
-    display: flex;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 header .logo {
-    height: 50px;
-    margin-right: 1rem;
+  height: 50px;
+  margin-right: 1rem;
 }
 
 header h1 {
-    font-size: 1.8rem;
-    color: #fff;
+  font-size: 1.8rem;
+  color: #fff;
 }
 
 header ul {
-    list-style: none;
-    display: flex;
-    margin-left: auto;
+  list-style: none;
+  display: flex;
+  margin-left: auto;
 }
 
 header ul li {
-    margin-left: 2.5rem;
+  margin-left: 2.5rem;
 }
 
 header ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 header ul li a:hover {
-    color: #5c5c5c;
+  color: #5c5c5c;
 }
 
 /* Main Content */
 main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 2rem;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 main h1 {
-    text-align: center;
-    color: #f071a6;
-    margin-bottom: 1rem;
+  text-align: center;
+  color: #f071a6;
+  margin-bottom: 1rem;
 }
 
 label {
-    display: block;
-    font-weight: bold;
-    color: #444;
-    margin-top: 1rem;
+  display: block;
+  font-weight: bold;
+  color: #444;
+  margin-top: 1rem;
 }
 
 input[type="number"],
 input[type="date"] {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1.5rem;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s, box-shadow 0.3s;
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 input[type="number"]:focus,
 input[type="date"]:focus {
-    border-color: #f071a6;
-    outline: none;
-    box-shadow: 0 0 6px rgba(240, 113, 166, 0.4);
+  border-color: #f071a6;
+  outline: none;
+  box-shadow: 0 0 6px rgba(240, 113, 166, 0.4);
 }
 
 button {
-    display: block;
-    width: 100%;
-    background-color: #f071a6;
-    color: #fff;
-    padding: 0.8rem;
-    font-size: 1.1rem;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
+  display: block;
+  width: 100%;
+  background-color: #f071a6;
+  color: #fff;
+  padding: 0.8rem;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: #d06092;
+  background-color: #d06092;
 }
 
 .output {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 /* Calendar Styling */
 #calendar-container {
-    margin-top: 2rem;
-    display: none;
+  margin-top: 2rem;
+  display: none;
 }
 
 #calendar-navigation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 20px;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 #calendar-title {
-    text-align: center;
-    font-size: 1.2em; /* Sesuaikan ukuran teks */
-    font-weight: bold;
-    color: #ff99cc;
+  text-align: center;
+  font-size: 1.2em; /* Sesuaikan ukuran teks */
+  font-weight: bold;
+  color: #ff99cc;
 }
 
 #calendar-title .month {
-    font-size: 1.4em; /* Ukuran lebih besar untuk bulan */
+  font-size: 1.4em; /* Ukuran lebih besar untuk bulan */
 }
 
 #calendar-title .year {
-    font-size: 1em; /* Ukuran lebih kecil untuk tahun */
-    color: #888;    /* Warna teks tahun lebih lembut */
+  font-size: 1em; /* Ukuran lebih kecil untuk tahun */
+  color: #888; /* Warna teks tahun lebih lembut */
 }
 
 .nav-btn {
-    background-color: #ff99cc;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    font-size: 0.9em;
-    cursor: pointer;
+  background-color: #ff99cc;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  cursor: pointer;
 }
 
 .nav-btn.small-btn {
-    padding: 6px 10px;
-    font-size: 0.8em; /* Ukuran tombol diperkecil */
+  padding: 6px 10px;
+  font-size: 0.8em; /* Ukuran tombol diperkecil */
 }
 
 .nav-btn:hover {
-    background-color: #ff66aa;
-    transition: background-color 0.2s ease;
+  background-color: #ff66aa;
+  transition: background-color 0.2s ease;
 }
 
 /* Kalender */
 #calendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    gap: 0.5rem;
-    margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
 }
 
 #calendar div {
-    padding: 1rem;
-    text-align: center;
-    background-color: #fff;
-    color: #333;
-    border-radius: 5px;
-    font-size: 0.9rem;
-    transition: background-color 0.3s, color 0.3s;
+  padding: 1rem;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 #calendar div.highlight {
-    background-color: #ffe6eb;
-    font-weight: bold;
-    color: #f071a6;
-    box-shadow: inset 0 0 8px rgba(240, 113, 166, 0.5);
-    border-radius: 50%;
+  background-color: #ffe6eb;
+  font-weight: bold;
+  color: #f071a6;
+  box-shadow: inset 0 0 8px rgba(240, 113, 166, 0.5);
+  border-radius: 50%;
 }
 
 #calendar div:hover {
-    background-color: #fce1e9;
-    cursor: pointer;
+  background-color: #fce1e9;
+  cursor: pointer;
 }
 .subtitle {
-    font-size: 1rem;
-    color: #555;
-    margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #555;
+  margin-top: 0.5rem;
 }
 
 .popup {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    display: none;
-    z-index: 1000;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: none;
+  z-index: 1000;
 }
 .popup.active {
-    display: block;
+  display: block;
 }
 .popup button {
-    margin-top: 10px;
-    background-color: #f071a6;
-    color: #fff;
-    border: none;
-    padding: 10px;
-    border-radius: 4px;
-    cursor: pointer;
+  margin-top: 10px;
+  background-color: #f071a6;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
 .popup button:hover {
-    background-color:rgba(240, 113, 166, 0.5); 
+  background-color: rgba(240, 113, 166, 0.5);
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 1rem;
-    background: linear-gradient(to right, #f8c8dc, #f071a6);
-    color: #fff;
-    margin-top: auto;
-    font-weight: 500;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(to right, #f8c8dc, #f071a6);
+  color: #fff;
+  margin-top: auto;
+  font-weight: 500;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .mental-health-button {
-    margin-top: 20px;
-    text-align: center;
+  margin-top: 20px;
+  text-align: center;
 }
 
 .mental-health-button .btn {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #e84176; /* Warna hijau */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: background-color 0.3s;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #e84176; /* Warna hijau */
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
 }
 
 .mental-health-button .btn:hover {
-    background-color: #870a4f; /* Warna hijau lebih gelap saat hover */
+  background-color: #870a4f; /* Warna hijau lebih gelap saat hover */
 }
 
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    main {
-        padding: 1.5rem;
-    }
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
 
-    header h1 {
-        font-size: 1.5rem;
-    }
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
 
-    header ul {
-        flex-direction: column;
-        align-items: flex-start;
-    }
+.nav-menu.active {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f071a6;
+  width: 100%;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  animation: slideIn 0.3s ease;
+}
 
-    header ul li {
-        margin-left: 0;
-        margin-top: 1rem;
-    }
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
-    #calendar {
-        grid-template-columns: repeat(7, 1fr);
-    }
+/* Media Queries */
+@media (max-width: 1350px) {
+  body {
+    font-size: 15px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1066px) {
+  body {
+    font-size: 14px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 13px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .about-us {
+    flex-direction: column;
+  }
+
+  .about-us img {
+    margin: 0 auto 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+
+  main {
+    padding: 1.5rem;
+  }
+
+  header ul {
+    display: none;
+  }
+
+  header .logo {
+    margin-bottom: 0.5rem;
+    max-height: 40px;
+  }
+
+  header h1 {
+    font-size: 1.3rem;
+  }
+  #calendar {
+    grid-template-columns: repeat(7, 1fr);
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute; /* Tambahkan untuk mengatur posisi absolut */
+    right: 20px; /* Atur jarak dari kanan */
+    top: 28px; /* Atur jarak dari atas */
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+@media (max-width: 490px) {
+  body {
+    font-size: 11px;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .accordion {
+    font-size: 1rem;
+  }
+
+  main h1 {
+    font-size: 1.8rem;
+  }
+
+  .references-title {
+    font-size: 1.2rem;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute; /* Tambahkan untuk mengatur posisi absolut */
+    right: 20px; /* Atur jarak dari kanan */
+    top: 28px; /* Atur jarak dari atas */
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+}
+
+@media (max-width: 370px) {
+  body {
+    font-size: 10px;
+  }
+
+  header h1 {
+    font-size: 1rem;
+  }
 }

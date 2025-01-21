@@ -4,19 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/reproduksi.css">
+    <link rel="icon" href="favicon.png" type="image/png">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Informasi Kesehatan Reproduksi</title>
 </head>
 <body>
-    <header>
+<header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
             <h1>KesehatanKu</h1>
-            <ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="main-menu" class="nav-menu">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>
+
         </nav>
     </header>
     <main>
@@ -200,6 +207,21 @@
                 <button type="submit" class="btn-tes">Cek IMT</button>
             </form>
         </section>
+        <section class="references">
+            <h2 class="references-title">Referensi</h2>
+            <ul class="references-list">
+                <li class="references-item">
+                    <a href="https://doi.org/10.1371/journal.pone.0287633" target="_blank" class="references-link">
+                    Monteiro, I. P., Azzi, C. F. G., Bilibio, J. P., Monteiro, P. S., Braga, G. C., & Nitz, N. (2023). Prevalence of sexually transmissible infections in adolescents treated in a family planning outpatient clinic for adolescents in the western Amazon. PloS one, 18(6), e0287633. "
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://ojs.unimal.ac.id/galenical/article/view/10134" target="_blank" class="references-link">
+                    Novalia, V. (2023). Kanker serviks. GALENICAL: Jurnal Kedokteran dan Kesehatan Mahasiswa Malikussaleh, 2(1), 45-56."
+                    </a>
+                </li>
+            </ul>
+</section>
     </main>
 
     <script>
@@ -216,6 +238,7 @@
             });
         }
 </script>
+<script src="hamburger.js" defer></script>
 
     <footer>
     <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>

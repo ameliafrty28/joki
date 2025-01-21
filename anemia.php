@@ -21,19 +21,27 @@ $conn->close();
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/anemia.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Informasi Anemia</title>
 </head>
 <body>
-    <header>
+<header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
             <h1>KesehatanKu</h1>
-            <ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="main-menu" class="nav-menu">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>
+
         </nav>
     </header>
 
@@ -113,6 +121,40 @@ $conn->close();
                 <button type="submit" class="btn-tes">Mulai Tes</button>
             </form>
         </section>
+        <section class="references">
+            <h2 class="references-title">Referensi</h2>
+            <ul class="references-list">
+                <li class="references-item">
+                    <a href="https://jurnal.ugm.ac.id/jpkm/article/download/40570/25068" target="_blank" class="references-link">
+                        Peningkatan Kadar Hemoglobin melalui Pemeriksaan dan Pemberian Tablet Fe Terhadap Remaja yang mengalami Anemia Melalui "Gerakan Jumat Pintar"
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://pkgm.fk.ugm.ac.id/2022/05/18/pencegahan-anemia-pada-remaja/" target="_blank" class="references-link">
+                        Pencegahan Anemia Pada Remaja
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://ejournal.stikku.ac.id/index.php/nnc/article/view/870" target="_blank" class="references-link">
+                    Sukmanawati, D., Badriah, D. L., & Setiayu, Y. (2023, October). HUBUNGAN PENGETAHUAN DAN SIKAP TENTANG MANFAAT KONSUMSI TABLET FE DENGAN KADAR HEMOGLOBIN PADA REMAJA PUTRI DI SMAN 1 DARMA. In National Nursing Conference (Vol. 1, No. 2, pp. 165-176)."
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://www.who.int/data/gho/data/themes/topics/anaemia_in_women_and_children " target="_blank" class="references-link">
+                    WHO. 2021. Anaemia in women and children. Retrieved 12 November 2024
+                    </a>
+                </li>
+                <li class="references-item">
+                    <p class="references-text">World Health Organization (WHO). "Nutritional Anemia."</p>
+                </li>
+                <li class="references-item">
+                    <p class="references-text">Centers for Disease Control and Prevention (CDC). "Iron Deficiency Anemia."</p>
+                </li>
+                <li class="references-item">
+                    <p class="references-text">Meiliana, V. (2018). Gambaran faktor risiko anemia pada remaja putri kelas X di SMAN 3 Kabupaten Tangerang tahun 2018 (Laporan Tugas Akhir). Kementerian Kesehatan Republik Indonesia, Politeknik Kesehatan Jakarta III, Jurusan Kebidanan, Program Studi D.III Kebidanan."</p>
+                </li>
+            </ul>
+</section>
     </main>
 
     <script>
@@ -135,6 +177,8 @@ $conn->close();
         });
     });
 </script>
+<script src="hamburger.js" defer></script>
+
 
     <footer>
     <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>

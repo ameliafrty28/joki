@@ -5,18 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Profil</title>
     <link rel="stylesheet" href="style/profil.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <header>
+<header>
         <nav>
             <img src="img/logo.png" alt="Logo" class="logo">
             <h1>KesehatanKu</h1>
-            <ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="main-menu" class="nav-menu">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>
+
         </nav>
     </header>
 
@@ -185,7 +194,7 @@
         <button id="toggle-password-form">Ubah Password</button>
 
 
-        <h2 style="color: red; ">Hasil Pengecekan Tingkat Stres</h2>
+        <h2 style="color:rgb(193, 40, 106); "><br>Hasil Pengecekan Tingkat Stres</h2>
         <table>
             <thead>
                 <tr>
@@ -206,8 +215,8 @@
                 <?php endwhile; ?>
             </tbody>
         </table>
-
-        <h2 style="color: green; ">Hasil Pengecekan Risiko Anemia</h2>
+<br>
+        <h2 style="color:rgb(36, 131, 83);">Hasil Pengecekan Risiko Anemia</h2>
         <table>
             <thead>
                 <tr>
@@ -215,7 +224,7 @@
                     <th>Hasil Analisis</th>
                     <th>Pola Menstruasi</th>
                     <th>Lama Menstruasi</th>
-                    <th>Konsumsi Makanan</th>
+                    <th>Konsumsi Zat Besi</th>
                     <th>Konsumsi TTD</th>
                     <th>Penngetahuan</th>
                     <th>Tanggal Cek</th>
@@ -236,8 +245,8 @@
                 <?php endwhile; ?>
             </tbody>
         </table>
-
-        <h2 style="color: red; ">Hasil Pengecekan Indeks Massa Tubuh (IMT)</h2>
+<br>
+        <h2 style="color:rgb(193, 40, 106); ">Hasil Pengecekan Indeks Massa Tubuh (IMT)</h2>
         <table>
             <thead>
                 <tr>
@@ -262,8 +271,8 @@
                 <?php endwhile; ?>
             </tbody>
         </table>
-
-        <h2 style="color: green; ">Hasil Pengecekan Siklus Menstruasi</h2>
+<br>
+        <h2 style="color:rgb(36, 131, 83); ">Hasil Pengecekan Siklus Menstruasi</h2>
         <table>
             <thead>
                 <tr>
@@ -292,6 +301,7 @@
         <a class="logout" href="tampilanawal.php">Logout</a>
     </div>
     </main>
+    <script src="hamburger.js" defer></script>
 
     <footer>
     <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>
