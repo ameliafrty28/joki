@@ -35,11 +35,13 @@ session_start();
     <main>
     <section id="home">
         <div class="home-text">
-            <h2>Selamat Datang di KESEHATANKU</h2>
-            <p>Platform ini menyediakan informasi yang ditujukan pada kesehatan Remaja Putri.</p>
-            <p>Platform ini menyediakan informasi yang berguna tentang kesehatan remaja putri.</p>
+            <h2>Jaga Kesehatan Anda dengan <span class="highlight">KesehatanKu</span></h2>
+            <p>Temukan informasi kesehatan remaja putri yang relevan dan bermanfaat untuk hidup sehat dan bahagia.</p>
+            <p><strong>Login</strong> sekarang untuk mengakses panduan kesehatan eksklusif dan tips menarik!</p>
             <a href="login.php" class="btn-login">Login</a>
             <a href="register.php" class="btn-register">Daftar Akun</a>
+            <a href="login.php" class="btn-login">Cek Kesehatan Anda</a>
+
 
         </div>
         <div class="home-image">

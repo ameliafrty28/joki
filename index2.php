@@ -27,7 +27,7 @@ if (!isset($_SESSION['id_user'])) {
                 <span></span>
             </div>
             <ul id="main-menu" class="nav-menu">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index2.php">Home</a></li>
                 <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>
@@ -38,18 +38,19 @@ if (!isset($_SESSION['id_user'])) {
     <main>
     <section id="home">
         <h2>Selamat Datang, <?= $_SESSION['username']; ?></h2>
-        <p>Selamat datang di platform KESEHATANKU. Di sini Anda bisa menemukan informasi penting mengenai berbagai topik kesehatan, dari anemia hingga kesehatan mental. Pilih kategori di bawah untuk memulai perjalanan informasi kesehatan Anda.</p>
+        <p>Selamat datang di platform KESEHATANKU. Di sini Anda bisa menemukan informasi penting mengenai berbagai topik kesehatan Pada remaja Putri</p>
         <p>Website ini bertujuan untuk mengetahui pengtingnya informasi terkait masalah kesehatan yang dialami remaja putri seperti Anemia, Kesehatan reproduksi, Kesehatan Mental dan Masalah nutrisi </p>
         <p></p>
         <div class="home-hero-container">
-            <img src="img/hero.jpg" alt="Hero utama" class="home-hero">
-            <div class="home-hero-text">
-                <h2>Selamat Datang di KESEHATANKU</h2>
-                <p>Platform ini menyediakan informasi yang ditujukan pada kesehatan Remaja Putri.</p>
-                <p>Temukan informasi kesehatan yang bermanfaat untuk hidup lebih sehat!</p>
-            </div>
-        </div>
+    <div class="slideshow">
+        <img src="img/hero.jpg" alt="Hero utama 1" class="slide">
+        <img src="img/hero1.jpg" alt="Hero utama 2" class="slide">
+        <img src="img/hero2.jpg" alt="Hero utama 3" class="slide">
+        <img src="img/hero3.jpg" alt="Hero utama 4" class="slide">
+    </div>
+</div>
 
+        <h1>Pilih Kategori dibawah ini untuk memulai perjalan informasi kesehatan anda</h1>
         <div class="home-images">
             <a href="cek-anemia.php">
                 <img src="img/anemia2.jpg" alt="Anemia" class="home-img">
@@ -73,6 +74,29 @@ if (!isset($_SESSION['id_user'])) {
     </main>
     <script src="hamburger.js" defer></script>
 
+    <script>
+const slides = document.querySelectorAll(".slide");
+let currentIndex = 0;
+
+function showNextSlide() {
+    // Set semua slide ke posisi awal
+    slides.forEach((slide, index) => {
+        slide.style.transform = "translateX(100%)"; // Semua slide dipindahkan ke kanan
+    });
+
+    // Geser slide saat ini keluar ke kiri
+    slides[currentIndex].style.transform = "translateX(-100%)";
+
+    // Perbarui indeks
+    currentIndex = (currentIndex + 1) % slides.length;
+
+    // Tampilkan slide berikutnya
+    slides[currentIndex].style.transform = "translateX(0)";
+}
+
+// Atur interval untuk slideshow
+setInterval(showNextSlide, 2000); // Pindah setiap 3 detik
+    </script>
     <footer>
     <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>
     </footer>

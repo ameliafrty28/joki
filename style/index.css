@@ -104,15 +104,32 @@ main {
 }
 
 .home-hero-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 400px;
   position: relative;
-  margin-bottom: 2rem;
-  overflow: hidden;
-  border-radius: 15px;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  overflow: hidden; /* Untuk menyembunyikan gambar di luar area */
+  border-radius: 10px;
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 100%; /* Semua slide dimulai di luar layar, di kanan */
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide:first-child {
+  left: 0; /* Slide pertama ditampilkan di awal */
 }
 
 .home-hero {
@@ -304,7 +321,9 @@ footer {
   body {
     font-size: 12px;
   }
-
+  .slideshow {
+    max-width: 100%;
+  }
   header ul {
     display: none;
   }

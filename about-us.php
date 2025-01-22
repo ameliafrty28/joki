@@ -25,7 +25,7 @@ session_start();
                 <span></span>
             </div>
             <ul id="main-menu" class="nav-menu">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index2.php">Home</a></li>
                 <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>
@@ -35,7 +35,7 @@ session_start();
     
     <main>
     <section id="about-us" class="about-us">
-    <button class="back-button" onclick="window.location.href='index.php';">
+    <button class="back-button" onclick="window.location.href='index2.php';">
         <i class="fas fa-arrow-left"></i>
     </button>
 

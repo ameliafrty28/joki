@@ -450,7 +450,7 @@ table th, table td {
   .hamburger {
     display: flex;
     position: absolute; /* Tambahkan untuk mengatur posisi absolut */
-    right: 70px; /* Atur jarak dari kanan */
+    right: 20px; /* Atur jarak dari kanan */
     top: 28px; /* Atur jarak dari atas */
   }
 

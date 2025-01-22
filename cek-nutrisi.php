@@ -110,7 +110,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <span></span>
             </div>
             <ul id="main-menu" class="nav-menu">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index2.php">Home</a></li>
                 <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>

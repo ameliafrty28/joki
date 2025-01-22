@@ -1,325 +1,324 @@
 /* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background: linear-gradient(
-      to bottom,
-      #ffe4e9,
-      #fff5f7
-    ); /* Gradasi warna lembut */
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    padding-top: 80px; /* Tinggi header */
-  }
-  
-  /* Header Styling */
-  header {
-    background-color: #f071a6;
-    color: #fff;
-    padding: 1rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 3px solid #ffb6c1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    height: 80px; /* Tentukan tinggi header */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: linear-gradient(
+    to bottom,
+    #ffe4e9,
+    #fff5f7
+  ); /* Gradasi warna lembut */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px; /* Tinggi header */
+}
+
+/* Header Styling */
+header {
+  background-color: #f071a6;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid #ffb6c1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 80px; /* Tentukan tinggi header */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
 header nav {
-    display: flex;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  width: 100%;
 }
 
 header .logo {
-    height: 50px;
-    margin-right: 1rem;
+  height: 50px;
+  margin-right: 1rem;
 }
 
 header h1 {
-    font-size: 1.8rem;
-    color: #fff;
+  font-size: 1.8rem;
+  color: #fff;
 }
 
 header ul {
-    list-style: none;
-    display: flex;
-    margin-left: auto; /* Memastikan menu selalu berada di kanan */
+  list-style: none;
+  display: flex;
+  margin-left: auto; /* Memastikan menu selalu berada di kanan */
 }
 
 header ul li {
-    margin-left: 2.5rem;
+  margin-left: 2.5rem;
 }
 
 header ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 header ul li a:hover {
-    color: #5c5c5c;
-    }
+  color: #5c5c5c;
+}
 
 /* Main Content Styling */
 main {
-    padding: 2rem;
-    flex: 1;
+  padding: 2rem;
+  flex: 1;
 }
 
 main h1 {
-    font-size: 2.5rem;
-    color: #e91e63;
-    text-align: center;
-    margin-bottom: 2rem;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  font-size: 2.5rem;
+  color: #e91e63;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
 main ol {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 main li {
-    margin-bottom: 2rem;
-    padding: 1rem;
-    background-color: #fff;
-    border: 2px solid #f48fb1;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 2px solid #f48fb1;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 main li:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
 main p {
-    margin: 0 0 1rem;
-    color: #444;
-    font-size: 1.2rem;
+  margin: 0 0 1rem;
+  color: #444;
+  font-size: 1.2rem;
 }
 
 main label {
-    display: block;
-    margin-bottom: 0.5rem;
-    color: #555;
-    font-size: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #555;
+  font-size: 1rem;
 }
 
 main input[type="radio"] {
-    margin-right: 0.5rem;
+  margin-right: 0.5rem;
 }
 
 button {
-    display: block;
-    width: 100%;
-    padding: 0.8rem 1.5rem;
-    background-color: #f071a6;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    text-transform: uppercase;
-    margin-top: 1rem;
+  display: block;
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  background-color: #f071a6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  text-transform: uppercase;
+  margin-top: 1rem;
 }
 
 button:hover {
-    background-color: #e91e63;
-    transform: scale(1.05);
+  background-color: #e91e63;
+  transform: scale(1.05);
 }
 
 footer {
-    text-align: center;
-    padding: 1rem;
-    background: linear-gradient(to right, #f8c8dc, #f071a6);
-    color: #fff;
-    margin-top: auto;
-    font-weight: 500;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 1rem;
+  background: linear-gradient(to right, #f8c8dc, #f071a6);
+  color: #fff;
+  margin-top: auto;
+  font-weight: 500;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Pop-up Styling */
 .popup-overlay {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 9999;
 }
 
 .popup-content {
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 80%;
-    max-width: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 90%; /* Sesuaikan agar lebih fleksibel */
+  max-width: 500px; /* Batas lebar maksimum */
+  margin: 0 10px; /* Tambahkan margin untuk layar kecil */
 }
 
 .popup-content h2 {
-    color: #333;
-    margin-bottom: 15px;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.5rem;
 }
 
 .popup-content p {
-    font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
 }
 
 .close-button {
-    padding: 10px 20px;
-    background-color: #f071a6;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    text-decoration: none;
-    display: inline-block;
+  padding: 10px 20px;
+  background-color: #f071a6;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .close-button:hover {
-    background-color: #c4469c;
+  background-color: #c4469c;
 }
-
 
 /* Hamburger Menu */
 .hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu.active {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f071a6;
+  width: 100%;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1350px) {
+  body {
+    font-size: 15px;
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 1066px) {
+  body {
+    font-size: 14px;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 900px) {
+  body {
+    font-size: 13px;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+
+  .about-us {
+    flex-direction: column;
+  }
+
+  .about-us img {
+    margin: 0 auto 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 12px;
+  }
+  main h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 0.7rem 1.2rem;
+  }
+
+  header ul {
     display: none;
-    flex-direction: column;
-    cursor: pointer;
-    gap: 4px;
   }
-  
-  .hamburger span {
-    height: 3px;
-    width: 25px;
-    background: #fff;
-    border-radius: 3px;
-    transition: all 0.3s ease;
-  }
-  
-  .nav-menu {
-    display: flex;
-    align-items: center;
-  }
-  
-  .nav-menu.active {
-    display: block;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #f071a6;
-    width: 100%;
-    flex-direction: column;
-    padding: 1rem;
-    gap: 1rem;
-    animation: slideIn 0.3s ease;
-  }
-  
-  @keyframes slideIn {
-    from {
-      opacity: 0;
-      transform: translateY(-20%);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Media Queries */
-  @media (max-width: 1350px) {
-    body {
-      font-size: 15px;
-    }
-  
-    header h1 {
-      font-size: 1.6rem;
-    }
-  }
-  
-  @media (max-width: 1066px) {
-    body {
-      font-size: 14px;
-    }
-  
-    header h1 {
-      font-size: 1.5rem;
-    }
-  }
-  
-  @media (max-width: 900px) {
-    body {
-      font-size: 13px;
-    }
-  
-  
-    header h1 {
-      font-size: 1.4rem;
-    }
-  
-    .about-us {
-      flex-direction: column;
-    }
-  
-    .about-us img {
-      margin: 0 auto 1rem;
-    }
-  }
-  
-  @media screen and (max-width: 768px) {
-    body {
-      font-size: 12px;
-    }
-    main h1 {
-        font-size: 2rem;
-    }
 
-    button {
-        font-size: 0.9rem;
-        padding: 0.7rem 1.2rem;
-    }
+  header .logo {
+    margin-bottom: 0.5rem;
+    max-height: 40px;
+  }
 
-    header ul {
-      display: none;
-    }
-  
-    header .logo {
-      margin-bottom: 0.5rem;
-      max-height: 40px;
-    }
-  
-    header h1 {
-      font-size: 1.3rem;
-    }
-    
+  header h1 {
+    font-size: 1.3rem;
+  }
+
   .nav-menu {
     display: none;
   }
@@ -346,65 +345,98 @@ footer {
   .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
-    
+
+  .popup-content {
+    width: 85%; /* Lebih kecil untuk perangkat menengah */
+    padding: 15px;
   }
-  
-  @media (max-width: 490px) {
-    body {
-      font-size: 11px;
-    }
-  
-    header h1 {
-      font-size: 1.2rem;
-    }
-  
-    .accordion {
-      font-size: 1rem;
-    }
-  
-    main h1 {
-      font-size: 1.8rem;
-    }
-  
-    .references-title {
-      font-size: 1.2rem;
-    }
-  
-    .nav-menu {
-      display: none;
-    }
-  
-    .nav-menu.active {
-      display: flex;
-    }
-  
-    .hamburger {
-      display: flex;
-      position: absolute; /* Tambahkan untuk mengatur posisi absolut */
-      right: 20px; /* Atur jarak dari kanan */
-      top: 28px; /* Atur jarak dari atas */
-    }
-  
-    .hamburger.active span:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 5px);
-    }
-  
-    .hamburger.active span:nth-child(2) {
-      opacity: 0;
-    }
-  
-    .hamburger.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -5px);
-    }
+
+  .popup-content h2 {
+    font-size: 1.3rem;
   }
-  
-  @media (max-width: 370px) {
-    body {
-      font-size: 10px;
-    }
-  
-    header h1 {
-      font-size: 1rem;
-    }
+
+  .popup-content p {
+    font-size: 0.9rem;
   }
-  
+
+  .close-button {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 490px) {
+  body {
+    font-size: 11px;
+  }
+
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  .accordion {
+    font-size: 1rem;
+  }
+
+  main h1 {
+    font-size: 1.8rem;
+  }
+
+  .references-title {
+    font-size: 1.2rem;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute; /* Tambahkan untuk mengatur posisi absolut */
+    right: 20px; /* Atur jarak dari kanan */
+    top: 28px; /* Atur jarak dari atas */
+  }
+
+  .hamburger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  .popup-content {
+    width: 90%; /* Lebar lebih besar untuk layar kecil */
+    padding: 10px;
+  }
+
+  .popup-content h2 {
+    font-size: 1.2rem;
+  }
+
+  .popup-content p {
+    font-size: 0.8rem;
+  }
+
+  .close-button {
+    font-size: 0.8rem;
+    padding: 7px 14px;
+  }
+}
+
+@media (max-width: 370px) {
+  body {
+    font-size: 10px;
+  }
+
+  header h1 {
+    font-size: 1rem;
+  }
+}

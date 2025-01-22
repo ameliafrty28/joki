@@ -21,7 +21,7 @@
                 <span></span>
             </div>
             <ul id="main-menu" class="nav-menu">
-                <li><a href="index.php">Home</a></li>
+                <li><a href="index2.php">Home</a></li>
                 <li><a href="about-us.php">About Us</a></li>
                 <li><a href="profile.php">Akun Saya</a></li>
             </ul>
@@ -29,7 +29,7 @@
         </nav>
     </header>
 
-   <button class="back-button" onclick="window.history.back();">
+    <button class="back-button" onclick="window.location.href='index2.php';">
         <i class="fas fa-arrow-left"></i> 
     </button>
 
@@ -194,7 +194,7 @@
         <button id="toggle-password-form">Ubah Password</button>
 
 
-        <h2 style="color:rgb(193, 40, 106); "><br>Hasil Pengecekan Tingkat Stres</h2>
+        <h2 style="color:rgb(96, 81, 88); "><br>Hasil Pengecekan Tingkat Stres</h2>
         <table>
             <thead>
                 <tr>
@@ -216,7 +216,7 @@
             </tbody>
         </table>
 <br>
-        <h2 style="color:rgb(36, 131, 83);">Hasil Pengecekan Risiko Anemia</h2>
+        <h2 style="color:rgb(96, 81, 88);">Hasil Pengecekan Risiko Anemia</h2>
         <table>
             <thead>
                 <tr>
@@ -246,7 +246,7 @@
             </tbody>
         </table>
 <br>
-        <h2 style="color:rgb(193, 40, 106); ">Hasil Pengecekan Indeks Massa Tubuh (IMT)</h2>
+        <h2 style="color:rgb(96, 81, 88);">Hasil Pengecekan Indeks Massa Tubuh (IMT)</h2>
         <table>
             <thead>
                 <tr>
@@ -272,7 +272,7 @@
             </tbody>
         </table>
 <br>
-        <h2 style="color:rgb(36, 131, 83); ">Hasil Pengecekan Siklus Menstruasi</h2>
+        <h2 style="color:rgb(96, 81, 88);">Hasil Pengecekan Siklus Menstruasi</h2>
         <table>
             <thead>
                 <tr>
