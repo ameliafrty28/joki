@@ -46,11 +46,11 @@ if (!isset($_SESSION['id_user'])) {
         <img src="img/hero.jpg" alt="Hero utama 1" class="slide">
         <img src="img/hero1.jpg" alt="Hero utama 2" class="slide">
         <img src="img/hero2.jpg" alt="Hero utama 3" class="slide">
-        <img src="img/hero3.jpg" alt="Hero utama 4" class="slide">
+        <img src="img/hero4.jpg" alt="Hero utama 4" class="slide">
     </div>
 </div>
 
-        <h1>Pilih Kategori dibawah ini untuk memulai perjalan informasi kesehatan anda</h1>
+        <h1>Pilih Kategori dibawah ini untuk memulai perjalan informasi kesehatan anda</h2>
         <div class="home-images">
             <a href="cek-anemia.php">
                 <img src="img/anemia2.jpg" alt="Anemia" class="home-img">
@@ -95,7 +95,7 @@ function showNextSlide() {
 }
 
 // Atur interval untuk slideshow
-setInterval(showNextSlide, 2000); // Pindah setiap 3 detik
+setInterval(showNextSlide, 3000); // Pindah setiap 3 detik
     </script>
     <footer>
     <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>

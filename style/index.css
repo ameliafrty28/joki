@@ -110,12 +110,13 @@ main {
   margin: 0 auto;
   overflow: hidden; /* Untuk menyembunyikan gambar di luar area */
   border-radius: 10px;
+  height: auto;
 }
 
 .slideshow {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 500px;
     display: flex;
 }
 
@@ -124,7 +125,7 @@ main {
   top: 0;
   left: 100%; /* Semua slide dimulai di luar layar, di kanan */
   width: 100%;
-  height: auto;
+  height: 500px;
   transition: transform 0.5s ease-in-out;
 }
 
@@ -321,9 +322,7 @@ footer {
   body {
     font-size: 12px;
   }
-  .slideshow {
-    max-width: 100%;
-  }
+
   header ul {
     display: none;
   }

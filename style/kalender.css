@@ -4,17 +4,22 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Poppins", sans-serif;
   line-height: 1.6;
   color: #333;
-  background: linear-gradient(to bottom, #ffe4e9, #fff5f7);
+  background: linear-gradient(
+    to bottom,
+    #ffe4e9,
+    #fff5f7
+  ); /* Gradasi warna lembut */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  padding-top: 80px; /* Tinggi header */
 }
 
+/* Header Styling */
 header {
   background-color: #f071a6;
   color: #fff;
@@ -23,6 +28,13 @@ header {
   align-items: center;
   justify-content: space-between;
   border-bottom: 3px solid #ffb6c1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 80px; /* Tentukan tinggi header */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 header nav {
