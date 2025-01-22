@@ -298,7 +298,7 @@
             </tbody>
         </table>
 
-        <a class="logout" href="tampilanawal.php">Logout</a>
+        <a class="logout" href="index.php">Logout</a>
     </div>
     </main>
     <script src="hamburger.js" defer></script>

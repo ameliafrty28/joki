@@ -125,13 +125,7 @@ if ($skor_percentage > 60 ||
     $saran = "Saran untuk remaja putri berisiko mengalami anemia:
     - Makan makanan kaya zat besi seperti daging, sayuran hijau (bayam, kangkung, dan buah kering).
     - Pertimbangkan suplemen sesuai anjuran dokter.
-    - Lakukan pemeriksaan kadar hemoglobin secara berkala.
-    
-    Sumber:
-    - Peningkatan Kadar Hemoglobin melalui Pemeriksaan dan Pemberian Tablet Fe Terhadap Remaja yang mengalami Anemia Melalui 'Gerakan Jumat Pintar' https://jurnal.ugm.ac.id/jpkm/article/download/40570/25068
-    - Pencegahan Anemia Pada Remaja https://pkgm.fk.ugm.ac.id/2022/05/18/pencegahan-anemia-pada-remaja/
-    - World Health Organization (WHO). 'Nutritional Anemia.'
-    - Centers for Disease Control and Prevention (CDC). 'Iron Deficiency Anemia.'";
+    - Lakukan pemeriksaan kadar hemoglobin secara berkala.";
 } else {
     $result_risiko = 'Tidak Berisiko';
     $saran = "

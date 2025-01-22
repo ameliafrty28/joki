@@ -1,9 +1,5 @@
 <?php
 session_start();
-if (!isset($_SESSION['id_user'])) {
-    header("Location: login.php");
-    exit;
-}
 ?>
 
 <!DOCTYPE html>
@@ -11,8 +7,8 @@ if (!isset($_SESSION['id_user'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Kesehatan</title>
-    <link rel="stylesheet" href="style/index.css">
+    <title>Web Kesehatan UNRIYO</title>
+    <link rel="stylesheet" href="style/tampilanawal.css">
     <link rel="icon" href="favicon.png" type="image/png">
 
 </head>
@@ -27,54 +23,85 @@ if (!isset($_SESSION['id_user'])) {
                 <span></span>
             </div>
             <ul id="main-menu" class="nav-menu">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="about-us.php">About Us</a></li>
-                <li><a href="profile.php">Akun Saya</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-us">About Us</a></li>
+                <li><a href="#team">Team</a></li>
             </ul>
 
         </nav>
     </header>
 
+
     <main>
     <section id="home">
-        <h2>Selamat Datang, <?= $_SESSION['username']; ?></h2>
-        <p>Selamat datang di platform KESEHATANKU. Di sini Anda bisa menemukan informasi penting mengenai berbagai topik kesehatan, dari anemia hingga kesehatan mental. Pilih kategori di bawah untuk memulai perjalanan informasi kesehatan Anda.</p>
-        <p>Website ini bertujuan untuk mengetahui pengtingnya informasi terkait masalah kesehatan yang dialami remaja putri seperti Anemia, Kesehatan reproduksi, Kesehatan Mental dan Masalah nutrisi </p>
-        <p></p>
-        <div class="home-hero-container">
-            <img src="img/hero.jpg" alt="Hero utama" class="home-hero">
-            <div class="home-hero-text">
-                <h2>Selamat Datang di KESEHATANKU</h2>
-                <p>Platform ini menyediakan informasi yang ditujukan pada kesehatan Remaja Putri.</p>
-                <p>Temukan informasi kesehatan yang bermanfaat untuk hidup lebih sehat!</p>
-            </div>
-        </div>
+        <div class="home-text">
+            <h2>Selamat Datang di KESEHATANKU</h2>
+            <p>Platform ini menyediakan informasi yang ditujukan pada kesehatan Remaja Putri.</p>
+            <p>Platform ini menyediakan informasi yang berguna tentang kesehatan remaja putri.</p>
+            <a href="login.php" class="btn-login">Login</a>
+            <a href="register.php" class="btn-register">Daftar Akun</a>
 
-        <div class="home-images">
-            <a href="cek-anemia.php">
-                <img src="img/anemia2.jpg" alt="Anemia" class="home-img">
-                <div class="image-caption">Cek Risiko Anemia</div>
-            </a>
-            <a href="cek-mental.php">
-                <img src="img/mental.jpeg" alt="Kesehatan Mental" class="home-img">
-                <div class="image-caption">Cek Tingkat Stres</div>
-            </a>
-            <a href="teskalender.php">
-                <img src="img/reproduksi.jpg" alt="Kesehatan Reproduksi" class="home-img">
-                <div class="image-caption">Cek Siklus Menstruasi</div>
-            </a>
-            <a href="cek-nutrisi.php">
-                <img src="img/nutrisi.jpg" alt="Masalah Nutrisi" class="home-img">
-                <div class="image-caption">Cek Indeks Massa Tubuh (IMT)</div>
-            </a>
+        </div>
+        <div class="home-image">
+            <img tabindex="0" src="img/kesehatan.png" alt="Gambar Icon">
         </div>
     </section>
 
+    <section id="about-us" class="about-us">
+        <div>
+          <img tabindex="0" src="img/tentang.jpg" alt="Logo">
+        </div>
+        <div>
+          <h2 tabindex="0">Tentang Platform Ini</h2>
+          <p tabindex="0">
+          Adanya platform KESEHATANKU ini yang bertujuan untuk membantu, Remaja putri dapat dengan mudah mengakses informasi kesehatan yang relevan dan terkini kapan saja dan dimana saja melalui internet. Website ini menyediakan informasi yang mudah dipahami dan relevan untuk remaja putri, seperti Anemia, Kesehatan Reproduksi, Kesehatan Mental, dan Nutrisi.          </p>
+          <p tabindex="0">
+          Dalam website ini terdapat beberapa topik permasalahan untuk remaja putri. informasi yaitu, pengertian, tanda gejala, dampak, pengobatan dan penyakit.  Website ini dapat meningkatkan kesadaran dan pengetahuan remaja putri tentang pentingnya menjaga kesehatan.
+          </p>
+        </div>
+      </section>
+
+
+      <section id="team" class="team">
+            <h2 tabindex="0">Anggota Kelompok Kami</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <img tabindex="0" src="img/sharon.png" alt="Foto Sharon Saully A.B">
+                    <h3 tabindex="0">Sharon Saully A.B</h3>
+                    <p tabindex="0">[22130022] Prodi. Keperawatan</p>
+                </div>
+                <div class="team-member">
+                    <img tabindex="0" src="img/yulaikha.png" alt="Foto Yulaikha Handayani">
+                    <h3 tabindex="0">Yulaikha Handayani</h3>
+                    <p tabindex="0">[22130023] Prodi. Keperawatan</p>
+                </div>
+                <div class="team-member">
+                    <img tabindex="0" src="img/nasya.png" alt="Foto Nasya Aulina">
+                    <h3 tabindex="0">Nasya Aulina</h3>
+                    <p tabindex="0">[22110015] Prodi. Kesehatan Masyarakat</p>
+                </div>
+                <div class="team-member">
+                    <img tabindex="0" src="img/arya.png" alt="Foto Arya Jaya Pradana">
+                    <h3 tabindex="0">Arya Jaya Pradana</h3>
+                    <p tabindex="0">[22110016] Prodi. Kesehatan Masyarakat</p>
+                </div>
+                <div class="team-member">
+                    <img tabindex="0" src="img/maria.png" alt="Foto Maria Karlina Lero">
+                    <h3 tabindex="0">Maria Karlina Lero</h3>
+                    <p tabindex="0">[22180014] Prodi. Kebidanan</p>
+                </div>
+                <div class="team-member">
+                    <img tabindex="0" src="img/amanda2.png" alt="Foto Amanda Amelia Geli">
+                    <h3 tabindex="0">Amanda Amelia Geli</h3>
+                    <p tabindex="0">[22180015] Prodi. Kebidanan</p>
+                </div>
+            </div>
+        </section>
     </main>
     <script src="hamburger.js" defer></script>
 
     <footer>
-    <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>
+        <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>
     </footer>
 </body>
 </html>

@@ -32,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $_SESSION['username'] = $user['username'];
 
             // Redirect ke halaman home
-            header("Location: index.php");
+            header("Location: index2.php");
             exit;
         } else {
             $error = "Username atau password salah!";
