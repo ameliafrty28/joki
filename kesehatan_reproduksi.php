@@ -95,10 +95,10 @@
                 <h2 class="accordion">Pengobatan</h2>
                 <div class="content">
                 <h2>Pengobatan IMS</h2>
-                    <p>Hal ini merupakan pencegahan primer sebaiknya dilakukan sedini mungkin dan dapat diberikan mulai remaja putri berusia 10 tahun (sebelum mereka memulai hubungan seksual) sampai dengan usia 55 tahun. Jadwal pemberian vaksin yaitu pemberian bulan 0, 1 atau 2, dan 6.</p>
-                    <br> 
-                    <p>Segera periksa ke dokter atau petugas kesehatan,jangan malu menyampaikan keluhan kepada dokter atau tenaga kesehatan,memenuhi aturan pengobatan sesuai petunjuk dokter atau petugas kesehatan,jangan melakukan hubungan seksual kecuali menggunakan kondom,pasangan sex sebaiknya memeriksakan diri,beritahu tentang akiba PMS yang berbahaya bagi kesehatan diri (Suryani & Harahap, 2021).Komponen penanganan kasus IMS harus dilakukan secara paripurna meliputi: anamnesis, pemeriksaan klinis, diagnosis yang tepat, pengobatan dini dan efektif, edukasi pasien, penyediaan dan anjuran untuk menggunaan kondom, notifikasi dan penanganan pasangan seksnya.</p>
-                </div>
+                    <p>Infeksi Menular Seksual (IMS) dapat diobati sesuai dengan jenis infeksinya. Untuk infeksi bakteri seperti klamidia, gonore, dan sifilis, pengobatan utama biasanya menggunakan antibiotik, seperti azitromisin, doksisiklin, atau suntikan penisilin. Jika IMS disebabkan oleh virus seperti HIV, herpes genital, atau hepatitis B, pengobatan dilakukan dengan obat antivirus untuk mengendalikan gejala dan mencegah komplikasi.</p>
+                    <br><p>Beberapa IMS, seperti HPV, tidak dapat disembuhkan sepenuhnya, tetapi gejala seperti kutil kelamin dapat diatasi dengan prosedur medis seperti krioterapi atau laser. Untuk infeksi parasit seperti trikomoniasis, obat yang digunakan adalah metronidazol atau tinidazol.</p>
+                    <br><p>Selama pengobatan, sangat penting untuk menghindari hubungan seksual hingga dinyatakan sembuh oleh dokter, serta menganjurkan pasangan seksual untuk menjalani pemeriksaan dan pengobatan guna mencegah reinfeksi. Sebagai langkah pencegahan, gunakan kondom saat berhubungan seksual dan, jika memungkinkan, lakukan vaksinasi seperti vaksin HPV dan hepatitis B.</p>
+                    <br><p>Jika Anda mengalami gejala seperti nyeri, luka, atau keputihan yang tidak biasa, segera periksakan diri ke dokter untuk mendapatkan penanganan yang tepat.</p>
             </div>
 
             <h2 class="accordion">Kanker Serviks</h2>
@@ -156,10 +156,7 @@
 
                 <h2 class="accordion">Pengobatan</h2>
                 <div class="content">
-                    <p>Infeksi Menular Seksual (IMS) dapat diobati sesuai dengan jenis infeksinya. Untuk infeksi bakteri seperti klamidia, gonore, dan sifilis, pengobatan utama biasanya menggunakan antibiotik, seperti azitromisin, doksisiklin, atau suntikan penisilin. Jika IMS disebabkan oleh virus seperti HIV, herpes genital, atau hepatitis B, pengobatan dilakukan dengan obat antivirus untuk mengendalikan gejala dan mencegah komplikasi.</p>
-                    <br><p>Beberapa IMS, seperti HPV, tidak dapat disembuhkan sepenuhnya, tetapi gejala seperti kutil kelamin dapat diatasi dengan prosedur medis seperti krioterapi atau laser. Untuk infeksi parasit seperti trikomoniasis, obat yang digunakan adalah metronidazol atau tinidazol.</p>
-                    <br><p>Selama pengobatan, sangat penting untuk menghindari hubungan seksual hingga dinyatakan sembuh oleh dokter, serta menganjurkan pasangan seksual untuk menjalani pemeriksaan dan pengobatan guna mencegah reinfeksi. Sebagai langkah pencegahan, gunakan kondom saat berhubungan seksual dan, jika memungkinkan, lakukan vaksinasi seperti vaksin HPV dan hepatitis B.</p>
-                    <br><p></p>
+                    <p>Pengobatan kanker serviks tergantung pada stadium penyakitnya. Pada tahap awal, operasi seperti histerektomi atau konisasi sering dilakukan. Untuk stadium lanjut, radioterapi dan kemoterapi digunakan untuk menghancurkan sel kanker, dan terapi target atau imunoterapi dapat membantu jika kanker telah menyebar. Pada stadium akhir, perawatan paliatif fokus mengurangi gejala dan meningkatkan kualitas hidup.</p>
                 </div>
             </div>
 
@@ -213,8 +210,53 @@
             <h2 class="references-title">Referensi</h2>
             <ul class="references-list">
                 <li class="references-item">
-                    <a href="https://jurnal.umj.ac.id/index.php/MyJM/article/view/18938 " target="_blank" class="references-link">
-                    Aima, S., & Erwandi, D. (2024). Determinan Perilaku Seksual Pada Remaja di Indonesia: Sistematik Review. Muhammadiyah Journal of Midwifery, 4(2), 85-93."
+                    <a href="https://journal.um-surabaya.ac.id/JKM/article/view/21589" target="_blank" class="references-link">
+                    Aniarti, R. (2024). Pengetahuan dan Efikasi Diri terhadap Pengendalian Nyeri pada Pasien Kanker Serviks. Jurnal Keperawatan Muhammadiyah, 9(1), 142-148.                    
+                </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://unesdoc.unesco.org/ark:/48223/pf0000229589" target="_blank" class="references-link">
+                    BKKBN. (2012). Supplement Book of the Technical guidance on reproductive health, sexual transmitted infection and HIV/AIDS. Jakarta.                    
+                </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://semnas.biologi.fmipa.unp.ac.id/index.php/prosiding/article/download/95/77/227" target="_blank" class="references-link">
+                    Efrizon, S., Zulfa, C. S., Atifah, Y., Achyar, A., & Ramadhani, S. (2021, September). Sistem Alat Reproduksi Pada Manusia. In Prosiding Seminar Nasional Biologi (Vol. 1, No. 1, pp. 725-32).                    
+                </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://www.ncbi.nlm.nih.gov/books/NBK560808/" target="_blank" class="references-link">
+                    Garcia MR, Leslie SW, Wray AA. Sexually Transmitted Infections. [Updated 2024 Apr 20]. In: StatPearls [Internet]. Treasure Island (FL): StatPearls Publishing; 2025 Januari.                    
+                </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://ejournal.nusantaraglobal.ac.id/index.php/sentri/article/view/751" target="_blank" class="references-link">
+                    Hayya, R. F., Wulandari, R., & Sugesti, R. (2023). Hubungan Tingkat Stress, Makanan Cepat Saji Dan Aktivitas Fisik Terhadap Siklus Menstruasi Pada Remaja Di Pmb N Jagakarsa. SENTRI: Jurnal Riset Ilmiah, 2(4), 1338-1355.                    
+                </a>
+                </li>
+                <li class="references-item">
+                    <a href="http://jurnal.globalhealthsciencegroup.com/index.php/JPPP/article/view/1385" target="_blank" class="references-link">
+                    Ilham, M. A., Islamy, N., & Nasution, S. H. (2023). Gangguan siklus menstruasi pada remaja: literature review. Jurnal Penelitian Perawat Profesional, 5(1), 185-192. 
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="Khabibah, U., Adyani, K., & Rahmawati, A. (2022). Faktor Risiko Kanker Serviks: Literature Review. Faletehan Health Journal, 9(03), 270-277" target="_blank" class="references-link">
+                    Khabibah, U., Adyani, K., & Rahmawati, A. (2022). Faktor Risiko Kanker Serviks: Literature Review. Faletehan Health Journal, 9(03), 270-277.                    
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://ojs.unimal.ac.id/galenical/article/view/10134" target="_blank" class="references-link">
+                    Novalia, V. (2023). Kanker serviks. GALENICAL: Jurnal Kedokteran dan Kesehatan Mahasiswa Malikussaleh, 2(1), 45-56.
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://journal.ugm.ac.id/jkr/article/view/49847" target="_blank" class="references-link">
+                    Simbolon, W. M., & Budiarti, W. (2020). Kejadian Infeksi Menular Seksual pada Wanita Kawin di Indonesia dan Variabel-variabel yang Memengaruhinya. Jurnal Kesehatan Reproduksi, 7(2), 81-87. 
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://ejurnal.pps.ung.ac.id/index.php/dikmas/article/view/2268" target="_blank" class="references-link">
+                    Yatimah, D., Ana, E. F., Wibowo, S., Lestari, R. D., & Adman, A. (2023). Penyuluhan Kesehatan Sistem Reproduksi Sebagai Upaya Meningkatkan Perawatan Kesehatan Remaja. Dikmas: Jurnal Pendidikan Masyarakat dan Pengabdian, 3(4), 737-744. 
                     </a>
                 </li>
             </ul>
