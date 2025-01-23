@@ -104,8 +104,135 @@
             <div class="content">            
                 <h2 class="accordion">Pengertian</h2>    
                 <div class="content">    
-                    <p>Seviks: bagian rahim yang terdapat pada puncak vagina (liang sanggama) yang hanya dapat dilihat dengan alat (spekulum). Serviks menghubungkan uterus (rahim) ke vagina. Selama haid, darah mengalir dari rahim melalui leher rahim ke dalam vagina. Vagina mengeluarkan darah haid ke bagian luar tubuh. Serviks menghasilkan lendir. Saat berhubungan seks, lendir mem- bantu sperma bergerak dari vagina melalui serviks ke dalam rahim. Selama kehamilan serviks tertutup rapat untuk membantu men- jaga bayi di dalam uterus. Saat proses persalinan serviks terbuka untuk memungkinkan bayi melewati vagina. Kanker Serviks adalah Penyakit tumor ganas di leher rahim yang dapat menyebar ke organ-organ yang lain dan menyebabkan kematian.</p>
+                    <p>Serviks: bagian rahim yang terdapat pada puncak vagina (liang sanggama) yang hanya dapat dilihat dengan alat (spekulum). Serviks menghubungkan uterus (rahim) ke vagina. Selama haid, darah mengalir dari rahim melalui leher rahim ke dalam vagina. Vagina mengeluarkan darah haid ke bagian luar tubuh. Serviks menghasilkan lendir. Saat berhubungan seks, lendir membantu sperma bergerak dari vagina melalui serviks ke dalam rahim. 
+                        <br> <br>Selama kehamilan serviks tertutup rapat untuk membantu menjaga bayi di dalam uterus. Saat proses persalinan serviks terbuka untuk memungkinkan bayi melewati vagina. Kanker Serviks adalah Penyakit tumor ganas di leher rahim yang dapat menyebar ke organ-organ yang lain dan menyebabkan kematian.</p>
+                <br><p><h2 class="accordion">Klasifikasi Berat Badan</h2>
+                <div class="content">
+                <p>Klasifikasi berat badan berdasarkan Indeks Massa Tubuh (IMT) yang direkomendasikan oleh WHO :</p>
+                <ul>
+                    <li><span>Underweight </span></li>
+                    <li><span>Normal</span></li>
+                    <li><span>Overweight</span></li>
+                    <li><span>Obesitas</span></li>
+                </ul>
+                <p>Cara menghitung IMT adalah dengan cara membagikan Berat Badan (BB) dengan Tinggi Badan (TB), maka akan menghasilkan nilai IMT.</p>
+                <img src="img/malnutrisi.jpg" alt="IMT manusia" class="img-content">
+                <h2 class="accordion">Underweight</h2> 
+                <div class="content">
+                    <h2>Underweight (Kekurangan Berat Badan): IMT < 18,5</h2>
+                    <p>Underweight atau berat badan kurang adalah kondisi ketika berat badan seseorang berada di bawah rentang normal untuk usianya. Underweight merupakan salah satu masalah gizi yang dapat memengaruhi kesehatan secara serius. Underweight dapat disebabkan oleh kurangnya asupan zat gizi yang masuk ke dalam tubuh. Kondisi ini dapat memengaruhi sistem kekebalan tubuh, kekuatan tulang, dan kesehatan tubuh secara keseluruhan. Untuk orang dewasa, berat badan yang normal diukur berdasarkan Indeks Massa Tubuh (IMT). Menurut WHO, <span>berat badan yang normal untuk orang dewasa adalah dengan IMT antara 18,5–24,9.</span></p>
+                    <h2>Penyebab</h2>
+                    <ul>
+                        <li>Genetik</li>
+                        <li>Metabolisme tinggi</li>
+                        <li>Sering melakukan aktivitas fisik</li>
+                        <li>Menderita penyakit tertentu</li>
+                        <li>Gangguan kesehatan mental</li>
+                    </ul>
+
+                    <h2>Tanda Gejala</h2>
+                    <ul>
+                        <li>Tubuh tampak kurus</li>
+                        <li>Rambut mudah rontok</li>
+                        <li>Sistem kekebalan tubuh lemah</li>
+                        <li>Mudah lelah</li>
+                        <li>Sulit berkonsentrasi</li>
+                        <li>Kurang bertenaga saat melakukan aktivitas</li>
+                        <li>Tulang cenderung rapuh</li>
+                        <li>Pertumbuhan dan perkembangan yang lambat</li>
+                    </ul>
+                    <p>Rekomendasi Pola Hidup dan Aktivitas Pisik</p>
+                    <ul>
+                        <li><span>Pola Hidup, </span>fokus pada peningkatan asupan kalori melalui makanan bernutrisi seperti protein, karbohidrat kompleks, lemak sehat, dan sayur/buah.
+                        </li>
+                        <li><span>Jadwal Makan,</span> 5-6 kali sehari dalam porsi kecil tetapi bernutrisi tinggi.
+                        </li>
+                        <li><span>Aktivitas Fisik,</span> olahraga dengan intensitas ringan seperti yoga, pilates, atau latihan kekuatan untuk meningkatkan massa otot.
+                        </li>
+                    </ul>
                 </div>
+
+                <h2 class="accordion">Normal</h2> 
+                <div class="content">
+                    <h2>Normal: IMT 18,5–24,9</h2>
+                    <p>Berat badan normal berdasarkan IMT adalah IMT 18,5 - 24,9.</p>
+                    <p>Rekomendasi Pola Hidup dan Aktivitas Pisik</p>
+                    <ul>
+                        <li><span>Pola Hidup, </span>pertahankan pola makan seimbang yang mencakup karbohidrat kompleks, protein tanpa lemak, lemak sehat, dan asupan sayur/buah sesuai kebutuhan kalori.
+                        </li>
+                        <li><span>Jadwal Makan,</span> 3 kali makan utama dengan 2-3 camilan sehat di antara waktu makan.
+                        </li>
+                        <li><span>Aktivitas Fisik,</span> 150 menit aktivitas aerobik sedang per minggu (misalnya jalan cepat, jogging), dengan tambahan latihan kekuatan 2 kali per minggu.
+                        </li>
+                    </ul>
+                </div>
+
+                <h2 class="accordion">Overweight</h2> 
+                <div class="content">
+                    <h2>Overweight (Kelebihan Berat Badan): IMT 25,0–29,9</h2>
+                    <p>Overweight adalah kondisi ketika berat badan seseorang melebihi berat badan ideal. Berat badan berlebih ini bisa disebabkan oleh penumpukan lemak, air, tulang, atau otot. Overweight berbeda dengan obesitas, meskipun keduanya sama-sama ditandai dengan bentuk badan yang lebih besar dari ukuran ideal. Perbedaannya adalah, obesitas merupakan kelainan atau penyakit yang ditandai dengan penimbunan lemak tubuh secara berlebihan.</p>
+                    
+                    <h2>Penyebab</h2>
+                    <ul>
+                        <li>Genetik</li>
+                        <li>Kurangnya melakukan aktivitas fisik</li>
+                        <li>Konsumsi makanan rendah nutrisi dan tinggi kalori, lemak, dan gula</li>
+                    </ul>
+
+                    <h2>Tanda Gejala</h2>
+                    <ul>
+                        <li>Kelelahan</li>
+                        <li>Nyeri punggung</li>
+                        <li>Nyeri otot dan sendi</li>
+                        <li>Gangguan metabolisme</li>
+                        <li>Diabetes tipe 2</li>
+                        <li>Kolestrol tinggi</li>
+                        <li>Tekanan darah tinggi</li>
+                        <li>Depresi</li>
+                    </ul>
+
+                    <p>Rekomendasi Pola Hidup dan Aktivitas Pisik</p>
+                    <ul>
+                        <li><span>Pola Hidup, </span>kurangi konsumsi makanan tinggi gula, lemak jenuh, dan makanan olahan. Fokus pada diet rendah kalori yang tetap seimbang.
+                        </li>
+                        <li><span>Jadwal Makan,</span> 3 kali makan utama dengan camilan rendah kalori (seperti buah segar atau kacang-kacangan) jika diperlukan.
+                        </li>
+                        <li><span>Aktivitas Fisik,</span> 300 menit aktivitas aerobik per minggu, seperti berenang, bersepeda, atau berjalan kaki, ditambah latihan kekuatan untuk meningkatkan metabolisme.                </li>
+                    </ul>
+                </div>
+
+                <h2 class="accordion">Obesitas</h2> 
+                <div class="content">
+                    <h2>Obesitas: IMT ≥ 30.</h2>
+                    <p>Obesitas menurut Organisasi Kesehatan Dunia (WHO) adalah penumpukan lemak yang abnormal atau berlebihan yang menimbulkan risiko bagi kesehatan'. Pengukuran menggunakan dengan Indeks Massa Tubuh (IMT). Selain itu terdapat metode lain dengan menggunakan rasio lingkar pinggang dan tinggi badan yang, jika digunakan bersama IMT akan didapat hasil yang lebih akurat.</p>        
+
+                    <h2>Penyebab</h2>
+                    <ul>
+                        <li>Genetik</li>
+                        <li>Kurangnya melakukan aktivitas fisik</li>
+                        <li>Konsumsi makanan rendah nutrisi dan tinggi kalori, lemak, dan gula</li>
+                    </ul>
+
+                    <h2>Tanda Gejala</h2>
+                    <ul>
+                        <li>Tumpukan lemak di bagian payudara</li>
+                        <li>Stretch mark di punggung dan pinggul</li>
+                        <li>Kulit menebal dan menjadi lebih gelap.</li>
+                    </ul>
+
+                    <h2>Pencegahan</h2>
+                    <ul>
+                        <li>Gerakan Masyarakat Hidup Sehat (GERMAS) dan Gerakan Nusantara Tekan Angka Obesitas (Gentas)</li>
+                        <li>Konsumsi makanan sehat dan gizi seimbang, konsumsi buah sayur minimal 5 porsi per hari.</li>
+                        <li>Konsumsi gula, garam dan lemak dengan pedoman G4 G1 L5 (konsumsi Gula maksimal 4 sendok makan atau 50 gram per hari, konsumsi Garam maksimal  1 sendok teh atau 2 gram per hari, konsumsi Lemak maksimal  5 sendok makan atau 67 gram per hari)</li>
+                        <li>Menjaga pola makan dan meningkatkan aktivitas fisik.</li>
+                        <li>Implementasi perilaku CERDIK. CERDIK ini mempunyai makna, Cek kesehatan secara berkala, Enyahkan asap rokok, Rajin aktivitas fisik, Diet sehat dan seimbang, Istirahat cukup, Kelola stress.</li>
+                    </ul>
+                </div>
+            </div>
+</p>
+                
+                    </div>
                 
                 <h2 class="accordion">Tanda Gejala</h2>
                 <div class="content">
@@ -146,7 +273,11 @@
                         <li>Kelola stress, seperti dengan rekreasi, ibadah.</li>
                     </ol>
                     <h3>Imunisasi HPV</h3>
-                    <p>Hal ini merupakan pencegahan primer sebaiknya dilakukan sedini mungkin dan dapat diberikan mulai remaja putri berusia 10 tahun (sebelum mereka memulai hubun- gan seksual) sampai dengan usia 55 tahun. Jadwal pemberian vaksin yaitu pemberian bulan 0, 1 atau 2, dan 6.</p>
+                    <p>Hal ini merupakan pencegahan primer sebaiknya dilakukan sedini mungkin dan dapat diberikan pada remaja putri usia 9 hingga 14 tahun, sebelum mereka menjadi aktif secara seksual, agar lebih efektif sampai dengan usia 55 tahun. Jadwal pemberian vaksin yaitu pemberian bulan 0, 1 atau 2, dan 6.</p>
+                    <br><p>Remaja putri perlu didorong untuk berbicara dengan keluarga, teman, atau seorang konselor untuk mendapatkan dukungan emosional. Keterbukaan sangat penting untuk mengurangi kecemasan dan stres. Selain pengobatan fisik, penting juga untuk menjaga kesehatan mental. Cemas dan stres adalah hal yang wajar, tetapi berbicara tentang perasaan, baik dengan keluarga atau profesional, bisa membantu mengatasi perasaan tersebut dan menjaga keseimbangan emosional selama pengobatan.
+                    </p>
+                    <p>Edukasi yang diberikan harus menyentuh aspek fisik, emosional, dan sosial dari pengalaman remaja putri yang menghadapi kanker serviks, serta pentingnya pencegahan sejak dini melalui vaksinasi, pemeriksaan, dan pola hidup sehat.
+                    </p>
                 </div>
 
                 <h2 class="accordion">Pengobatan</h2>

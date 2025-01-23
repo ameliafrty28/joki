@@ -226,7 +226,7 @@
                     <th>Lama Menstruasi</th>
                     <th>Konsumsi Zat Besi</th>
                     <th>Konsumsi TTD</th>
-                    <th>Penngetahuan</th>
+                    <th>Pengetahuan</th>
                     <th>Tanggal Cek</th>
                 </tr>
             </thead>

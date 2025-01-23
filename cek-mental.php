@@ -98,30 +98,50 @@ if ($result->num_rows > 0) {
 
         </nav>
     </header>
-<main>
+    <main>
     <h1>Tes Tingkat Stres</h1>
     <form method="POST">
         <input type="hidden" name="id_user" value="<?php echo $id_user; ?>">
         <ol>
-            <?php while ($row = $result->fetch_assoc()) { ?>
+            <?php while ($row = $result->fetch_assoc()) { 
+                $id = $row['id_pertanyaan'];
+                ?>
                 <li>
                     <p><?php echo $row['pertanyaan']; ?></p>
-                    <input type="hidden" name="id_pertanyaan[]" value="<?php echo $row['id_pertanyaan']; ?>">
-                    <label>
-                        <input type="radio" name="jawaban[<?php echo $row['id_pertanyaan']; ?>]" value="0" required> Tidak Pernah (0)
-                    </label>
-                    <label>
-                        <input type="radio" name="jawaban[<?php echo $row['id_pertanyaan']; ?>]" value="1"> Hampir Tidak Pernah (1)
-                    </label>
-                    <label>
-                        <input type="radio" name="jawaban[<?php echo $row['id_pertanyaan']; ?>]" value="2"> Kadang-kadang (2)
-                    </label>
-                    <label>
-                        <input type="radio" name="jawaban[<?php echo $row['id_pertanyaan']; ?>]" value="3"> Cukup Sering (3)
-                    </label>
-                    <label>
-                        <input type="radio" name="jawaban[<?php echo $row['id_pertanyaan']; ?>]" value="4"> Sangat Sering (4)
-                    </label>
+                    <input type="hidden" name="id_pertanyaan[]" value="<?php echo $id; ?>">
+                    <?php if (in_array($id, [43, 44, 46, 47])) { ?>
+                        <label>
+                            <input type="radio" name="jawaban[<?php echo $id; ?>]" value="4" required> Tidak Pernah (4)
+                        </label>
+                        <label>
+                            <input type="radio" name="jawaban[<?php echo $id; ?>]" value="3"> Hampir Tidak Pernah (3)
+                        </label>
+                        <label>
+                            <input type="radio" name="jawaban[<?php echo $id; ?>]" value="2"> Kadang-kadang (2)
+                        </label>
+                        <label>
+                            <input type="radio" name="jawaban[<?php echo $id; ?>]" value="1"> Cukup Sering (1)
+                        </label>
+                        <label>
+                            <input type="radio" name="jawaban[<?php echo $id; ?>]" value="0"> Sangat Sering (0)
+                        </label>
+                    <?php } else { ?>
+                        <label>
+                            <input type="radio" name="jawaban[<?php echo $id; ?>]" value="0" required> Tidak Pernah (0)
+                        </label>
+                        <label>
+                            <input type="radio" name="jawaban[<?php echo $id; ?>]" value="1"> Hampir Tidak Pernah (1)
+                        </label>
+                        <label>
+                            <input type="radio" name="jawaban[<?php echo $id; ?>]" value="2"> Kadang-kadang (2)
+                        </label>
+                        <label>
+                            <input type="radio" name="jawaban[<?php echo $id; ?>]" value="3"> Cukup Sering (3)
+                        </label>
+                        <label>
+                            <input type="radio" name="jawaban[<?php echo $id; ?>]" value="4"> Sangat Sering (4)
+                        </label>
+                    <?php } ?>
                 </li>
             <?php } ?>
         </ol>

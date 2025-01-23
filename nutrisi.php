@@ -59,6 +59,9 @@
                 
             </div>
 
+            <h2 class="accordion">IMT(Indeks Massa Tubuh)</h2>
+            <div class="content">    
+            <p>Indeks Massa Tubuh (IMT) adalah salah satu cara sederhana untuk menilai status gizi seseorang berdasarkan berat badan dan tinggi badannya. IMT digunakan sebagai indikator umum untuk mengidentifikasi apakah seseorang memiliki berat badan normal, kekurangan berat badan, kelebihan berat badan, atau obesitas. Dalam fitur ini pengguna hanya memasukkan tinggi badan dan berat badan, kemudian web ini akan menganalisa apakah berat badan pengguna tersebut normal atau tidak.</p>
             <h2 class="accordion">Klasifikasi Berat Badan</h2>
                 <div class="content">
                 <p>Klasifikasi berat badan berdasarkan Indeks Massa Tubuh (IMT) yang direkomendasikan oleh WHO :</p>
@@ -184,10 +187,7 @@
                 </div>
             </div>
 
-            <h2 class="accordion">IMT(Indeks Massa Tubuh)</h2>
-            <div class="content">    
-            <p>Indeks Massa Tubuh (IMT) adalah salah satu cara sederhana untuk menilai status gizi seseorang berdasarkan berat badan dan tinggi badannya. IMT digunakan sebagai indikator umum untuk mengidentifikasi apakah seseorang memiliki berat badan normal, kekurangan berat badan, kelebihan berat badan, atau obesitas. Dalam fitur ini pengguna hanya memasukkan tinggi badan dan berat badan, kemudian web ini akan menganalisa apakah berat badan pengguna tersebut normal atau tidak.</p>
-            </div>
+        </div>
 
         </section>
         <section>
