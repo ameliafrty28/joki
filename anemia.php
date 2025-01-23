@@ -74,8 +74,7 @@ $conn->close();
 
             <h2 class="accordion">Dampak dan Komplikasi</h2>
             <div class="content">            
-                <p>Dampak anemia pada remaja putri yaitu pertumbuhan terhambat, sering merasa sakit kepala di sertai pusing,mata berkunang-kunang,sulit berkonsentrasi dalam mengerjakan sesuatu,konsentrasi belajar menurun dan aktifitas fisik menurun,kelopak mata bibir, kulit, dan kuku tampak pucat,tubuh mudah terinfeksi. Komplikasi, pada saat persalinan yaitu terjadi pendarah saat bersalin, Komplikasi pada kehamilan,kelahiran prematur pada bayi dan berat badan bayi rendah(BBLR), Gangguan tumbuh kembang pada bayi yang dilahirkan</p>
-                <p>Jika tidak ditangani, anemia dapat menyebabkan komplikasi seperti kerusakan organ, gangguan kehamilan, dan lain-lain.</p>
+                <p>Dampak anemia pada remaja putri yaitu pertumbuhan terhambat, sering merasa sakit kepala di sertai pusing,mata berkunang-kunang,sulit berkonsentrasi dalam mengerjakan sesuatu,konsentrasi belajar menurun dan aktifitas fisik menurun,kelopak mata bibir, kulit, dan kuku tampak pucat,tubuh mudah terinfeksi. Komplikasi, pada saat persalinan yaitu terjadi pendarah saat bersalin, Komplikasi pada kehamilan,kelahiran prematur pada bayi dan berat badan bayi rendah(BBLR), Gangguan tumbuh kembang pada bayi yang dilahirkan. Jika tidak ditangani, anemia dapat menyebabkan komplikasi seperti kerusakan organ, gangguan kehamilan, dan lain-lain.</p>
             </div>
 
             <h2 class="accordion">Penyebab</h2>

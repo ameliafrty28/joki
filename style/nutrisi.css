@@ -104,6 +104,7 @@ footer {
 main {
     padding: 2rem;
     margin-bottom: 5rem; /* Adjust for footer height */
+    text-align: justify;
 }
 
 main h1 {

@@ -37,20 +37,13 @@
             <div class="content">
                 <p>Nutrisi merupakan elemen penting dalam kehidupan manusia untuk menjaga kesehatan tubuh. 
                 Pemenuhan nutrisi yang seimbang meliputi karbohidrat, protein, lemak, vitamin, mineral, 
-                dan air untuk mendukung fungsi tubuh yang optimal.</p>  
-                <p>
-                Kekurangan atau kelebihan nutrisi dapat menyebabkan berbagai masalah kesehatan, 
+                dan air untuk mendukung fungsi tubuh yang optimal.Kekurangan atau kelebihan nutrisi dapat menyebabkan berbagai masalah kesehatan, 
                 seperti obesitas, malnutrisi, dan penyakit kronis lainnya. Oleh karena itu, penting untuk mengetahui kebutuhan nutrisi harian sesuai usia, berat badan, tinggi badan, dan aktivitas fisik.
                 </p>
 
-                <p>Masalah nutrisi atau malnutrisi adalah kondisi ketika tubuh tidak mendapatkan asupan gizi yang cukup atau seimbang.                 <p>
-                Kekurangan atau kelebihan nutrisi dapat menyebabkan berbagai masalah kesehatan, 
-                seperti obesitas, malnutrisi, dan penyakit kronis lainnya. Oleh karena itu, penting untuk mengetahui kebutuhan nutrisi harian sesuai usia, berat badan, tinggi badan, dan aktivitas fisik.
-                </p>
-                <p>Arti malnutrisi menurut WHO adalah kekurangan, kelebihan, atau ketidakseimbangan dalam asupan energi maupun nutrisi seseorang. Malnutrition dapat terjadi ketika seseorang memiliki terlalu banyak atau terlalu sedikit makanan dan nutrisi penting dalam tubuhnya. </p>
-                <p>Secara umum, kondisi ini terbagi dalam 2 bentuk, yaitu terlalu sedikit nutrisi (kurang gizi) atau terlalu banyak nutrisi (overnutrition). </p>
-                <p>Meskipun banyak terjadi pada anak-anak, tetapi sebenarnya malnutrisi tidak memandang usia karena dapat terjadi juga pada orang dewasa, baik itu laki-laki maupun wanita.</p>
-                <p>Dampak malnutrisi ternyata dapat sangat mempengaruhi kesehatan karena menyebabkan penyakit dan komplikasi tertentu. Bahkan, dalam beberapa kasus, bisa menjadi mengancam jiwa.</p>
+                <p><br>Masalah nutrisi atau malnutrisi adalah kondisi ketika tubuh tidak mendapatkan asupan gizi yang cukup atau seimbang. Kekurangan atau kelebihan nutrisi dapat menyebabkan berbagai masalah kesehatan, 
+                seperti obesitas, malnutrisi, dan penyakit kronis lainnya. Oleh karena itu, penting untuk mengetahui kebutuhan nutrisi harian sesuai usia, berat badan, tinggi badan, dan aktivitas fisik. Arti malnutrisi menurut WHO adalah kekurangan, kelebihan, atau ketidakseimbangan dalam asupan energi maupun nutrisi seseorang. Malnutrition dapat terjadi ketika seseorang memiliki terlalu banyak atau terlalu sedikit makanan dan nutrisi penting dalam tubuhnya. </p>
+                <p><br>Secara umum, kondisi ini terbagi dalam 2 bentuk, yaitu terlalu sedikit nutrisi (kurang gizi) atau terlalu banyak nutrisi (overnutrition). Meskipun banyak terjadi pada anak-anak, tetapi sebenarnya malnutrisi tidak memandang usia karena dapat terjadi juga pada orang dewasa, baik itu laki-laki maupun wanita. Dampak malnutrisi ternyata dapat sangat mempengaruhi kesehatan karena menyebabkan penyakit dan komplikasi tertentu. Bahkan, dalam beberapa kasus, bisa menjadi mengancam jiwa.</p>
                 <h2>Terdapat 4 bentuk malnutrisi, yaitu:</h2>
                 <ul>
                     <li><span>Kurang gizi</span>
@@ -80,9 +73,7 @@
                 <h2 class="accordion">Underweight</h2> 
                 <div class="content">
                     <h2>Underweight (Kekurangan Berat Badan): IMT < 18,5</h2>
-                    <p>Underweight atau berat badan kurang adalah kondisi ketika berat badan seseorang berada di bawah rentang normal untuk usianya. Underweight merupakan salah satu masalah gizi yang dapat memengaruhi kesehatan secara serius.</p>
-                    <p>Underweight dapat disebabkan oleh kurangnya asupan zat gizi yang masuk ke dalam tubuh. Kondisi ini dapat memengaruhi sistem kekebalan tubuh, kekuatan tulang, dan kesehatan tubuh secara keseluruhan.</p>
-                    <p>Untuk orang dewasa, berat badan yang normal diukur berdasarkan Indeks Massa Tubuh (IMT). Menurut WHO, <span>berat badan yang normal untuk orang dewasa adalah dengan IMT antara 18,5–24,9.</span></p>
+                    <p>Underweight atau berat badan kurang adalah kondisi ketika berat badan seseorang berada di bawah rentang normal untuk usianya. Underweight merupakan salah satu masalah gizi yang dapat memengaruhi kesehatan secara serius. Underweight dapat disebabkan oleh kurangnya asupan zat gizi yang masuk ke dalam tubuh. Kondisi ini dapat memengaruhi sistem kekebalan tubuh, kekuatan tulang, dan kesehatan tubuh secara keseluruhan. Untuk orang dewasa, berat badan yang normal diukur berdasarkan Indeks Massa Tubuh (IMT). Menurut WHO, <span>berat badan yang normal untuk orang dewasa adalah dengan IMT antara 18,5–24,9.</span></p>
                     <h2>Penyebab</h2>
                     <ul>
                         <li>Genetik</li>
@@ -132,8 +123,7 @@
                 <h2 class="accordion">Overweight</h2> 
                 <div class="content">
                     <h2>Overweight (Kelebihan Berat Badan): IMT 25,0–29,9</h2>
-                    <p>Overweight adalah kondisi ketika berat badan seseorang melebihi berat badan ideal. Berat badan berlebih ini bisa disebabkan oleh penumpukan lemak, air, tulang, atau otot.</p>
-                    <p>Overweight berbeda dengan obesitas, meskipun keduanya sama-sama ditandai dengan bentuk badan yang lebih besar dari ukuran ideal. Perbedaannya adalah, obesitas merupakan kelainan atau penyakit yang ditandai dengan penimbunan lemak tubuh secara berlebihan.</p>
+                    <p>Overweight adalah kondisi ketika berat badan seseorang melebihi berat badan ideal. Berat badan berlebih ini bisa disebabkan oleh penumpukan lemak, air, tulang, atau otot. Overweight berbeda dengan obesitas, meskipun keduanya sama-sama ditandai dengan bentuk badan yang lebih besar dari ukuran ideal. Perbedaannya adalah, obesitas merupakan kelainan atau penyakit yang ditandai dengan penimbunan lemak tubuh secara berlebihan.</p>
                     
                     <h2>Penyebab</h2>
                     <ul>

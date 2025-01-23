@@ -119,7 +119,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </header>
 
     <main>
-        <h2>Cek Masalah Nutrisi Anda</h2>
+        <h2>Cek Indeks Massa Tubuh (IMT) Anda</h2>
         <form method="POST" action="">
             <label for="weight">Berat Badan (kg):</label>
             <input type="number" id="weight" name="weight" step="0.1" required placeholder="contoh: 70">

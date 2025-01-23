@@ -39,12 +39,9 @@
             <h2 class="accordion">Apa itu Kesehatan Mental?</h2>
             <div class="content">
                 <p>Kesehatan jiwa atau sebutan lainnya kesehatan mental adalah kesehatan yang berkaitan dengan kondisi emosi, kejiwaan, dan psikis seseorang.</p>
-                <p>Kesehatan mental adalah kondisi di mana seseorang dapat mengatasi tekanan hidup, bekerja secara produktif, dan berkontribusi kepada komunitasnya. Kesehatan mental yang baik memungkinkan seseorang untuk menikmati kehidupan sehari-hari dan menghargai orang lain.</p>
-                <p>Kesehatan mental adalah aspek penting dari kesejahteraan secara keseluruhan karena berpengaruh langsung terhadap cara seseorang berpikir, merasa, dan berperilaku. Ketika kesehatan mental terjaga, seseorang lebih mampu menghadapi stres, menjaga hubungan yang sehat, dan membuat keputusan yang baik dalam kehidupannya.</p>
-                <p>Ketika kesehatan mental terjaga, seseorang lebih mampu menghadapi stres, menjaga hubungan yang sehat, dan membuat keputusan yang baik dalam kehidupannya.</p>
-                <p>Sebaliknya, masalah kesehatan mental yang tidak ditangani dapat berdampak buruk pada kualitas hidup, termasuk menurunnya produktivitas dan hubungan sosial.</p>
-                <P>Dengan kondisi mental yang baik, kamu nantinya bisa mengatasi stres dari tekanan hidup, memanfaatkan waktu secara produktif, dan mudah menyadari potensi yang dimiliki.</P>
-                <P>Menjaga kesehatan mental juga penting karena dapat mencegah berbagai gangguan psikologis seperti depresi dan kecemasan. </P>
+                <p>Kesehatan mental adalah kondisi di mana seseorang dapat mengatasi tekanan hidup, bekerja secara produktif, dan berkontribusi kepada komunitasnya. Kesehatan mental yang baik memungkinkan seseorang untuk menikmati kehidupan sehari-hari dan menghargai orang lain. Kesehatan mental adalah aspek penting dari kesejahteraan secara keseluruhan karena berpengaruh langsung terhadap cara seseorang berpikir, merasa, dan berperilaku. Ketika kesehatan mental terjaga, seseorang lebih mampu menghadapi stres, menjaga hubungan yang sehat, dan membuat keputusan yang baik dalam kehidupannya.</p>
+                <p><br>Ketika kesehatan mental terjaga, seseorang lebih mampu menghadapi stres, menjaga hubungan yang sehat, dan membuat keputusan yang baik dalam kehidupannya. Sebaliknya, masalah kesehatan mental yang tidak ditangani dapat berdampak buruk pada kualitas hidup, termasuk menurunnya produktivitas dan hubungan sosial.</p>
+                <P>Dengan kondisi mental yang baik, kamu nantinya bisa mengatasi stres dari tekanan hidup, memanfaatkan waktu secara produktif, dan mudah menyadari potensi yang dimiliki.Menjaga kesehatan mental juga penting karena dapat mencegah berbagai gangguan psikologis seperti depresi dan kecemasan. </P>
             </div>
 
             <h2 class="accordion">Penyebab Gangguan Kesehatan Mental</h2>

@@ -37,8 +37,7 @@
         <section>
             <h2 class="accordion">Apa itu Kesehatan Reproduksi?</h2>
             <div class="content">
-                <p>Kesehatan reproduksi adalah keadaan sehat secara fisik, mental, dan sosial yang utuh dalam segala aspek yang berhubungan dengan sistem reproduksi, fungsi, dan prosesnya. Kesehatan reproduksi tidak hanya bebas dari penyakit atau kecacatan.</p>
-                <p>Terdapat beberapa penyakit atau permasalahan pada kesehatan reproduksi, di antaranya seperti IMS (Infeksi Menular Seksual) dan Kanker Serviks.</p>
+                <p>Kesehatan reproduksi adalah keadaan sehat secara fisik, mental, dan sosial yang utuh dalam segala aspek yang berhubungan dengan sistem reproduksi, fungsi, dan prosesnya. Kesehatan reproduksi tidak hanya bebas dari penyakit atau kecacatan. Terdapat beberapa penyakit atau permasalahan pada kesehatan reproduksi, di antaranya seperti IMS (Infeksi Menular Seksual) dan Kanker Serviks.</p>
             </div>
 
             <h2 class="accordion">IMS (Infeksi Menular Seksual)</h2>
@@ -105,8 +104,7 @@
             <div class="content">            
                 <h2 class="accordion">Pengertian</h2>    
                 <div class="content">    
-                    <p>Seviks: bagian rahim yang terdapat pada puncak vagina (liang sanggama) yang hanya dapat dilihat dengan alat (spekulum).</p>
-                    <p>Serviks menghubungkan uterus (rahim) ke vagina. Selama haid, darah mengalir dari rahim melalui leher rahim ke dalam vagina. Vagina mengeluarkan darah haid ke bagian luar tubuh. Serviks menghasilkan lendir. Saat berhubungan seks, lendir mem- bantu sperma bergerak dari vagina melalui serviks ke dalam rahim. Selama kehamilan serviks tertutup rapat untuk membantu men- jaga bayi di dalam uterus. Saat proses persalinan serviks terbuka untuk memungkinkan bayi melewati vagina. Kanker Serviks adalah Penyakit tumor ganas di leher rahim yang dapat menyebar ke organ-organ yang lain dan menyebabkan kematian.</p>
+                    <p>Seviks: bagian rahim yang terdapat pada puncak vagina (liang sanggama) yang hanya dapat dilihat dengan alat (spekulum). Serviks menghubungkan uterus (rahim) ke vagina. Selama haid, darah mengalir dari rahim melalui leher rahim ke dalam vagina. Vagina mengeluarkan darah haid ke bagian luar tubuh. Serviks menghasilkan lendir. Saat berhubungan seks, lendir mem- bantu sperma bergerak dari vagina melalui serviks ke dalam rahim. Selama kehamilan serviks tertutup rapat untuk membantu men- jaga bayi di dalam uterus. Saat proses persalinan serviks terbuka untuk memungkinkan bayi melewati vagina. Kanker Serviks adalah Penyakit tumor ganas di leher rahim yang dapat menyebar ke organ-organ yang lain dan menyebabkan kematian.</p>
                 </div>
                 
                 <h2 class="accordion">Tanda Gejala</h2>
@@ -161,8 +159,7 @@
             <div class="content">   
                 <h2 class="accordion">Pengertian</h2> 
                 <div class="content">   
-                    <p>Menstruasi atau haid adalah proses keluarnya darah dan sel-sel tubuh dari vagina yang terjadi secara periodik setiap bulan. Menstruasi merupakan bagian dari proses normal organ reproduksi wanita untuk mempersiapkan kehamilan.</p>
-                    <p>Menstruasi menandai dimulainya pubertas dan kemampuan seorang wanita untuk mengandung anak. Siklus menstruasi pertama biasanya dimulai pada usia 12 tahun, atau 2–3 tahun setelah payudara tumbuh. Siklus ini akan terus berlangsung hingga memasuki masa menopause.</p>        
+                    <p>Menstruasi atau haid adalah proses keluarnya darah dan sel-sel tubuh dari vagina yang terjadi secara periodik setiap bulan. Menstruasi merupakan bagian dari proses normal organ reproduksi wanita untuk mempersiapkan kehamilan. Menstruasi menandai dimulainya pubertas dan kemampuan seorang wanita untuk mengandung anak. Siklus menstruasi pertama biasanya dimulai pada usia 12 tahun, atau 2–3 tahun setelah payudara tumbuh. Siklus ini akan terus berlangsung hingga memasuki masa menopause.</p>        
                     </div>
                 
                     <h2 class="accordion">Ciri-Ciri</h2>

@@ -99,7 +99,7 @@ if ($result->num_rows > 0) {
         </nav>
     </header>
 <main>
-    <h1>Tes Kesehatan Mental</h1>
+    <h1>Tes Tingkat Stres</h1>
     <form method="POST">
         <input type="hidden" name="id_user" value="<?php echo $id_user; ?>">
         <ol>
