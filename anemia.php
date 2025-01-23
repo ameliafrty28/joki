@@ -74,7 +74,8 @@ $conn->close();
 
             <h2 class="accordion">Dampak dan Komplikasi</h2>
             <div class="content">            
-                <p>Dampak anemia pada remaja putri yaitu pertumbuhan terhambat, sering merasa sakit kepala di sertai pusing,mata berkunang-kunang,sulit berkonsentrasi dalam mengerjakan sesuatu,konsentrasi belajar menurun dan aktifitas fisik menurun,kelopak mata bibir, kulit, dan kuku tampak pucat,tubuh mudah terinfeksi. Komplikasi, pada saat persalinan yaitu terjadi pendarah saat bersalin, Komplikasi pada kehamilan,kelahiran prematur pada bayi dan berat badan bayi rendah(BBLR), Gangguan tumbuh kembang pada bayi yang dilahirkan. Jika tidak ditangani, anemia dapat menyebabkan komplikasi seperti kerusakan organ, gangguan kehamilan, dan lain-lain.</p>
+                <p>Dampak anemia pada remaja putri yaitu pertumbuhan terhambat, sering merasa sakit kepala di sertai pusing, mata berkunang-kunang, sulit berkonsentrasi dalam mengerjakan sesuatu, konsentrasi belajar menurun dan aktifitas fisik menurun, kelopak mata bibir, kulit, dan kuku tampak pucat, dan tubuh mudah terinfeksi.</p>
+                <br><p>Anemia yang tidak segera ditangani, dapat menyebabkan komplikasi yang cukup fatal. Komplikasi anemia dapat menyebabkan pendarah saat bersalin, kelahiran prematur pada bayi dan berat badan bayi rendah (BBLR), ataupun gangguan tumbuh kembang pada bayi yang telah dilahirkan. Selain itu, anemia berat dapat dapat menimbulkan letargi, konfusi, serta komplikasi seperti gagal jantung, aritmia, infark miokard, dan angina.</p>
             </div>
 
             <h2 class="accordion">Penyebab</h2>
@@ -124,33 +125,49 @@ $conn->close();
             <h2 class="references-title">Referensi</h2>
             <ul class="references-list">
                 <li class="references-item">
-                    <a href="https://jurnal.ugm.ac.id/jpkm/article/download/40570/25068" target="_blank" class="references-link">
-                        Peningkatan Kadar Hemoglobin melalui Pemeriksaan dan Pemberian Tablet Fe Terhadap Remaja yang mengalami Anemia Melalui "Gerakan Jumat Pintar"
+                    <a href="https://wnj.westscience-press.com/index.php/jmws/article/view/817" target="_blank" class="references-link">
+                    Izzara, W. A., Yulastri, A., Erianti, Z., Putri, M. Y., & Yuliana, Y. (2023). Penyebab, Pencegahan dan Penanggulangan Anemia pada Remaja Putri (Studi Literatur). Jurnal Multidisiplin West Science, 2(12), 1051-1064.                    
                     </a>
                 </li>
                 <li class="references-item">
-                    <a href="https://pkgm.fk.ugm.ac.id/2022/05/18/pencegahan-anemia-pada-remaja/" target="_blank" class="references-link">
-                        Pencegahan Anemia Pada Remaja
+                    <a href="http://www.jurnalmedikahutama.com/index.php/JMH/article/view/266 " target="_blank" class="references-link">
+                    Kusnadi, F. N. (2021). Hubungan Tingkat Pengetahuan Tentang Anemia dengan Kejadian Anemia pada Remaja Putri. Jurnal Medika Hutama, 3(01 Oktober), 1293-1298.                    
                     </a>
+                </li>
+                <li class="references-item">
+                    <a href="http://114.7.227.163:6643/repository/repository/LTA_VINNA.pdf" target="_blank" class="references-link">
+                    Meliana, Vinna. (2018). Gambaran Faktor Risiko Anemia Pada Remaja Putri Kelas X di SMAN 3 Kabupaten Tangerang.                
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://scholar.archive.org/work/f4kijofrb5blteeri73gomg3yi/access/wayback/http://e-abdimas.unw.ac.id/index.php/jhhs/article/download/74/66" target="_blank" class="references-link">
+                    Nafisah, N. M., & Safalas, Eti. (2021). Literature Review: Hubungan Pola Makan Dengan Kejadian Anemia Pada Remaja Putri. Journal of Holistics and Health Sciences, 3(2).                
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://journal.ugm.ac.id/jpkm/article/view/40570" target="_blank" class="references-link">
+                    Nuraeni, R., Sari, P., Martini, N., Astuti, S., & Rahmiati, L. (2019). Peningkatan Kadar Hemoglobin melalui Pemeriksaan dan Pemberian Tablet Fe Terhadap Remaja yang Mengalami Anemia Melalui “Gerakan Jumat Pintar”. Jurnal Pengabdian Kepada Masyarakat (Indonesian Journal of Community Engagement), 5(2), 200-221.
+                </a>
                 </li>
                 <li class="references-item">
                     <a href="https://ejournal.stikku.ac.id/index.php/nnc/article/view/870" target="_blank" class="references-link">
-                    Sukmanawati, D., Badriah, D. L., & Setiayu, Y. (2023, October). HUBUNGAN PENGETAHUAN DAN SIKAP TENTANG MANFAAT KONSUMSI TABLET FE DENGAN KADAR HEMOGLOBIN PADA REMAJA PUTRI DI SMAN 1 DARMA. In National Nursing Conference (Vol. 1, No. 2, pp. 165-176)."
+                    Sukmanawati, D., Badriah, D. L., & Setiayu, Y. (2023, October). HUBUNGAN PENGETAHUAN DAN SIKAP TENTANG MANFAAT KONSUMSI TABLET FE DENGAN KADAR HEMOGLOBIN PADA REMAJA PUTRI DI SMAN 1 DARMA. In National Nursing Conference (Vol. 1, No. 2, pp. 165-176).                     
                     </a>
                 </li>
                 <li class="references-item">
-                    <a href="https://www.who.int/data/gho/data/themes/topics/anaemia_in_women_and_children " target="_blank" class="references-link">
-                    WHO. 2021. Anaemia in women and children. Retrieved 12 November 2024
+                    <a href="https://search.ebscohost.com/login.aspx?direct=true&profile=ehost&scope=site&authtype=crawler&jrnl=16937228&AN=172337303&h=5DTWst5IuOfhalpG%2B1ek6A7sH5hy3svmoqyQU7%2B1kcpF250PvJcIz%2FmOnc0GDq0CLvdfcnR4AHiJMagNS5lEJQ%3D%3D&crl=c" target="_blank" class="references-link">
+                    Suryani, D., & Nugroho, A. (2023). PENGARUH KOMBINASI ASUPAN PROTEIN, VITAMIN C DAN TABLET TAMBAH DARAH TEHADAP KADAR HEMOGLOBIN REMAJA PUTRI. National Nutrition Journal/Media Gizi Indonesia, 18.                 
                     </a>
                 </li>
                 <li class="references-item">
-                    <p class="references-text">World Health Organization (WHO). "Nutritional Anemia."</p>
+                    <a href="https://pesquisa.bvsalud.org/portal/resource/pt/sea-203912" target="_blank" class="references-link">
+                    Vaidya, S. S., Nakate, D. P., Gaikwad, S. Y., Patil, R. S., & Ghogare, M. S. (2019). Nutritional anaemia: Clinical and haematological presentation in children.                
+                    </a>
                 </li>
                 <li class="references-item">
-                    <p class="references-text">Centers for Disease Control and Prevention (CDC). "Iron Deficiency Anemia."</p>
-                </li>
-                <li class="references-item">
-                    <p class="references-text">Meiliana, V. (2018). Gambaran faktor risiko anemia pada remaja putri kelas X di SMAN 3 Kabupaten Tangerang tahun 2018 (Laporan Tugas Akhir). Kementerian Kesehatan Republik Indonesia, Politeknik Kesehatan Jakarta III, Jurusan Kebidanan, Program Studi D.III Kebidanan."</p>
+                    <a href="https://www.who.int/data/gho/data/themes/topics/anaemia_in_women_and_children" target="_blank" class="references-link">
+                    WHO. 2021. Anaemia in women and children. Retrieved 12 November 2024                
+                    </a>
                 </li>
             </ul>
 </section>

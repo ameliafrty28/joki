@@ -112,21 +112,42 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $tdd_non_haid = $_POST['tdd_non_haid'];
     $makanan = $_POST['makanan'];
     $konsumsi_zat_besi = $_POST['konsumsi_zat_besi'];
+    
 // Evaluasi kondisi risiko anemia
-// Evaluasi risiko anemia
-if ($skor_percentage > 60 || 
-    $siklus_haid == '2' || 
-    $durasi_haid == '2' || // Lebih dari 7 Hari
-    $tdd_haid == '0' || // Tidak konsumsi TTD saat haid
-    $tdd_non_haid == '0' || // Tidak konsumsi TTD saat tidak haid
-    $makanan == '1' || // Hanya makanan pokok dan sayur
-    $konsumsi_zat_besi == '3' || $konsumsi_zat_besi == '4')  { // Konsumsi makanan sangat jarang
+// Inisialisasi variabel counter untuk menghitung jumlah kondisi terpenuhi
+$counter = 0;
+
+// Periksa setiap kondisi dan tambahkan ke counter jika terpenuhi
+if ($skor_percentage > 60) {
+    $counter++;
+}
+if ($siklus_haid == '2') {
+    $counter++;
+}
+if ($durasi_haid == '2') { // Lebih dari 7 hari
+    $counter++;
+}
+if ($tdd_haid == '0') { // Tidak konsumsi TTD saat haid
+    $counter++;
+}
+if ($tdd_non_haid == '0') { // Tidak konsumsi TTD saat tidak haid
+    $counter++;
+}
+if ($makanan == '1') { // Hanya makanan pokok dan sayur
+    $counter++;
+}
+if ($konsumsi_zat_besi == '3' || $konsumsi_zat_besi == '4') { // Konsumsi makanan sangat jarang
+    $counter++;
+}
+
+// Tentukan hasil berdasarkan jumlah kondisi yang terpenuhi
+if ($counter > 1) { // Jika lebih dari satu kondisi terpenuhi
     $result_risiko = 'Berisiko';
     $saran = "Saran untuk remaja putri berisiko mengalami anemia:
     - Makan makanan kaya zat besi seperti daging, sayuran hijau (bayam, kangkung, dan buah kering).
     - Pertimbangkan suplemen sesuai anjuran dokter.
     - Lakukan pemeriksaan kadar hemoglobin secara berkala.";
-} else {
+} else { // Jika hanya satu atau tidak ada kondisi yang terpenuhi
     $result_risiko = 'Tidak Berisiko';
     $saran = "
     - Konsumsi makanan kaya zat besi
@@ -138,6 +159,7 @@ if ($skor_percentage > 60 ||
     - Rutin Olahraga
     - Lakukan pemeriksaan kadar hemoglobin secara berkala.";
 }
+
 
 // Simpan hasil analisis ke database
 $stmt_riwayat = $conn->prepare("INSERT INTO tb_riwayat_anemia (id_user, id_kategori, hasil_analisis, pola_menstruasi, lama_menstruasi, konsumsi_makanan, mengkonsumsi_ttd, pengetahuan) VALUES (?, ?, ?, ?, ?, ?, ?, ?)");
@@ -234,7 +256,7 @@ $stmt_riwayat->execute();
 
                 <div id="detail-makanan"></div>
 
-                <label for="konsumsi_zat_besi">Seberapa sering Anda mengkonsumsi tempe atau udang?</label>
+                <label for="konsumsi_zat_besi">Seberapa sering Anda mengonsumsi sumber protein hewani seperti daging, ikan, telur, atau produk susu, serta protein nabati seperti tahu, tempe, kacang-kacangan, atau biji-bijian dalam pola makan mingguan Anda?</label>
                 <select name="konsumsi_zat_besi">
                     <option value="" selected disabled>Pilih jawaban</option>
                     <option value="1">Satu minggu sekali</option>

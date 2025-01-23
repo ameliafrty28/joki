@@ -27,10 +27,8 @@ session_start();
                 <li><a href="#about-us">About Us</a></li>
                 <li><a href="#team">Team</a></li>
             </ul>
-
         </nav>
     </header>
-
 
     <main>
     <section id="home">
@@ -41,8 +39,6 @@ session_start();
             <a href="login.php" class="btn-login">Login</a>
             <a href="register.php" class="btn-register">Daftar Akun</a>
             <a href="login.php" class="btn-login">Cek Kesehatan Anda</a>
-
-
         </div>
         <div class="home-image">
             <img tabindex="0" src="img/kesehatan.png" alt="Gambar Icon">
@@ -62,7 +58,6 @@ session_start();
           </p>
         </div>
       </section>
-
 
       <section id="team" class="team">
             <h2 tabindex="0">Anggota Kelompok Kami</h2>

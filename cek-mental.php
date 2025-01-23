@@ -51,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         // Kirimkan hasil untuk ditampilkan sebagai popup
         echo "<div class='popup-overlay'>
                 <div class='popup-content'>
-                    <h2>Hasil Tes Kesehatan Mental</h2>
+                    <h2>Hasil Tes Tingkat Stres</h2>
                     <p><strong>Total Skor:</strong> $total_skor</p>
                     <p><strong>Hasil:</strong> $hasil</p>
                     <p><strong>Saran:</strong><br>$saran</p>
