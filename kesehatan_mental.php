@@ -75,16 +75,23 @@
                 <div class="content">
                     <p>Pengobatan gangguan kesehatan mental melibatkan berbagai pendekatan yang disesuaikan dengan jenis dan tingkat keparahan gangguan yang dialami. Beberapa metode pengobatan yang umum digunakan meliputi:</p>
                     <ol>
-                        <li><span style="font-weight: bold;">Pencegahan :</span>
-                            <p>Fokus pada mencegah gangguan sebelum muncul, dengan menjalani gaya hidup sehat seperti makan bergizi, olahraga teratur, tidur cukup, dan menghindari kebiasaan buruk seperti merokok atau penyalahgunaan zat. Selain itu, mendapatkan dukungan dari keluarga, teman, dan komunitas bisa membantu agar lebih terhubung dan tidak terisolasi.</p>
+                        <li><span style="font-weight: bold;">Terapi Psikologis (Psikoterapi):</span>
+                            <p>Pendekatan ini melibatkan konseling dengan profesional kesehatan mental untuk membantu individu memahami dan mengatasi pikiran, perasaan, dan perilaku yang bermasalah. Contoh terapi ini termasuk Terapi Perilaku Kognitif (CBT) dan terapi interpersonal.</p>
                         </li>
-                        <li><span style="font-weight: bold;">Deteksi Dini:</span>
-                            <p>Penting untuk mengenali tanda-tanda awal gangguan mental. Pemeriksaan rutin di fasilitas kesehatan, sekolah, atau tempat kerja bisa membantu menemukan masalah lebih awal. Jika gejala mulai muncul, segera cari bantuan agar masalah tidak semakin parah.</p>
+                        <li><span style="font-weight: bold;">Medikasi:</span>
+                            <p>Penggunaan obat-obatan seperti antidepresan, antipsikotik, atau ansiolitik dapat diresepkan oleh psikiater untuk membantu mengelola gejala gangguan mental tertentu.</p>
                         </li>
-                        <li><span style="font-weight: bold;">Penanganan Lanjutan:</span>
-                            <p>Bagi yang sudah mengalami gangguan mental, fokusnya adalah memberikan perawatan yang tepat seperti terapi, dukungan kelompok, atau pengobatan. Program rehabilitasi juga membantu memulihkan diri dan kembali menjalani hidup normal, termasuk pelatihan keterampilan untuk bekerja atau bersosialisasi.</p>
+                        <li><span style="font-weight: bold;">Dukungan Sosial:</span>
+                            <p>Dukungan dari keluarga, teman, dan komunitas memainkan peran penting dalam proses pemulihan individu dengan gangguan mental. Program dukungan sosial dapat membantu mengurangi isolasi dan meningkatkan kesejahteraan emosional.</p>
+                        </li> 
+                        <li><span style="font-weight: bold;">Rehabilitasi Psikososial:</span>
+                            <p>Program ini bertujuan untuk membantu individu dengan gangguan mental berat dalam mengembangkan keterampilan sosial dan pekerjaan, sehingga mereka dapat berfungsi lebih efektif dalam masyarakat.</p>
+                        </li>
+                        <li><span style="font-weight: bold;">Terapi Komplementer:</span>
+                            <p>Beberapa pendekatan seperti zikir atau meditasi dapat digunakan sebagai terapi tambahan untuk mengatasi gangguan mental, karena mengandung unsur psikoteraputik yang efektif.</p>
                         </li>                 
                  </ol>
+                 <br><p>Penting untuk dicatat bahwa pemilihan metode pengobatan harus dilakukan oleh profesional kesehatan mental yang berkompeten. Selain itu, akses terhadap layanan kesehatan mental yang berkualitas dan edukasi masyarakat untuk mengurangi stigma juga merupakan faktor penting dalam penanganan gangguan kesehatan mental.</p>
                 </div>
             </div>
 
@@ -99,6 +106,21 @@
         <section class="references">
             <h2 class="references-title">Referensi</h2>
             <ul class="references-list">
+                <li class="references-item">
+                    <a href="https://doi.org/10.35720/tscs1kep.v9i01.495" target="_blank" class="references-link">
+                    Adventinawati, M. K. (2025). Pencegahan Kesehatan Mental dalam Upaya Mengurangi Stigma Kesehatan Mental di Masyarakat. Hukum Inovatif: Jurnal Ilmu Hukum Sosial dan Humaniora, 2(1), 110-116. 
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://doi.org/10.35720/tscs1kep.v9i01.495" target="_blank" class="references-link">
+                    Agustiana, M., Riniasih, W., Sukmayadi, S., & Fatchulloh, F. (2024). PENGARUH JOGING TERHADAP PENURUNAN TINGKAT STRES PADA REMAJA SMAN 1 TOROH. The Shine Cahaya Dunia S-1 Keperawatan, 9(01)."
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://doi.org/10.35720/tscs1kep.v9i01.495" target="_blank" class="references-link">
+                    Agustiana, M., Riniasih, W., Sukmayadi, S., & Fatchulloh, F. (2024). PENGARUH JOGING TERHADAP PENURUNAN TINGKAT STRES PADA REMAJA SMAN 1 TOROH. The Shine Cahaya Dunia S-1 Keperawatan, 9(01)."
+                    </a>
+                </li>
                 <li class="references-item">
                     <a href="https://doi.org/10.35720/tscs1kep.v9i01.495" target="_blank" class="references-link">
                     Agustiana, M., Riniasih, W., Sukmayadi, S., & Fatchulloh, F. (2024). PENGARUH JOGING TERHADAP PENURUNAN TINGKAT STRES PADA REMAJA SMAN 1 TOROH. The Shine Cahaya Dunia S-1 Keperawatan, 9(01)."
