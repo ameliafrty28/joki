@@ -151,13 +151,15 @@
                     <p>Hal ini merupakan pencegahan primer sebaiknya dilakukan sedini mungkin dan dapat diberikan pada remaja putri usia 9 hingga 14 tahun, sebelum mereka menjadi aktif secara seksual, agar lebih efektif sampai dengan usia 55 tahun. Jadwal pemberian vaksin yaitu pemberian bulan 0, 1 atau 2, dan 6.</p>
                     <br><p>Remaja putri perlu didorong untuk berbicara dengan keluarga, teman, atau seorang konselor untuk mendapatkan dukungan emosional. Keterbukaan sangat penting untuk mengurangi kecemasan dan stres. Selain pengobatan fisik, penting juga untuk menjaga kesehatan mental. Cemas dan stres adalah hal yang wajar, tetapi berbicara tentang perasaan, baik dengan keluarga atau profesional, bisa membantu mengatasi perasaan tersebut dan menjaga keseimbangan emosional selama pengobatan.
                     </p>
-                    <p>Edukasi yang diberikan harus menyentuh aspek fisik, emosional, dan sosial dari pengalaman remaja putri yang menghadapi kanker serviks, serta pentingnya pencegahan sejak dini melalui vaksinasi, pemeriksaan, dan pola hidup sehat.
-                    </p>
+                    <p>Edukasi yang diberikan harus menyentuh aspek fisik, emosional, dan sosial dari pengalaman remaja putri yang menghadapi kanker serviks, serta pentingnya pencegahan sejak dini melalui vaksinasi, pemeriksaan, dan pola hidup sehat.</p>
                 </div>
 
                 <h2 class="accordion">Pengobatan</h2>
                 <div class="content">
-    p
+                    <p>Infeksi Menular Seksual (IMS) dapat diobati sesuai dengan jenis infeksinya. Untuk infeksi bakteri seperti klamidia, gonore, dan sifilis, pengobatan utama biasanya menggunakan antibiotik, seperti azitromisin, doksisiklin, atau suntikan penisilin. Jika IMS disebabkan oleh virus seperti HIV, herpes genital, atau hepatitis B, pengobatan dilakukan dengan obat antivirus untuk mengendalikan gejala dan mencegah komplikasi.</p>
+                    <br><p>Beberapa IMS, seperti HPV, tidak dapat disembuhkan sepenuhnya, tetapi gejala seperti kutil kelamin dapat diatasi dengan prosedur medis seperti krioterapi atau laser. Untuk infeksi parasit seperti trikomoniasis, obat yang digunakan adalah metronidazol atau tinidazol.</p>
+                    <br><p>Selama pengobatan, sangat penting untuk menghindari hubungan seksual hingga dinyatakan sembuh oleh dokter, serta menganjurkan pasangan seksual untuk menjalani pemeriksaan dan pengobatan guna mencegah reinfeksi. Sebagai langkah pencegahan, gunakan kondom saat berhubungan seksual dan, jika memungkinkan, lakukan vaksinasi seperti vaksin HPV dan hepatitis B.</p>
+                    <br><p></p>
                 </div>
             </div>
 
