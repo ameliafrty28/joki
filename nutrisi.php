@@ -223,8 +223,8 @@
                     </a>
                 </li>
                 <li class="references-item">
-                    <a href="https://doi.org/10.1371/journal.pone.0287633" target="_blank" class="references-link">
-                    Monteiro, I. P., Azzi, C. F. G., Bilibio, J. P., Monteiro, P. S., Braga, G. C., & Nitz, N. (2023). Prevalence of sexually transmissible infections in adolescents treated in a family planning outpatient clinic for adolescents in the western Amazon. PloS one, 18(6), e0287633. "
+                    <a href="https://jurnalilmiah.org/journal/index.php/analis/article/view/598" target="_blank" class="references-link">
+                    Wulandari, M. Z., Hamdi, A. F., Nurhalisa, F. Z., Hutabarat, D. F. P., Septiani, G. C., Nurazizah, D. A., & Puspadewi, S. (2023). Penggunaan Perhitungan Indeks Massa Tubuh sebagai Penanda Status Gizi pada Mahasiswa Prodi Kesehatan Masyarakat Rombel 2D. Jurnal Analis, 2(2), 124-131. 
                     </a>
                 </li>
             </ul>
