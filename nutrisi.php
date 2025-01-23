@@ -35,25 +35,22 @@
         <section>
             <h2 class="accordion">Apa itu Nutrisi?</h2>
             <div class="content">
-                <p>Nutrisi merupakan elemen penting dalam kehidupan manusia untuk menjaga kesehatan tubuh. 
-                Pemenuhan nutrisi yang seimbang meliputi karbohidrat, protein, lemak, vitamin, mineral, 
-                dan air untuk mendukung fungsi tubuh yang optimal.Kekurangan atau kelebihan nutrisi dapat menyebabkan berbagai masalah kesehatan, 
-                seperti obesitas, malnutrisi, dan penyakit kronis lainnya. Oleh karena itu, penting untuk mengetahui kebutuhan nutrisi harian sesuai usia, berat badan, tinggi badan, dan aktivitas fisik.
-                </p>
-
-                <p><br>Masalah nutrisi atau malnutrisi adalah kondisi ketika tubuh tidak mendapatkan asupan gizi yang cukup atau seimbang. Kekurangan atau kelebihan nutrisi dapat menyebabkan berbagai masalah kesehatan, 
-                seperti obesitas, malnutrisi, dan penyakit kronis lainnya. Oleh karena itu, penting untuk mengetahui kebutuhan nutrisi harian sesuai usia, berat badan, tinggi badan, dan aktivitas fisik. Arti malnutrisi menurut WHO adalah kekurangan, kelebihan, atau ketidakseimbangan dalam asupan energi maupun nutrisi seseorang. Malnutrition dapat terjadi ketika seseorang memiliki terlalu banyak atau terlalu sedikit makanan dan nutrisi penting dalam tubuhnya. </p>
-                <p><br>Secara umum, kondisi ini terbagi dalam 2 bentuk, yaitu terlalu sedikit nutrisi (kurang gizi) atau terlalu banyak nutrisi (overnutrition). Meskipun banyak terjadi pada anak-anak, tetapi sebenarnya malnutrisi tidak memandang usia karena dapat terjadi juga pada orang dewasa, baik itu laki-laki maupun wanita. Dampak malnutrisi ternyata dapat sangat mempengaruhi kesehatan karena menyebabkan penyakit dan komplikasi tertentu. Bahkan, dalam beberapa kasus, bisa menjadi mengancam jiwa.</p>
+                <p>Nutrisi adalah hal yang sangat penting untuk menjaga tubuh tetap sehat. Agar tubuh berfungsi dengan baik, kita memerlukan asupan yang seimbang, seperti karbohidrat, protein, lemak, vitamin, mineral, dan air. Jika asupan nutrisi terlalu sedikit atau terlalu banyak, bisa menyebabkan masalah kesehatan seperti obesitas, kurang gizi, atau penyakit kronis. Oleh karena itu, sangat penting untuk memahami kebutuhan nutrisi harian yang sesuai dengan usia, berat badan, tinggi badan, dan tingkat aktivitas fisik kita.</p>
+                <br><p>Masalah Nutrisi atau Malnutrisi terjadi ketika tubuh tidak mendapatkan cukup gizi atau malah mendapatkan terlalu banyak. Kondisi ini bisa terjadi pada siapa saja, baik anak-anak maupun orang dewasa, dan dapat berdampak serius pada kesehatan. Malnutrisi dapat meningkatkan risiko berbagai penyakit dan komplikasi yang bisa berbahaya. Menurut WHO, malnutrisi adalah ketidakseimbangan dalam asupan energi dan nutrisi. Terdapat 4 bentuk malnutrisi: </p>
                 <h2>Terdapat 4 bentuk malnutrisi, yaitu:</h2>
                 <ul>
-                    <li><span>Kurang gizi</span>
-                        <p>yang meliputi wasting (berat badan rendah menurut tinggi badan), stunting (tinggi badan rendah menurut umur), dan kekurangan berat badan (berat badan rendah menurut umur). </p></li>
-                    <li><span>Malnutrisi terkait mikronutrien</span>
-                        <p>yang meliputi defisiensi mikronutrien (kekurangan vitamin dan mineral penting) maupun kelebihan mikronutrien </p></li>
-                    <li><span>Kelebihan berat badan</span>
-                        <p>obesitas</p></li>
-                    <li><span>Penyakit tidak menular yang berhubungan dengan diet</span>
-                        <p>seperti penyakit jantung, stroke, diabetes, dan beberapa jenis kanker.</p></li>
+                    <li><span style="font-style: italic; font-weight: bold;">Under Nutrition:</span>
+                        <p>Kekurangan konsumsi pangan secara relative maupun absolute untuk periode tertentu.</p>
+                    </li>
+                    <li><span style="font-style: italic; font-weight: bold;">Specific Defiency:</span>
+                        <p>Kekurangan zat gizi tertentu, misalnya kekurangan yodium.</p>
+                    </li>
+                    <li><span style="font-style: italic; font-weight: bold;">Over Nutrition:</span>
+                        <p>Kelebihan konsumsi pangan untuk periode tertentu.</p>
+                    </li>
+                    <li><span style="font-style: italic; font-weight: bold;">Imbalance:</span>
+                        <p>Karena disproporsi zat gizi.</p>
+                    </li>
                 </ul>
                 <p>Akibat dari malnutrisi mungkin seseorang akan mengalami masalah kesehatan jangka pendek dan jangka panjang, pemulihan yang lambat dari luka dan penyakit, dan risiko infeksi yang lebih tinggi.</p>
                 
@@ -201,13 +198,33 @@
             <h2 class="references-title">Referensi</h2>
             <ul class="references-list">
                 <li class="references-item">
-                    <a href="https://doi.org/10.1371/journal.pone.0287633" target="_blank" class="references-link">
-                    Monteiro, I. P., Azzi, C. F. G., Bilibio, J. P., Monteiro, P. S., Braga, G. C., & Nitz, N. (2023). Prevalence of sexually transmissible infections in adolescents treated in a family planning outpatient clinic for adolescents in the western Amazon. PloS one, 18(6), e0287633. "
+                    <a href="https://prosiding.ummetro.ac.id/index.php/snppm/article/download/171/139" target="_blank" class="references-link">
+                    Alfarisi, BI, Hestiana, AR, Salsabila, A., Fayyaza, NA, Islami, MD, Ramadhan, G., ... & Lubis, HML (2023, Agustus). MENGUNGKAPKAN KESEHATAN MELALUI ANGKA: PREDIKSI KESALAHAN GIZI MELALUI PENILAIAN STATUS GIZI DAN ASUPAN MAKRONUTRI. Dalam PROSEDUR SEMINAR PENELITIAN DAN PENGABDIKAN NASIONAL (SNPPM) UNIVERSITAS METRO MUHAMMADIYAH (Vol. 5, No. 1, pp. 299-311).
                     </a>
                 </li>
                 <li class="references-item">
-                    <a href="https://ojs.unimal.ac.id/galenical/article/view/10134" target="_blank" class="references-link">
-                    Novalia, V. (2023). Kanker serviks. GALENICAL: Jurnal Kedokteran dan Kesehatan Mahasiswa Malikussaleh, 2(1), 45-56."
+                    <a href="https://journal.stikespemkabjombang.ac.id/index.php/jikep/article/view/1570" target="_blank" class="references-link">
+                    Awaliah, A., Widiastuti, E., Rita, E., Setiyono, E., & Zuryati, M. (2023). HUBUNGAN ASUPAN MAKANAN DAN AKTIVITAS FISIK DENGAN KEJADIAN MALNUTRISI PADA REMAJA DI WILAYAH KECAMATAN SENEN: A Correlation between Food Intake and Physical Activity with the Incidence of Malnutrition in Adolescents in the Senen District Area. Jurnal Ilmiah Keperawatan (Scientific Journal of Nursing), 9(2), 420-425.
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://scholar.archive.org/work/zip7afkcb5b3hjbikpb6s4fwge/access/wayback/https://ejournal.mandalanursa.org/index.php/JUPE/article/download/5891/4241" target="_blank" class="references-link">
+                    Kasingku, J. D. (2023). Peran Makanan Sehat Dalam Meningkatkan Kesehatan Fisik dan Kerohanian Pelajar. Jurnal Pendidikan Mandala, 8(3), 853-859.                    
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="http://www.jurnalmedikahutama.com/index.php/JMH/article/view/226" target="_blank" class="references-link">
+                    Rasyid, M. F. A. (2021). Pengaruh asupan kalsium terhadap indeks masa tubuh (IMT). Jurnal Medika Hutama, 2(04 Juli), 1094-1097.                     
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://repo-dosen.ulm.ac.id/bitstream/handle/123456789/18024/2.%20Kapita%20Selekta%20Mal%20Nutrisi.pdf?sequence=1&isAllowed=y" target="_blank" class="references-link">
+                    Triawati., Sanyoto. D. D., Yunanto, A. (2018). Kapita Selekta Malnutrisi. Banjarmasin: Sari Mulia.                     
+                    </a>
+                </li>
+                <li class="references-item">
+                    <a href="https://doi.org/10.1371/journal.pone.0287633" target="_blank" class="references-link">
+                    Monteiro, I. P., Azzi, C. F. G., Bilibio, J. P., Monteiro, P. S., Braga, G. C., & Nitz, N. (2023). Prevalence of sexually transmissible infections in adolescents treated in a family planning outpatient clinic for adolescents in the western Amazon. PloS one, 18(6), e0287633. "
                     </a>
                 </li>
             </ul>
