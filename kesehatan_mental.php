@@ -107,23 +107,23 @@
             <h2 class="references-title">Referensi</h2>
             <ul class="references-list">
                 <li class="references-item">
-                    <a href="https://doi.org/10.35720/tscs1kep.v9i01.495" target="_blank" class="references-link">
+                    <a href="https://journal.lpkd.or.id/index.php/Humif/article/view/1010" target="_blank" class="references-link">
                     Adventinawati, M. K. (2025). Pencegahan Kesehatan Mental dalam Upaya Mengurangi Stigma Kesehatan Mental di Masyarakat. Hukum Inovatif: Jurnal Ilmu Hukum Sosial dan Humaniora, 2(1), 110-116. 
                     </a>
                 </li>
                 <li class="references-item">
-                    <a href="https://doi.org/10.35720/tscs1kep.v9i01.495" target="_blank" class="references-link">
+                    <a href="https://ejournal.annurpurwodadi.ac.id/index.php/TSCS1Kep/article/view/495" target="_blank" class="references-link">
                     Agustiana, M., Riniasih, W., Sukmayadi, S., & Fatchulloh, F. (2024). PENGARUH JOGING TERHADAP PENURUNAN TINGKAT STRES PADA REMAJA SMAN 1 TOROH. The Shine Cahaya Dunia S-1 Keperawatan, 9(01)."
                     </a>
                 </li>
                 <li class="references-item">
-                    <a href="https://doi.org/10.35720/tscs1kep.v9i01.495" target="_blank" class="references-link">
-                    Agustiana, M., Riniasih, W., Sukmayadi, S., & Fatchulloh, F. (2024). PENGARUH JOGING TERHADAP PENURUNAN TINGKAT STRES PADA REMAJA SMAN 1 TOROH. The Shine Cahaya Dunia S-1 Keperawatan, 9(01)."
+                    <a href="https://discovery.ucl.ac.uk/id/eprint/10130898/" target="_blank" class="references-link">
+                    Chen, J. Y., Chin, W. Y., Tiwari, A., Wong, J., Wong, I. C., Worsley, A., ... & Lau, C. S. (2021). Validation of the perceived stress scale (PSS-10) in medical and health sciences students in Hong Kong. The Asia Pacific Scholar, 6(2), 31-37. 
                     </a>
                 </li>
                 <li class="references-item">
-                    <a href="https://doi.org/10.35720/tscs1kep.v9i01.495" target="_blank" class="references-link">
-                    Agustiana, M., Riniasih, W., Sukmayadi, S., & Fatchulloh, F. (2024). PENGARUH JOGING TERHADAP PENURUNAN TINGKAT STRES PADA REMAJA SMAN 1 TOROH. The Shine Cahaya Dunia S-1 Keperawatan, 9(01)."
+                    <a href="hhttp://journal-stiayappimakassar.ac.id/index.php/srj/article/view/1230" target="_blank" class="references-link">
+                    Vitoasmara, K., Hidayah, F. V., Purnamasari, N. I., & Aprillia, R. Y. (2024). Gangguan Mental (Mental Disorders). Student Research Journal, 2(3), 57-68. 
                     </a>
                 </li>
             </ul>

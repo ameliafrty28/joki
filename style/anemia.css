@@ -226,10 +226,11 @@ table th {
   background-color: #f9f9f9;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem; /* Ukuran font lebih kecil */
 }
 
 .references-title {
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Ukuran font judul lebih kecil */
   color: #333;
   margin-bottom: 15px;
   text-align: center;
@@ -239,6 +240,7 @@ table th {
   list-style: none;
   padding: 0;
   margin: 0;
+  font-size: 0.8rem; /* Ukuran font lebih kecil untuk daftar */
 }
 
 .references-item {
@@ -348,7 +350,6 @@ table th {
     font-size: 13px;
   }
 
-
   header h1 {
     font-size: 1.4rem;
   }
@@ -390,11 +391,18 @@ table th {
     font-size: 14px; /* Mengurangi ukuran font untuk perangkat kecil */
   }
 
-  .reference-title {
-    text-align: center;
-    font-size: 16px; /* Ukuran font judul yang lebih kecil */
+  .references {
+    font-size: 0.8rem; /* Ukuran font lebih kecil untuk layar kecil */
   }
-  
+
+  .references-title {
+    font-size: 1rem; /* Ukuran font judul lebih kecil */
+  }
+
+  .references-list {
+    font-size: 0.7rem; /* Ukuran font daftar lebih kecil */
+  }
+
   .nav-menu {
     display: none;
   }
@@ -421,7 +429,6 @@ table th {
   .hamburger.active span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
   }
-  
 }
 
 @media (max-width: 490px) {
@@ -441,8 +448,16 @@ table th {
     font-size: 1.8rem;
   }
 
+  .references {
+    font-size: 0.7rem; /* Ukuran font lebih kecil untuk bagian referensi */
+  }
+
   .references-title {
-    font-size: 1.2rem;
+    font-size: 1rem; /* Ukuran font judul lebih kecil */
+  }
+
+  .references-list {
+    font-size: 0.6rem; /* Ukuran font lebih kecil untuk daftar */
   }
 
   .nav-menu {

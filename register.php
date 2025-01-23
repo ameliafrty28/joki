@@ -57,6 +57,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrasi Akun</title>
     <link rel="stylesheet" href="style/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="icon" href="favicon.png" type="image/png">
 
 
@@ -97,15 +99,84 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <input type="number" id="umur" name="umur" required placeholder="Masukkan usia">
 
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required placeholder="Masukkan Password">
+            <div class="password-container">
+                <input type="password" id="password" name="password" required placeholder="Masukkan Password">
+                <i id="togglePassword" class="fa fa-eye"></i>
+            </div>
 
             <label for="confirm_password">Konfirmasi Password:</label>
-            <input type="password" id="confirm_password" name="confirm_password" required placeholder="Konfirmasi Password">
+            <div class="password-container">
+                <input type="password" id="confirm_password" name="confirm_password" required placeholder="Konfirmasi Password">
+                <i id="toggleConfirmPassword" class="fa fa-eye"></i>
+            </div>
+
+            <style>
+                /* Gaya dasar untuk password container */
+                .password-container {
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                }
+
+                /* Input */
+                .password-container input {
+                    width: 100%;
+                    padding: 10px;
+                    padding-right: 40px; /* Ruang untuk ikon mata */
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+
+                /* Ikon mata */
+                .password-container i {
+                    position: absolute;
+                    right: 10px;
+                    margin-bottom: 10px;
+                    cursor: pointer;
+                    font-size: 18px;
+                    color: #888;
+                }
+
+                /* Hover efek untuk ikon mata */
+                .password-container i:hover {
+                    color: #333;
+                }
+            </style>
+
 
             <button type="submit">Daftar</button>
             <p>Sudah punya akun? <a href="login.php">Login</a></p>
         </form>
     </main>
+    <script>
+    // Fungsi untuk toggle visibilitas password
+    function togglePassword(inputId, toggleId) {
+        const input = document.getElementById(inputId);
+        const toggleIcon = document.getElementById(toggleId);
+        if (input.type === "password") {
+            input.type = "text";
+            toggleIcon.classList.remove("fa-eye");
+            toggleIcon.classList.add("fa-eye-slash");
+        } else {
+            input.type = "password";
+            toggleIcon.classList.remove("fa-eye-slash");
+            toggleIcon.classList.add("fa-eye");
+        }
+    }
+
+    // Event listener untuk input password
+    document.getElementById("togglePassword").addEventListener("click", () => {
+        togglePassword("password", "togglePassword");
+    });
+
+    // Event listener untuk input konfirmasi password
+    document.getElementById("toggleConfirmPassword").addEventListener("click", () => {
+        togglePassword("confirm_password", "toggleConfirmPassword");
+    });
+</script>
+
+
 
     <footer>
         <p>&copy; 2024 INOVASI TEKNOLOGI KESEHATAN. Kelas 2 Kelompok 8</p>
