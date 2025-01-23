@@ -46,52 +46,45 @@
             <h2 class="accordion">Faktor Penyebab Gangguan Kesehatan Mental</h2>
             <div class="content">   
                 <p>Adapun faktor-faktor yang menjadi penyebab dalam gangguan mental, yakni:</p> 
-                <ul>
-                    <li>Cedera pada kepala.</li>
-                    <li>Faktor genetik atau terdapat riwayat pengidap gangguan kesehatan jiwa dalam keluarga.</li>
-                    <li>Kekerasan dalam rumah tangga atau bentuk pelecehan lainnya.</li>
-                    <li>Adanya riwayat kekerasan saat kanak-kanak.</li>
-                    <li>Memiliki kelainan senyawa kimia otak atau gangguan pada otak.</li>
-                    <li>Mengalami diskriminasi dan stigma.</li>
-                    <li>Kehilangan atau kematian seseorang yang sangat dekat.</li>
-                    <li>Mengalami kerugian sosial, seperti masalah kemiskinan atau utang.</li>
-                    <li>Merawat anggota keluarga atau teman yang sakit kronis.</li>
-                    <li>Pengangguran, kehilangan pekerjaan, atau tunawisma.</li>
-                    <li>Pengaruh zat racun, alkohol, atau obat-obatan yang dapat merusak otak.</li>
-                    <li>Stres berat yang terjadi dalam waktu yang lama.</li>
-                    <li>Terisolasi secara sosial atau merasa kesepian.</li>
-                    <li>Tinggal pada lingkungan perumahan yang buruk.</li>
-                    <li>Mengalami trauma yang signifikan, seperti pertempuran militer, kecelakaan serius, atau tindakan kriminal lainnya.</li>
-                </ul>
+                <ol>
+                    <li>Genetik yaitu faktor keturunan dapat meningkatkan risiko gangguan mental.</li>
+                    <li>Biologis merupakan ketidakseimbangan kimia di otak, infeksi, atau kerusakan otak.</li>
+                    <li>Psikologis yaitu trauma masa kecil, pelecehan, dan kehilangan.</li>
+                    <li>Lingkungan sebagai stres kronis, lingkungan sosial yang buruk, dan pengalaman hidup yang menantang.</li>
+                </ol>
+
 
                 <h2 class="accordion">Pencegahan</h2>
                 <div class="content">
-                    <p>Beberapa upaya untuk mencegah terjadinya gangguan kesehatan jiwa antara lain:</p>
+                    <p>Mencegah gangguan kesehatan mental adalah langkah penting untuk menjaga kesejahteraan dan mencegah masalah yang lebih serius. Ada tiga cara utama untuk melakukannya, yaitu:</p>
                     <ol>
-                        <li>Melakukan aktivitas fisik dan tetap aktif secara fisik.</li>    
-                        <li>Membantu orang lain dengan tulus.</li>
-                        <li>Membiasakan berpikir positif.</li>
-                        <li>Memiliki kemampuan untuk mengatasi masalah.</li>
-                        <li>Mencari bantuan profesional jika memang kamu memerlukannya.</li>
-                        <li>Menjaga hubungan baik dengan orang lain.</li>
-                        <li>Memastikan tubuh mendapatkan cukup waktu istirahat.</li>
-                    </ol>
-                    <p>Perlu diperhatikan bahwa edukasi pencegahan IMS pada remaja harus disesuaikan dengan kelompok target. Edukasi pada remaja pada umumnya mungkin akan sedikit berbeda dengan edukasi pada remaja dari kelompok YKAP (young key affected population). YKAP terdiri dari remaja pekerja seks, pengguna jasa pekerja seks, kaum transjender, pengguna obat suntik, pria pelaku seks sesama jenis, dan orang yang terinfeksi HIV. Tidak semua poin dapat diaplikasikan secara efektif pada setiap situasi. Sebagai contoh, poin (h) tentang hak dan cara menjaga sistem reproduksi mungkin patut lebih diprioritaskan oleh konselor/ pendidik dalam memberi edukasi pada kelompok remaja pekerja seks. Beberapa poin bisa menjadi isu yang sensitif bagi kelompok tertentu. Oleh karena itu, pemilihan cara edukasi harus dipersiapkan dan dipertimbangkan secara bijaksana.
-                    </p>
+                    <li><span style="font-weight: bold;">Pencegahan Awal:</span>
+                        <p>Fokus pada mencegah gangguan sebelum muncul, dengan menjalani gaya hidup sehat seperti makan bergizi, olahraga teratur, tidur cukup, dan menghindari kebiasaan buruk seperti merokok atau penyalahgunaan zat. Selain itu, mendapatkan dukungan dari keluarga, teman, dan komunitas bisa membantu agar lebih terhubung dan tidak terisolasi.</p>
+                    </li>
+                    <li><span style="font-weight: bold;">Deteksi Dini:</span>
+                        <p>Penting untuk mengenali tanda-tanda awal gangguan mental. Pemeriksaan rutin di fasilitas kesehatan, sekolah, atau tempat kerja bisa membantu menemukan masalah lebih awal. Jika gejala mulai muncul, segera cari bantuan agar masalah tidak semakin parah.</p>
+                    </li>
+                    <li><span style="font-weight: bold;">Penanganan Lanjutan:</span>
+                        <p>Bagi yang sudah mengalami gangguan mental, fokusnya adalah memberikan perawatan yang tepat seperti terapi, dukungan kelompok, atau pengobatan. Program rehabilitasi juga membantu memulihkan diri dan kembali menjalani hidup normal, termasuk pelatihan keterampilan untuk bekerja atau bersosialisasi.</p>
+                    </li>                 
+                 </ol>
+                 
                 </div>                
 
                 <h2 class="accordion">Pengobatan</h2>
                 <div class="content">
-                    <p>Ada beberapa cara penanganan gangguan kesehatan mental yang bisa menjadi pilihan sesuai dengan kondisi yang terjadi pada pengidap, yaitu:</p>
-                    <ol type="a">
-                        <li>Psikoterapi</li>
-                        <li>Obat</li>
-                        <li>Perawatan intensif di rumah sakit</li>
-                        <li>Supporting group</li>
-                        <li>Stimulasi pada otak</li>
-                        <li>Rehabilitas</li>
-                        <li>Perawatan mandiri</li>
-                    </ol>
+                    <p>Pengobatan gangguan kesehatan mental melibatkan berbagai pendekatan yang disesuaikan dengan jenis dan tingkat keparahan gangguan yang dialami. Beberapa metode pengobatan yang umum digunakan meliputi:</p>
+                    <ol>
+                        <li><span style="font-weight: bold;">Pencegahan :</span>
+                            <p>Fokus pada mencegah gangguan sebelum muncul, dengan menjalani gaya hidup sehat seperti makan bergizi, olahraga teratur, tidur cukup, dan menghindari kebiasaan buruk seperti merokok atau penyalahgunaan zat. Selain itu, mendapatkan dukungan dari keluarga, teman, dan komunitas bisa membantu agar lebih terhubung dan tidak terisolasi.</p>
+                        </li>
+                        <li><span style="font-weight: bold;">Deteksi Dini:</span>
+                            <p>Penting untuk mengenali tanda-tanda awal gangguan mental. Pemeriksaan rutin di fasilitas kesehatan, sekolah, atau tempat kerja bisa membantu menemukan masalah lebih awal. Jika gejala mulai muncul, segera cari bantuan agar masalah tidak semakin parah.</p>
+                        </li>
+                        <li><span style="font-weight: bold;">Penanganan Lanjutan:</span>
+                            <p>Bagi yang sudah mengalami gangguan mental, fokusnya adalah memberikan perawatan yang tepat seperti terapi, dukungan kelompok, atau pengobatan. Program rehabilitasi juga membantu memulihkan diri dan kembali menjalani hidup normal, termasuk pelatihan keterampilan untuk bekerja atau bersosialisasi.</p>
+                        </li>                 
+                 </ol>
                 </div>
             </div>
 

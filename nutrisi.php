@@ -63,10 +63,10 @@
                 <div class="content">
                 <p>Klasifikasi berat badan berdasarkan Indeks Massa Tubuh (IMT) yang direkomendasikan oleh WHO :</p>
                 <ul>
-                    <li><span>Underweight </span></li>
-                    <li><span>Normal</span></li>
-                    <li><span>Overweight</span></li>
-                    <li><span>Obesitas</span></li>
+                    <li><span style="font-weight: bold;">Underweight </span></li>
+                    <li><span style="font-weight: bold;">Normal</span></li>
+                    <li><span style="font-weight: bold;">Overweight</span></li>
+                    <li><span style="font-weight: bold;">Obesitas</span></li>
                 </ul>
                 <p>Cara menghitung IMT adalah dengan cara membagikan Berat Badan (BB) dengan Tinggi Badan (TB), maka akan menghasilkan nilai IMT.</p>
                 <img src="img/malnutrisi.jpg" alt="IMT manusia" class="img-content">
@@ -96,11 +96,11 @@
                     </ul>
                     <p>Rekomendasi Pola Hidup dan Aktivitas Pisik</p>
                     <ul>
-                        <li><span>Pola Hidup, </span>fokus pada peningkatan asupan kalori melalui makanan bernutrisi seperti protein, karbohidrat kompleks, lemak sehat, dan sayur/buah.
+                        <li><span style="font-weight: bold;">Pola Hidup, </span>fokus pada peningkatan asupan kalori melalui makanan bernutrisi seperti protein, karbohidrat kompleks, lemak sehat, dan sayur/buah.
                         </li>
-                        <li><span>Jadwal Makan,</span> 5-6 kali sehari dalam porsi kecil tetapi bernutrisi tinggi.
+                        <li><span style="font-weight: bold;">Jadwal Makan,</span> 5-6 kali sehari dalam porsi kecil tetapi bernutrisi tinggi.
                         </li>
-                        <li><span>Aktivitas Fisik,</span> olahraga dengan intensitas ringan seperti yoga, pilates, atau latihan kekuatan untuk meningkatkan massa otot.
+                        <li><span style="font-weight: bold;">Aktivitas Fisik,</span> olahraga dengan intensitas ringan seperti yoga, pilates, atau latihan kekuatan untuk meningkatkan massa otot.
                         </li>
                     </ul>
                 </div>
@@ -111,11 +111,11 @@
                     <p>Berat badan normal berdasarkan IMT adalah IMT 18,5 - 24,9.</p>
                     <p>Rekomendasi Pola Hidup dan Aktivitas Pisik</p>
                     <ul>
-                        <li><span>Pola Hidup, </span>pertahankan pola makan seimbang yang mencakup karbohidrat kompleks, protein tanpa lemak, lemak sehat, dan asupan sayur/buah sesuai kebutuhan kalori.
+                        <li><span style="font-weight: bold;">Pola Hidup, </span>pertahankan pola makan seimbang yang mencakup karbohidrat kompleks, protein tanpa lemak, lemak sehat, dan asupan sayur/buah sesuai kebutuhan kalori.
                         </li>
-                        <li><span>Jadwal Makan,</span> 3 kali makan utama dengan 2-3 camilan sehat di antara waktu makan.
+                        <li><span style="font-weight: bold;">Jadwal Makan,</span> 3 kali makan utama dengan 2-3 camilan sehat di antara waktu makan.
                         </li>
-                        <li><span>Aktivitas Fisik,</span> 150 menit aktivitas aerobik sedang per minggu (misalnya jalan cepat, jogging), dengan tambahan latihan kekuatan 2 kali per minggu.
+                        <li><span style="font-weight: bold;">Aktivitas Fisik,</span> 150 menit aktivitas aerobik sedang per minggu (misalnya jalan cepat, jogging), dengan tambahan latihan kekuatan 2 kali per minggu.
                         </li>
                     </ul>
                 </div>
@@ -146,11 +146,11 @@
 
                     <p>Rekomendasi Pola Hidup dan Aktivitas Pisik</p>
                     <ul>
-                        <li><span>Pola Hidup, </span>kurangi konsumsi makanan tinggi gula, lemak jenuh, dan makanan olahan. Fokus pada diet rendah kalori yang tetap seimbang.
+                        <li><span style="font-weight: bold;">Pola Hidup, </span>kurangi konsumsi makanan tinggi gula, lemak jenuh, dan makanan olahan. Fokus pada diet rendah kalori yang tetap seimbang.
                         </li>
-                        <li><span>Jadwal Makan,</span> 3 kali makan utama dengan camilan rendah kalori (seperti buah segar atau kacang-kacangan) jika diperlukan.
+                        <li><span style="font-weight: bold;">Jadwal Makan,</span> 3 kali makan utama dengan camilan rendah kalori (seperti buah segar atau kacang-kacangan) jika diperlukan.
                         </li>
-                        <li><span>Aktivitas Fisik,</span> 300 menit aktivitas aerobik per minggu, seperti berenang, bersepeda, atau berjalan kaki, ditambah latihan kekuatan untuk meningkatkan metabolisme.                </li>
+                        <li><span style="font-weight: bold;">Aktivitas Fisik,</span> 300 menit aktivitas aerobik per minggu, seperti berenang, bersepeda, atau berjalan kaki, ditambah latihan kekuatan untuk meningkatkan metabolisme.                </li>
                     </ul>
                 </div>
 
